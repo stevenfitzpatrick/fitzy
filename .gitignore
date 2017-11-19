@@ -1,2 +1,11 @@
+.DS_Store
+
+# Build Folders
+lib
+
 # NPM Files
 node_modules
+
+# Editors
+.idea/
+.vscode/
