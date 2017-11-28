@@ -1,6 +1,6 @@
 {
 	"name": "fitzy",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "React UI Library",
 	"main": "lib/fitzy.js",
 	"module": "lib/fitzy.esm.js",
