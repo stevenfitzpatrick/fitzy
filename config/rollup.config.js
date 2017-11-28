@@ -1,4 +1,3 @@
-import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import replace from 'rollup-plugin-post-replace';
 import buble from 'rollup-plugin-buble';

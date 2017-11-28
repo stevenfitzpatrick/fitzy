@@ -1,6 +1,6 @@
 {
 	"name": "fitzy",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "React UI Library",
 	"main": "lib/fitzy.js",
 	"module": "lib/fitzy.esm.js",
@@ -8,7 +8,8 @@
 	"dev:main": "lib/fitzy.dev.js",
 	"scripts": {
 		"clean": "rimraf lib/",
-		"build": "npm-run-all clean transpile size",
+		"build": "npm-run-all clean transpile copy-typescript-definition size",
+		"copy-typescript-definition": "copyfiles -f ./src/fitzy.d.ts ./lib",
 		"transpile:main": "rollup -c config/rollup.config.js",
 		"transpile:esm": "rollup -c config/rollup.config.esm.js",
 		"transpile": "npm-run-all transpile:main transpile:esm",
@@ -20,6 +21,8 @@
 		"release": "cross-env npm run smart-release",
 		"lint": "eslint src"
 	},
+	"typings": "./lib/fitzy.d.ts",
+	"files": ["src","lib","fitzy.d.ts"],
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/stevenfitzpatrick/fitzy.git"
@@ -38,6 +41,7 @@
 		"babel-preset-env": "^1.6.1",
 		"babel-preset-react": "^6.24.1",
 		"bundlesize": "^0.15.3",
+		"copyfiles": "^1.2.0",
 		"cross-env": "^5.1.1",
 		"eslint": "^4.11.0",
 		"eslint-plugin-import": "^2.8.0",
