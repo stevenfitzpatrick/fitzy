@@ -1,14 +1,26 @@
 # fitzy
 
-[![npm](https://img.shields.io/npm/v/preact.svg)](http://npm.im/preact)
+[![npm](https://img.shields.io/npm/v/fitzy.svg)](http://npm.im/fitzy)
 
 React UI Library
 
-### Author
+## Installation
+
+```bash
+npm install fitzy --save
+```
+
+## Usage
+
+```js
+import { Input } from 'fitzy';
+```
+
+## Author
 
 * Steven Fitzpatrick [@Fitzy_longhorn](https://twitter.com/Fitzy_longhorn)
 
-### License
+## License
 
 [MIT]
 
