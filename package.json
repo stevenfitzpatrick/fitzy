@@ -1,6 +1,6 @@
 {
 	"name": "fitzy",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "React UI Library",
 	"main": "lib/fitzy.js",
 	"module": "lib/fitzy.esm.js",
@@ -49,8 +49,10 @@
 		"react-dom": "^16.1.1",
 		"rollup": "^0.48.2",
 		"rollup-plugin-babel": "^3.0.2",
+		"rollup-plugin-buble": "^0.18.0",
 		"rollup-plugin-memory": "^2.0.0",
-		"rollup-plugin-node-resolve": "^3.0.0"
+		"rollup-plugin-node-resolve": "^3.0.0",
+		"rollup-plugin-post-replace": "^1.0.0"
 	},
 	"bundlesize": [
 		{

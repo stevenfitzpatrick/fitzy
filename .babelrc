@@ -7,6 +7,5 @@
             }
         ],
         "react"
-    ],
-    "plugins": ["external-helpers"]
+    ]
 }

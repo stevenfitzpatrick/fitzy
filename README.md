@@ -7,7 +7,7 @@ React UI Library
 ## Installation
 
 ```bash
-npm install fitzy --save
+$ npm install fitzy --save
 ```
 
 ## Usage

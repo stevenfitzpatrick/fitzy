@@ -1,5 +1,7 @@
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
+import replace from 'rollup-plugin-post-replace';
+import buble from 'rollup-plugin-buble';
 
 export default {
     strict: true,
@@ -8,6 +10,7 @@ export default {
     globals: {
         react: 'React'
     },
+    useStrict: false,
     exports: 'named',
     output: {
         format: 'iife',
@@ -17,11 +20,15 @@ export default {
     },
     plugins: [
         resolve(),
-        babel({
-            externalHelpers: true,
-            sourceMap: true,
-            exclude: 'node_modules/**',
-            babelrc: true
-        })
+        // remove Babel helpers
+        replace({
+            'throw ': 'return; throw '
+        }),
+        buble()
+        // babel({
+        //     sourceMap: true,
+        //     exclude: 'node_modules/**',
+        //     babelrc: true
+        // })
     ]
 };
