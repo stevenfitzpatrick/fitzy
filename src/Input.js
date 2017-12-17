@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
+/**
+ * Input Button Example
+ */
 class Input extends Component {
+    static propTypes = {
+        value: PropTypes.string
+    };
+
     render() {
         return (
             <div>
-                <input type="text" />
+                <label>Text</label>
+                <input type="text" className="lol" value={this.props.value} />
             </div>
         );
     }
