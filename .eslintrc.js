@@ -2,6 +2,11 @@ module.exports = {
     parser: 'babel-eslint',
     extends: 'eslint:recommended',
     plugins: ['react', 'jsx-a11y', 'import'],
+    env: {
+        es6: true,
+        browser: true,
+        node: true
+    },
     rules: {
         indent: ['error', 4],
         'linebreak-style': ['error', 'unix'],
