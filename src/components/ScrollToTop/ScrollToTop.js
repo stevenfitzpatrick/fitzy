@@ -1,9 +1,9 @@
 import { Component } from 'react';
 
 class ScrollToTop extends Component {
-    render() {
-        return <div />;
-    }
+  render() {
+    return <div />;
+  }
 }
 
 export default ScrollToTop;

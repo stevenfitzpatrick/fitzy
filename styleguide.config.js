@@ -10,8 +10,8 @@ module.exports = {
     },
     styleguideDir: 'dist',
     webpackConfig: createConfig([babel(), postcss()]),
-    showCode: true,
-    showUsage: true,
+    showCode: false,
+    showUsage: false,
     sections: [
         {
             name: 'Components',
