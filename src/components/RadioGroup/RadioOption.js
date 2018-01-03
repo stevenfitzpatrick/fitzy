@@ -1,7 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const propTypes = {
+const RadioOption = ({ isChecked, value, onChange, name, children }) => (
+  <label htmlFor={value}>
+    <input
+      type="radio"
+      checked={isChecked}
+      value={value}
+      onChange={onChange}
+      name={name}
+      id={value}
+    />
+    {children}
+  </label>
+);
+
+RadioOption.propTypes = {
   /**
    * onChange Handler sending updated value
    */
@@ -24,25 +38,8 @@ const propTypes = {
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
 };
 
-const defaultProps = {
+RadioOption.defaultProps = {
   isChecked: false
 };
-
-const RadioOption = ({ isChecked, value, onChange, name, children }) => (
-  <label htmlFor={value}>
-    <input
-      type="radio"
-      checked={isChecked}
-      value={value}
-      onChange={onChange}
-      name={name}
-      id={value}
-    />
-    {children}
-  </label>
-);
-
-RadioOption.propTypes = propTypes;
-RadioOption.defaultProps = defaultProps;
 
 export default RadioOption;

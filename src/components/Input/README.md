@@ -52,5 +52,12 @@ initialState = { value: '' };
 Input as textarea :
 
 ```jsx
-<Input name="name" type="textarea" />
+initialState = { value: '' };
+
+<Input
+  name="name"
+  type="textarea"
+  value={state.value}
+  onChange={v => setState({ value: v })}
+/>;
 ```

@@ -2,29 +2,6 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 class RadioGroup extends PureComponent {
-  static propTypes = {
-    /**
-     * onChange Handler sending updated value
-     */
-    onChange: PropTypes.func.isRequired,
-    /**
-     * Name of the field
-     */
-    name: PropTypes.string.isRequired,
-    /**
-     * Current Value of the field
-     */
-    value: PropTypes.string,
-    /**
-     * Radio Options List
-     */
-    children: PropTypes.node
-  };
-
-  static defaultProps = {
-    value: ''
-  };
-
   /**
    * On Change Event Handler
    */
@@ -40,5 +17,28 @@ class RadioGroup extends PureComponent {
     });
   }
 }
+
+RadioGroup.propTypes = {
+  /**
+   * onChange Handler sending updated value
+   */
+  onChange: PropTypes.func.isRequired,
+  /**
+   * Name of the field
+   */
+  name: PropTypes.string.isRequired,
+  /**
+   * Current Value of the field
+   */
+  value: PropTypes.string,
+  /**
+   * Radio Options List
+   */
+  children: PropTypes.node
+};
+
+RadioGroup.defaultProps = {
+  value: ''
+};
 
 export default RadioGroup;

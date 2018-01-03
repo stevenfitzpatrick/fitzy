@@ -4,83 +4,6 @@ import PropTypes from 'prop-types';
 import { isBoolean } from '../../utils/formHelpers';
 
 class Input extends PureComponent {
-  static propTypes = {
-    /**
-     * onChange Handler sending updated value
-     */
-    onChange: PropTypes.func.isRequired,
-    /**
-     * onBlur Handler sending updated value
-     */
-    onBlur: PropTypes.func,
-    /**
-     * Current Value of the input
-     */
-    value: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.number,
-      PropTypes.bool
-    ]),
-    /**
-     * Set input type
-     */
-    type: PropTypes.oneOf([
-      'checkbox',
-      'text',
-      'url',
-      'email',
-      'color',
-      'date',
-      'number',
-      'password',
-      'range',
-      'search',
-      'tel'
-    ]),
-    /**
-     * Set Label for input field
-     */
-    label: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
-    /**
-     * Set name for input field
-     */
-    name: PropTypes.string,
-    /**
-     * Set placeholder for input field
-     */
-    placeholder: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    /**
-     * Set hint for input field
-     */
-    hint: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    /**
-     * Set id for input field
-     */
-    id: PropTypes.string,
-    /**
-     * Mark the field as required
-     */
-    required: PropTypes.bool,
-    /**
-     * Mark the field as disabled
-     */
-    disabled: PropTypes.bool,
-    /**
-     * Add SpellCheck functionality to input
-     */
-    spellCheck: PropTypes.bool
-  };
-
-  static defaultProps = {
-    type: 'text',
-    required: false,
-    placeholder: '',
-    hint: '',
-    value: '',
-    disabled: false,
-    spellCheck: false
-  };
-
   getEventValue = (type, e) =>
     isBoolean(type) ? e.target.checked : e.target.value;
 
@@ -114,7 +37,16 @@ class Input extends PureComponent {
   }
 
   renderInput(inputId) {
-    const { type, name, value, placeholder, required, disabled } = this.props;
+    const {
+      type,
+      name,
+      value,
+      placeholder,
+      required,
+      disabled,
+      autoFocus
+    } = this.props;
+
     const Type = type === 'textarea' ? 'textarea' : 'input';
     return (
       <Type
@@ -125,6 +57,7 @@ class Input extends PureComponent {
         id={inputId}
         required={required}
         disabled={disabled}
+        autoFocus={autoFocus}
         onChange={this.handleChange}
         onBlur={this.handleBlur}
       />
@@ -146,7 +79,86 @@ class Input extends PureComponent {
 }
 
 Input.propTypes = {
-  value: PropTypes.string
+  /**
+   * onChange Handler sending updated value
+   */
+  onChange: PropTypes.func.isRequired,
+  /**
+   * onBlur Handler sending updated value
+   */
+  onBlur: PropTypes.func,
+  /**
+   * Current Value of the input
+   */
+  value: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.bool
+  ]),
+  /**
+   * Set input type
+   */
+  type: PropTypes.oneOf([
+    'checkbox',
+    'text',
+    'url',
+    'email',
+    'color',
+    'date',
+    'number',
+    'password',
+    'range',
+    'search',
+    'tel',
+    'textarea'
+  ]),
+  /**
+   * Set Label for input field
+   */
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+  /**
+   * Set name for input field
+   */
+  name: PropTypes.string,
+  /**
+   * Set placeholder for input field
+   */
+  placeholder: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  /**
+   * Set hint for input field
+   */
+  hint: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  /**
+   * Set id for input field
+   */
+  id: PropTypes.string,
+  /**
+   * Mark the field as required
+   */
+  required: PropTypes.bool,
+  /**
+   * Mark the field as disabled
+   */
+  disabled: PropTypes.bool,
+  /**
+   * Add SpellCheck functionality to input
+   */
+  spellCheck: PropTypes.bool,
+  /**
+   * Add SpellCheck functionality to input
+   */
+  autoFocus: PropTypes.bool
+};
+
+Input.defaultProps = {
+  type: 'text',
+  required: false,
+  placeholder: '',
+  hint: '',
+  value: '',
+  disabled: false,
+  spellCheck: false,
+  autoFocus: false
 };
 
 export default Input;

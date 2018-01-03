@@ -1,6 +1,10 @@
 module.exports = {
   parser: 'babel-eslint',
-  extends: ['eslint:recommended', 'plugin:jest/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:jest/recommended',
+    'plugin:jsx-a11y/recommended'
+  ],
   plugins: ['jest', 'react', 'jsx-a11y', 'import'],
   env: {
     es6: true,
@@ -20,6 +24,13 @@ module.exports = {
     'object-shorthand': 2,
     'prefer-arrow-callback': 2,
     'react/jsx-uses-vars': 1,
-    'react/jsx-uses-react': 1
+    'react/jsx-uses-react': 1,
+    'jsx-a11y/no-autofocus': [
+      2,
+      {
+        ignoreNonDOM: true
+      }
+    ],
+    'jsx-a11y/label-has-for': 0
   }
 };
