@@ -12,6 +12,7 @@ node_modules
 
 # Styleguide Folder
 styleguide/*
+dist/*
 
 # Testing
 coverage/*
