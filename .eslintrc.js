@@ -5,7 +5,7 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:jsx-a11y/recommended'
   ],
-  plugins: ['jest', 'react', 'jsx-a11y', 'import'],
+  plugins: ['jest', 'react', 'jsx-a11y', 'import','prettier'],
   env: {
     es6: true,
     browser: true,

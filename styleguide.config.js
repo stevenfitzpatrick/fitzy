@@ -31,7 +31,20 @@ module.exports = {
       components() {
         return [
           path.resolve(__dirname, 'src/components/Input', 'Input.js'),
-          path.resolve(__dirname, 'src/components/RadioGroup', 'RadioGroup.js')
+          path.resolve(__dirname, 'src/components/RadioGroup', 'RadioGroup.js'),
+          path.resolve(__dirname, 'src/components/Tabs', 'Tabs.js')
+        ];
+      }
+    },
+    {
+      name: 'Declarative',
+      components() {
+        return [
+          path.resolve(
+            __dirname,
+            'src/components/EventManager',
+            'EventManager.js'
+          )
         ];
       }
     }

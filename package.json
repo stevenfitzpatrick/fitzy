@@ -45,7 +45,7 @@
     "ui"
   ],
   "author": "Steven Fitzpatrick <steven.fitzpatrick1985@gmail.com>",
-  "homepage": "https://stevenfitzpatrick.io",
+  "homepage": "https://fitzy-ui.com",
   "license": "MIT",
   "lint-staged": {
     "*.{js,tsx,ts}": [
@@ -85,6 +85,7 @@
     "lint-staged": "^6.0.0",
     "microbundle": "^0.2.4",
     "npm-run-all": "^4.1.2",
+    "prettier-eslint": "^8.7.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-styleguidist": "^6.1.0",
