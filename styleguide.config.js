@@ -16,14 +16,7 @@ module.exports = {
     {
       name: 'Components',
       components() {
-        return [
-          path.resolve(
-            __dirname,
-            'src/components/ScrollToTop',
-            'ScrollToTop.js'
-          ),
-          path.resolve(__dirname, 'src/components/Toggle', 'Toggle.js')
-        ];
+        return [path.resolve(__dirname, 'src/components/Toggle', 'Toggle.js')];
       }
     },
     {

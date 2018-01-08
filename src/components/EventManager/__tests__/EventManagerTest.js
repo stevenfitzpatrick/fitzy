@@ -5,7 +5,6 @@ import EventManager from '../EventManager';
 
 describe('EventManager', () => {
   let wrapper;
-  let input;
   let instance;
 
   // Main Props
@@ -55,7 +54,7 @@ describe('EventManager', () => {
 
   it('should render children without crashing', () => {
     expect(wrapper.is('div')).toBe(true);
-    expect(wrapper.length).toEqual(1);
+    expect(wrapper).toHaveLength(1);
     expect(wrapper.instance()).toBeInstanceOf(EventManager);
   });
 
