@@ -1,6 +1,8 @@
 # fitzy
 
 [![npm](https://img.shields.io/npm/v/fitzy.svg)](http://npm.im/fitzy)
+[![CircleCI](https://circleci.com/gh/stevenfitzpatrick/fitzy/tree/master.svg?style=shield)](https://circleci.com/gh/stevenfitzpatrick/fitzy/tree/master)
+[![coveralls](https://img.shields.io/coveralls/stevenfitzpatrick/fitzy/master.svg)](https://coveralls.io/github/stevenfitzpatrick/fitzy)
 [![npm download](https://img.shields.io/npm/dm/fitzy.svg)](http://npm.im/fitzy)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 ![Code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
