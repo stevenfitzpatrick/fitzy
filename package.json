@@ -1,6 +1,6 @@
 {
   "name": "fitzy",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "source": "src/fitzy.js",
   "description": "React UI Library",
   "main": "lib/fitzy.js",
