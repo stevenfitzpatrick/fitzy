@@ -1,14 +1,11 @@
-# fitzy
+# Fitzy
 
+<p align="center">
 [![npm](https://img.shields.io/npm/v/fitzy.svg)](http://npm.im/fitzy)
 [![CircleCI](https://circleci.com/gh/stevenfitzpatrick/fitzy/tree/master.svg?style=shield)](https://circleci.com/gh/stevenfitzpatrick/fitzy/tree/master)
 [![coveralls](https://img.shields.io/coveralls/stevenfitzpatrick/fitzy/master.svg)](https://coveralls.io/github/stevenfitzpatrick/fitzy)
-[![npm download](https://img.shields.io/npm/dm/fitzy.svg)](http://npm.im/fitzy)
-[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 ![Code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
-[![peerDependencies Status](https://img.shields.io/david/peer/stevenfitzpatrick/fitzy.svg)](https://david-dm.org/stevenfitzpatrick/fitzy?type=peer)
-[![DevDependencies](https://img.shields.io/david/dev/stevenfitzpatrick/fitzy.svg)](https://david-dm.org/stevenfitzpatrick/fitzy#info=devDependencies&view=list)
-[![gzip size](http://img.badgesize.io/https://unpkg.com/fitzy/lib/fitzy.min.js?compression=gzip)](https://unpkg.com/fitzy/lib/fitzy.min.js)
+</p>
 
 Library of common React UI Components, ready to plug into your website. Uses Emotion CSS-in-JS Library for styles.
 
