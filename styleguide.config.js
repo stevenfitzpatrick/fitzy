@@ -14,17 +14,21 @@ module.exports = {
   showUsage: false,
   sections: [
     {
-      name: 'Components',
-      components() {
-        return [path.resolve(__dirname, 'src/components/Toggle', 'Toggle.js')];
-      }
-    },
-    {
       name: 'Forms',
       components() {
         return [
           path.resolve(__dirname, 'src/components/Input', 'Input.js'),
           path.resolve(__dirname, 'src/components/RadioGroup', 'RadioGroup.js'),
+          path.resolve(__dirname, 'src/components/Toggle', 'Toggle.js')
+        ];
+      }
+    },
+    {
+      name: 'Components',
+      components() {
+        return [
+          path.resolve(__dirname, 'src/components/Tag', 'Tag.js'),
+          path.resolve(__dirname, 'src/components/TagInput', 'TagInput.js'),
           path.resolve(__dirname, 'src/components/Tabs', 'Tabs.js')
         ];
       }

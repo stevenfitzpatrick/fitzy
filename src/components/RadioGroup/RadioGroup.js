@@ -2,9 +2,6 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 class RadioGroup extends PureComponent {
-  /**
-   * On Change Event Handler
-   */
   onChange = e => this.props.onChange && this.props.onChange(e.target.value);
 
   render() {

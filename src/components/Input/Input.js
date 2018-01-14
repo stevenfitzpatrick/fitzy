@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import { isBoolean } from '../../utils/formHelpers';
+import { isBoolean } from '../../utils/formUtils';
 
 class Input extends PureComponent {
   getEventValue = (type, e) =>
