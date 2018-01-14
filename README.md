@@ -1,11 +1,9 @@
 # Fitzy
 
-<p align="center">
 [![npm](https://img.shields.io/npm/v/fitzy.svg)](http://npm.im/fitzy)
 [![CircleCI](https://circleci.com/gh/stevenfitzpatrick/fitzy/tree/master.svg?style=shield)](https://circleci.com/gh/stevenfitzpatrick/fitzy/tree/master)
 [![coveralls](https://img.shields.io/coveralls/stevenfitzpatrick/fitzy/master.svg)](https://coveralls.io/github/stevenfitzpatrick/fitzy)
 ![Code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
-</p>
 
 Library of common React UI Components, ready to plug into your website. Uses Emotion CSS-in-JS Library for styles.
 
@@ -31,6 +29,9 @@ Fitzy is available as an [npm package](https://www.npmjs.com/package/fitzy).
 ```bash
 $ npm install fitzy --save
 ```
+
+> This library depends on `react`,`prop-types` and `Emotion`. Please make sure you
+> have those installed as well.
 
 ## Usage
 
