@@ -18,7 +18,7 @@ Library of common React UI Components, ready to plug into your website. Uses Emo
 * [Licence](#licence)
 * [Links](#links)
 
-## Getting Started
+## 💻 Getting Started
 
 Follow these instructions to include the Fitzy Library to your website.
 
@@ -33,7 +33,7 @@ $ npm install fitzy --save
 > This library depends on `react`,`prop-types` and `Emotion`. Please make sure you
 > have those installed as well.
 
-## Usage
+## 📦 Usage
 
 The `fitzy` library provides both named and default exports, so you can import everything or just what you need. I would recommend just to import what you need for smaller bundle sizes.
 
@@ -64,19 +64,19 @@ import Fitzy from 'fitzy';
 
 * Steven Fitzpatrick [@Fitzy_longhorn](https://twitter.com/Fitzy_longhorn)
 
-## License
+## 📃 License
 
 This project is licensed under the MIT License - see the [Licence.md](Licence.md) file for details.
 
-## Change log
+## 📜 Change log
 
 The change log can found on the [releases](https://github.com/stevenfitzpatrick/fitzy/releases) page.
 
-## Contributions
+## ✍️ Contributions
 
 Feel free to contribute and submit pull requests.
 
-## Links
+## 🔗 Links
 
 * [Website](https://fitzy-ui.com)
 * [Author Website](https://stevenfitzpatrick.io)
