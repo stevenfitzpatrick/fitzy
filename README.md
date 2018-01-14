@@ -49,7 +49,7 @@ import { Input, Tabs } from 'fitzy';
 import Fitzy from 'fitzy';
 ```
 
-## Components
+## 🎁 Components
 
 ### Tabs
 
@@ -60,7 +60,7 @@ import Fitzy from 'fitzy';
 * [Jest](https://github.com/facebook/jest) - Test Framework.
 * [Styleguidist](https://github.com/styleguidist/react-styleguidist) - React component development library.
 
-## Author
+## 👊 Author
 
 * Steven Fitzpatrick [@Fitzy_longhorn](https://twitter.com/Fitzy_longhorn)
 
