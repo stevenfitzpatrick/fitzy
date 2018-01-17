@@ -58,7 +58,7 @@ class TagInput extends Component {
   getTagProps = ({ ...props }) => {
     const { tag_handleClick, tag_handleKeyDown } = this;
     return {
-      onClick: tag_handleClick,
+      onRemove: tag_handleClick,
       onKeyDown: tag_handleKeyDown,
       ...props
     };

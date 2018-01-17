@@ -9,11 +9,11 @@ class Input extends PureComponent {
 
   handleChange = e =>
     this.props.onChange &&
-    this.props.onChange(this.getEventValue(this.props.type, e));
+    this.props.onChange(e, this.getEventValue(this.props.type, e));
 
   handleBlur = e => {
     this.props.onBlur &&
-      this.props.onBlur(this.getEventValue(this.props.type, e));
+      this.props.onBlur(e, this.getEventValue(this.props.type, e));
   };
 
   renderHint() {

@@ -46,7 +46,7 @@ describe('Input', () => {
     expect(onChangeSpy.mock.calls).toHaveLength(0);
     input.simulate('change', { target: { value: 'new' } });
     expect(onChangeSpy.mock.calls).toHaveLength(1);
-    expect(onChangeSpy.mock.calls[0][0]).toBe('new');
+    expect(onChangeSpy.mock.calls[0][1]).toBe('new');
   });
 
   it('should call onBlur when leaving input', () => {
@@ -98,9 +98,10 @@ describe('Input', () => {
 
     it('should call onChange with checked value', () => {
       expect(onChangeSpy).not.toBeCalled();
-      input.simulate('change', { target: { checked: false } });
+      const event = { target: { checked: false } };
+      input.simulate('change', event);
       expect(onChangeSpy).toBeCalled();
-      expect(onChangeSpy).toBeCalledWith(false);
+      expect(onChangeSpy).toBeCalledWith(event, false);
     });
   });
 
