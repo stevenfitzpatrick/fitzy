@@ -8,6 +8,7 @@ module.exports = {
     const component = path.basename(componentPath, '.js');
     return `import { ${component} } from '${name}';`;
   },
+  assetsDir: 'assets',
   styleguideDir: 'dist',
   webpackConfig: createConfig([babel(), postcss()]),
   showCode: false,

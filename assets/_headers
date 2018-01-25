@@ -1,0 +1,8 @@
+# A path:
+/build/*
+   # Headers for that path:
+   Cache-Control: public, max-age=360000
+
+/index.html
+   X-Frame-Options: DENY
+   X-XSS-Protection: 1; mode=block
