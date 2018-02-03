@@ -19,6 +19,13 @@ describe('Input', () => {
     onBlur: onBlurSpy
   };
 
+  const funkyProps = {
+    ...defaultProps,
+    spellCheck: false,
+    autoComplete: 'username',
+    autoFocus: true
+  };
+
   beforeEach(() => {
     wrapper = shallow(<Input type="text" {...defaultProps} />);
     input = wrapper.find('input');
@@ -114,6 +121,16 @@ describe('Input', () => {
     it('should render type of checkbox', () => {
       expect(input.props().type).toEqual('textarea');
       expect(input.is('textarea')).toEqual(true);
+    });
+  });
+
+  describe('with Funky Props', () => {
+    it('should display all extra funky props', () => {
+      wrapper.setProps({ ...funkyProps });
+      const funkyInput = wrapper.find('input');
+      expect(Object.keys(funkyInput.props())).toEqual(
+        expect.arrayContaining(Object.keys(funkyProps))
+      );
     });
   });
 });

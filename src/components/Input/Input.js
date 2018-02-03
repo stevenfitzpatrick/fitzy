@@ -44,7 +44,9 @@ class Input extends PureComponent {
       placeholder,
       required,
       disabled,
-      autoFocus
+      autoFocus,
+      spellCheck,
+      autoComplete
     } = this.props;
 
     const Type = type === 'textarea' ? 'textarea' : 'input';
@@ -58,6 +60,8 @@ class Input extends PureComponent {
         required={required}
         disabled={disabled}
         autoFocus={autoFocus}
+        spellCheck={spellCheck}
+        autoComplete={autoComplete}
         onChange={this.handleChange}
         onBlur={this.handleBlur}
       />
@@ -145,20 +149,25 @@ Input.propTypes = {
    */
   spellCheck: PropTypes.bool,
   /**
-   * Add SpellCheck functionality to input
+   * Add Auto Focus functionality to input
    */
-  autoFocus: PropTypes.bool
+  autoFocus: PropTypes.bool,
+  /**
+   * Add Auto Complete aka autofill functionality to input
+   */
+  autoComplete: PropTypes.string
 };
 
 Input.defaultProps = {
   type: 'text',
   required: false,
-  placeholder: '',
+  placeholder: null,
   hint: '',
   value: '',
   disabled: false,
-  spellCheck: false,
-  autoFocus: false
+  spellCheck: null,
+  autoFocus: null,
+  autoComplete: null
 };
 
 export default Input;

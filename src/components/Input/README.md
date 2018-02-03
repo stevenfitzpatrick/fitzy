@@ -7,7 +7,7 @@ initialState = { value: '' };
   placeholder="Enter your name"
   name="name"
   value={state.value}
-  onChange={v => setState({ value: v })}
+  onChange={(_, v) => setState({ value: v })}
 />;
 ```
 
@@ -18,7 +18,7 @@ initialState = { value: '' };
 
 <Input
   value={state.value}
-  onChange={v => setState({ value: v })}
+  onChange={(_, v) => setState({ value: v })}
   disabled={true}
 />;
 ```
@@ -32,7 +32,9 @@ initialState = { value: '' };
   label="Name"
   name="name"
   value={state.value}
-  onChange={v => setState({ value: v })}
+  onChange={(_, v) => setState({ value: v })}
+  autoComplete="username"
+  required
 />;
 ```
 

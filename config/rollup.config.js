@@ -5,16 +5,15 @@ import babel from 'rollup-plugin-babel';
 import pkg from '../package.json';
 
 export default {
-  strict: true,
   input: 'src/fitzy.js',
   external: ['react'].concat(Object.keys(pkg.dependencies)),
-  globals: {
-    react: 'React',
-    'prop-types': 'PropTypes'
-  },
-  useStrict: false,
-  exports: 'named',
   output: {
+    globals: {
+      react: 'React',
+      'prop-types': 'PropTypes'
+    },
+    strict: true,
+    exports: 'named',
     format: 'iife',
     file: 'lib/fitzy.dev.js',
     name: 'fitzy',
