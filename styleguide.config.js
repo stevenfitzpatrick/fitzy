@@ -20,7 +20,9 @@ module.exports = {
         return [
           path.resolve(__dirname, 'src/components/Input', 'Input.js'),
           path.resolve(__dirname, 'src/components/RadioGroup', 'RadioGroup.js'),
-          path.resolve(__dirname, 'src/components/Toggle', 'Toggle.js')
+          path.resolve(__dirname, 'src/components/Toggle', 'Toggle.js'),
+          path.resolve(__dirname, 'src/components/Password', 'Password.js'),
+          path.resolve(__dirname, 'src/components/Dropdown', 'Dropdown.js')
         ];
       }
     },

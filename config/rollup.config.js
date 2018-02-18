@@ -10,7 +10,8 @@ export default {
   output: {
     globals: {
       react: 'React',
-      'prop-types': 'PropTypes'
+      'prop-types': 'PropTypes',
+      downshift: 'Downshift'
     },
     strict: true,
     exports: 'named',
