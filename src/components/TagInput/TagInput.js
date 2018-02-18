@@ -1,11 +1,11 @@
-import { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Component } from 'react';
 
 import {
-  keys,
-  keyMatches,
+  isDelete,
   isEnter,
-  isDelete
+  keyMatches,
+  keys
 } from '../../utils/accessibilityUtils';
 import { isEmpty } from '../../utils/formUtils';
 

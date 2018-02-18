@@ -1,5 +1,5 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
 const RadioOption = ({ isChecked, value, onChange, name, children }) => (
   <label htmlFor={value}>

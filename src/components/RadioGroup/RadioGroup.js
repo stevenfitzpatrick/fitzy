@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import React, { PureComponent } from 'react';
 
 class RadioGroup extends PureComponent {
   onChange = e => this.props.onChange && this.props.onChange(e.target.value);

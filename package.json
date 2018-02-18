@@ -1,6 +1,6 @@
 {
   "name": "fitzy",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "source": "src/fitzy.js",
   "description": "React UI Library",
   "main": "lib/fitzy.js",
@@ -79,6 +79,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.17.0",
+    "eslint-plugin-codebox": "^2.0.2",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jest": "^21.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",

@@ -1,6 +1,6 @@
-import React from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
+import React from 'react';
 
 const Tab = ({ children, isDisabled, isActive, onSelect }) => {
   const className = classnames({ active: isActive, disabled: isDisabled });

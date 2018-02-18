@@ -5,7 +5,7 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:jsx-a11y/recommended'
   ],
-  plugins: ['jest', 'react', 'jsx-a11y', 'import','prettier'],
+  plugins: ['jest', 'react', 'jsx-a11y', 'import', 'prettier', 'codebox'],
   env: {
     es6: true,
     browser: true,
@@ -31,6 +31,27 @@ module.exports = {
         ignoreNonDOM: true
       }
     ],
-    'jsx-a11y/label-has-for': 0
+    'jsx-a11y/label-has-for': 0,
+    'codebox/sort-imports': [
+      'error',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'parent',
+          'sibling',
+          'index',
+          ['unknown', 'absolute']
+        ],
+        importTypes: ['default', 'named', 'all', 'none'],
+        ignoreCase: true
+      }
+    ],
+    'codebox/sort-named-imports': [
+      'error',
+      {
+        ignoreCase: true
+      }
+    ]
   }
 };

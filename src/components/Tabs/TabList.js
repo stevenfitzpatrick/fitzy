@@ -1,5 +1,5 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
 const TabList = ({ activeIndex, onSelectTab, children }) => {
   const newChildren = React.Children.map(children, (child, index) =>

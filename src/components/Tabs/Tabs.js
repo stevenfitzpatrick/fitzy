@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 
-import TabList from './TabList';
 import Tab from './Tab';
-import TabPanels from './TabPanels';
+import TabList from './TabList';
 import TabPanel from './TabPanel';
+import TabPanels from './TabPanels';
 
 export class Tabs extends Component {
   initialState = {
