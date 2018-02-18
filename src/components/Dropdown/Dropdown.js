@@ -5,11 +5,12 @@ import classnames from 'classnames';
 
 import { dropdownStyles, menuStyles, buttonStyles } from './styles';
 
-const Dropdown = ({ items, onChange }) => {
+const Dropdown = ({ items, onChange, ...props }) => {
   const classNames = classnames(dropdownStyles);
   return (
     <Downshift
       onChange={onChange}
+      {...props}
       itemToString={i => (i ? i.name : '')}
       render={({
         getInputProps,
