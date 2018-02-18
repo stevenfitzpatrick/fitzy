@@ -17,5 +17,6 @@ const items = [
   onChange={e => {
     setState({ value: e });
   }}
+  onBlur={e => console.log('hi')}
 />;
 ```

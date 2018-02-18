@@ -5,12 +5,11 @@ import classnames from 'classnames';
 
 import { dropdownStyles, menuStyles, buttonStyles } from './styles';
 
-const Dropdown = ({ items, onChange, ...props }) => {
+const Dropdown = ({ items, onChange, onBlur }) => {
   const classNames = classnames(dropdownStyles);
   return (
     <Downshift
       onChange={onChange}
-      {...props}
       itemToString={i => (i ? i.name : '')}
       render={({
         getInputProps,
@@ -24,10 +23,10 @@ const Dropdown = ({ items, onChange, ...props }) => {
         highlightedIndex
       }) => (
         <div className={classNames}>
-          <input {...getInputProps({})} type="hidden" />
+          <input {...getInputProps()} type="hidden" />
           <button
             onClick={toggleMenu}
-            {...getButtonProps({ tabIndex: 0 })}
+            {...getButtonProps({ onBlur })}
             className={buttonStyles}
           />
           <span className="text">
@@ -61,11 +60,13 @@ const Dropdown = ({ items, onChange, ...props }) => {
 
 Dropdown.propTypes = {
   onChange: PropTypes.func,
+  onBlur: PropTypes.func,
   items: PropTypes.array
 };
 
 Dropdown.defaultProps = {
-  items: []
+  items: [],
+  onBlur: () => {}
 };
 
 export default Dropdown;
