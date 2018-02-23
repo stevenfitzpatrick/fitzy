@@ -74,9 +74,3 @@ jobs:
       - run:
           name: Publish NPM
           command: npm publish
-workflows:
-  version: 2
-  build_and_release:
-    jobs:
-      - build
-      - release
