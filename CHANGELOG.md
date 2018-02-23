@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/stevenfitzpatrick/fitzy/compare/v2.0.3...v2.1.0) (2018-02-23)
+
+
+### Bug Fixes
+
+* **CircleCI:** Force Build ([e391802](https://github.com/stevenfitzpatrick/fitzy/commit/e391802))
+
+
+### Features
+
+* **`Input`:** Add Warning and className prop for Input component ([41255a5](https://github.com/stevenfitzpatrick/fitzy/commit/41255a5))
+
+
+
 <a name="2.0.3"></a>
 ## [2.0.3](https://github.com/stevenfitzpatrick/fitzy/compare/v2.0.2...v2.0.3) (2018-02-23)
 

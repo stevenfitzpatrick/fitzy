@@ -1,6 +1,6 @@
 {
   "name": "fitzy",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "source": "src/fitzy.js",
   "description": "React UI Library",
   "main": "lib/fitzy.js",
@@ -25,7 +25,7 @@
     "size": "node -e \"process.stdout.write('gzip size: ')\" && gzip-size src/fitzy.js",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "release": "standard-version",
+    "release": "npm run build && npm run test && standard-version && git push --follow-tags && npm publish",
     "lint": "eslint src"
   },
   "typings": "./lib/fitzy.d.ts",
