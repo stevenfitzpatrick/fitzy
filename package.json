@@ -102,7 +102,7 @@
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-post-replace": "^1.0.0",
     "standard-version": "^4.3.0",
-    "webpack": "^3.10.0",
+    "webpack": "^3.11.0",
     "webpack-blocks": "^1.0.0-rc.2"
   },
   "dependencies": {
