@@ -70,8 +70,6 @@ This project is licensed under the MIT License - see the [Licence.md](Licence.md
 
 ## 📜 Change log
 
-Test
-
 The change log can found on the [releases](https://github.com/stevenfitzpatrick/fitzy/releases) page.
 
 ## ✍️ Contributions
