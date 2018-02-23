@@ -6,6 +6,11 @@ version: 2
 
 jobs:
   build:
+    environment:
+      GIT_AUTHOR_NAME: Steven Fitzpatrick
+      GIT_AUTHOR_EMAIL: steven.fitzpatrick1985@gmail.com
+      GIT_COMMITTER_NAME: Steven Fitzpatrick
+      GIT_COMMITTER_EMAIL: steven.fitzpatrick1985@gmail.com
     docker:
       # specify the version you desire here
       - image: circleci/node:8.9.1
