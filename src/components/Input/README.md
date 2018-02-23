@@ -11,7 +11,7 @@ initialState = { value: '' };
 />;
 ```
 
-Input disabled :
+Input with warning :
 
 ```jsx
 initialState = { value: '' };
@@ -19,7 +19,7 @@ initialState = { value: '' };
 <Input
   value={state.value}
   onChange={(_, v) => setState({ value: v })}
-  disabled={true}
+  warning={<span>Some Warning</span>}
 />;
 ```
 

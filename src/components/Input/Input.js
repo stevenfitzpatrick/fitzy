@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
+import React, { Fragment, PureComponent } from 'react';
 
 import { isBoolean } from '../../utils/formUtils';
 import { inputStyles } from './styles';
@@ -26,6 +26,16 @@ class Input extends PureComponent {
     }
 
     return <p>{hint}</p>;
+  }
+
+  renderWarning() {
+    const { warning } = this.props;
+
+    if (!warning) {
+      return null;
+    }
+
+    return warning;
   }
 
   renderLabel(inputId) {
@@ -74,14 +84,15 @@ class Input extends PureComponent {
   }
 
   render() {
-    const { id, name } = this.props;
+    const { id, name, className } = this.props;
     const inputId = id || name;
 
     return (
-      <div>
+      <div className={className}>
         {this.renderLabel(inputId)}
         {this.renderInput(inputId)}
         {this.renderHint()}
+        {this.renderWarning()}
       </div>
     );
   }
@@ -160,7 +171,15 @@ Input.propTypes = {
   /**
    * Add Auto Complete aka autofill functionality to input
    */
-  autoComplete: PropTypes.string
+  autoComplete: PropTypes.string,
+  /**
+   * Add Error Message below search field
+   */
+  warning: PropTypes.node,
+  /**
+   * Classname for css class for input container
+   */
+  className: PropTypes.string
 };
 
 Input.defaultProps = {
@@ -172,7 +191,9 @@ Input.defaultProps = {
   disabled: false,
   spellCheck: null,
   autoFocus: null,
-  autoComplete: null
+  autoComplete: null,
+  warning: null,
+  className: ''
 };
 
 export default Input;
