@@ -74,7 +74,7 @@ The change log can found on the [releases](https://github.com/stevenfitzpatrick/
 
 ## ✍️ Contributions
 
-Feel free to contribute and submit pull requests. Test
+Feel free to contribute and submit pull requests.
 
 ## 🔗 Links
 
