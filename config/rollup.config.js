@@ -45,10 +45,10 @@ export default {
       ],
       babelrc: false,
       plugins: [
-        //'transform-react-remove-prop-types',
+        ['transform-react-remove-prop-types', { mode: 'unsafe-wrap' }],
         'external-helpers',
         'transform-object-rest-spread',
-        'transform-class-properties'
+        ['transform-class-properties', { loose: true }]
       ]
     })
   ]
