@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/stevenfitzpatrick/fitzy/compare/v2.1.0...v2.2.0) (2018-02-24)
+
+
+### Features
+
+* **Rollup:** Add CJS Build for the Fitzy lib ([a651d8e](https://github.com/stevenfitzpatrick/fitzy/commit/a651d8e))
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/stevenfitzpatrick/fitzy/compare/v2.0.3...v2.1.0) (2018-02-23)
 
