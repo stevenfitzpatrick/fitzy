@@ -1,7 +1,8 @@
-import { css } from 'emotion';
+import styled from 'styled-components';
 
-const inputStyles = css`
+const FitzyInput = styled.input`
   display: block;
+  font-weight: 5px;
 `;
 
-export { inputStyles };
+export { FitzyInput };

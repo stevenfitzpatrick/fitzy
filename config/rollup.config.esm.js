@@ -1,5 +1,5 @@
-import config from './rollup.config';
 import pkg from '../package.json';
+import config from './rollup.config';
 
 // ES output
 config.output.format = 'es';

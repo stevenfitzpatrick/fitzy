@@ -1,6 +1,6 @@
-import resolve from 'rollup-plugin-node-resolve';
-import replace from 'rollup-plugin-post-replace';
 import babel from 'rollup-plugin-babel';
+import replace from 'rollup-plugin-post-replace';
+import resolve from 'rollup-plugin-node-resolve';
 
 import pkg from '../package.json';
 
@@ -11,7 +11,9 @@ export default {
     globals: {
       react: 'React',
       'prop-types': 'PropTypes',
-      downshift: 'Downshift'
+      downshift: 'Downshift',
+      classnames: 'classnames',
+      'styled-components': 'styled-components'
     },
     strict: true,
     exports: 'named',
@@ -28,7 +30,19 @@ export default {
     }),
     babel({
       exclude: 'node_modules/**',
-      presets: [['env', { modules: false, loose: true }], 'react'],
+      presets: [
+        [
+          'env',
+          {
+            modules: false,
+            loose: true,
+            targets: {
+              browsers: ['last 2 versions', 'IE >= 11']
+            }
+          }
+        ],
+        'react'
+      ],
       babelrc: false,
       plugins: [
         //'transform-react-remove-prop-types',

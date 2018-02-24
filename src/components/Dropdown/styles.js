@@ -1,4 +1,4 @@
-import { css } from 'emotion';
+import { css } from 'styled-components';
 
 const dropdownStyles = css`
   position: relative;

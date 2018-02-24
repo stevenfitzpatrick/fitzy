@@ -1,9 +1,8 @@
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { Fragment, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 
 import { isBoolean } from '../../utils/formUtils';
-import { inputStyles } from './styles';
 
 class Input extends PureComponent {
   getEventValue = (type, e) =>
@@ -61,7 +60,7 @@ class Input extends PureComponent {
       autoComplete
     } = this.props;
 
-    const classNames = classnames(inputStyles);
+    const classNames = classnames('');
 
     const Type = type === 'textarea' ? 'textarea' : 'input';
     return (
