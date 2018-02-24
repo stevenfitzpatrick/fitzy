@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.2.1"></a>
+## [2.2.1](https://github.com/stevenfitzpatrick/fitzy/compare/v2.2.0...v2.2.1) (2018-02-24)
+
+
+### Bug Fixes
+
+* **Babel:** Update support browser list targets for rollup builds ([8ddfddc](https://github.com/stevenfitzpatrick/fitzy/commit/8ddfddc))
+* **Rollup:** Remove proptype check for production but allow in development ([1a58782](https://github.com/stevenfitzpatrick/fitzy/commit/1a58782))
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/stevenfitzpatrick/fitzy/compare/v2.1.0...v2.2.0) (2018-02-24)
 
