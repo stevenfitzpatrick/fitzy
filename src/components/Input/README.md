@@ -17,6 +17,8 @@ Input with warning :
 initialState = { value: '' };
 
 <Input
+  label="Name"
+  placeholder="Enter your name"
   value={state.value}
   onChange={(_, v) => setState({ value: v })}
   warning={<span>Some Warning</span>}

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 
 import { isBoolean } from '../../utils/formUtils';
+import { FitzyInput, FitzyLabel, FormError, FormField } from './styles';
 
 class Input extends PureComponent {
   getEventValue = (type, e) =>
@@ -34,7 +35,7 @@ class Input extends PureComponent {
       return null;
     }
 
-    return warning;
+    return <FormError>{warning}</FormError>;
   }
 
   renderLabel(inputId) {
@@ -44,7 +45,7 @@ class Input extends PureComponent {
       return null;
     }
 
-    return <label htmlFor={inputId}>{label}</label>;
+    return <FitzyLabel htmlFor={inputId}>{label}</FitzyLabel>;
   }
 
   renderInput(inputId) {
@@ -62,7 +63,7 @@ class Input extends PureComponent {
 
     const classNames = classnames('');
 
-    const Type = type === 'textarea' ? 'textarea' : 'input';
+    const Type = type === 'textarea' ? FitzyInput : FitzyInput;
     return (
       <Type
         name={name}
@@ -87,12 +88,12 @@ class Input extends PureComponent {
     const inputId = id || name;
 
     return (
-      <div className={className}>
+      <FormField role="presentation" className={className}>
         {this.renderLabel(inputId)}
         {this.renderInput(inputId)}
         {this.renderHint()}
         {this.renderWarning()}
-      </div>
+      </FormField>
     );
   }
 }
