@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.3.0"></a>
+# [2.3.0](https://github.com/stevenfitzpatrick/fitzy/compare/v2.2.1...v2.3.0) (2018-02-25)
+
+
+### Bug Fixes
+
+* **Styleguidist:** Add CSS Reset Styles and `Source Sans Pro` font for demo ([d937e24](https://github.com/stevenfitzpatrick/fitzy/commit/d937e24))
+
+
+### Features
+
+* **Input:** Add Styled Components styling for input component ([e70e720](https://github.com/stevenfitzpatrick/fitzy/commit/e70e720))
+* **Tests:** Improve test setup for Styled Components ([da0d983](https://github.com/stevenfitzpatrick/fitzy/commit/da0d983))
+
+
+
 <a name="2.2.1"></a>
 ## [2.2.1](https://github.com/stevenfitzpatrick/fitzy/compare/v2.2.0...v2.2.1) (2018-02-24)
 
