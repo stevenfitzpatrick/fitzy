@@ -1,0 +1,6 @@
+/*
+  Reset styles for Styleguidist UI Demo page
+*/
+*:before, *:after,* {
+  box-sizing: border-box
+}

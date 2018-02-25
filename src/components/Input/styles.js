@@ -17,12 +17,13 @@ const FitzyInput = styled.input`
   padding: 12px;
   font-size: inherit;
   font-weight: normal;
+  font-family: inherit;
   border-radius: 3px;
   border: 1px solid #ccc;
   font-family: inherit;
   width: 100%;
   background-color: #fff;
-  transition: all 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
   margin: 0 0 5px 0;
 `;
 
@@ -33,4 +34,5 @@ const FitzyLabel = styled.label`
   max-width: 100%;
 `;
 
+/** @component */
 export { FitzyInput, FormField, FitzyLabel, FormError };

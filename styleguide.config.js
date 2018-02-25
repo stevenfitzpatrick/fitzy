@@ -1,5 +1,5 @@
 const path = require('path');
-const { createConfig, babel, postcss } = require('webpack-blocks');
+const { createConfig, babel, postcss, match, css } = require('webpack-blocks');
 const { version, name } = require('./package.json');
 
 module.exports = {
@@ -8,11 +8,23 @@ module.exports = {
     const component = path.basename(componentPath, '.js');
     return `import { ${component} } from '${name}';`;
   },
+  template: path.join(__dirname, 'styleguide-config/template.html'),
   assetsDir: 'assets',
   styleguideDir: 'dist',
-  webpackConfig: createConfig([babel(), postcss()]),
+  require: [path.join(__dirname, 'styleguide-config/reset.css')],
+  webpackConfig: createConfig([
+    babel(),
+    match(['*.css', '!*node_modules*'], [css(), postcss()])
+  ]),
   showCode: false,
   showUsage: false,
+  styles: {
+    StyleGuide: {
+      '@global body': {
+        fontFamily: 'Source Sans Pro'
+      }
+    }
+  },
   sections: [
     {
       name: 'Forms',
