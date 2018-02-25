@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 
 import { isBoolean } from '../../utils/formUtils';
-import { FitzyInput, FitzyLabel, FormError, FormField } from './styles';
+import { FitzyInput, FitzyLabel, FormError, FormField } from './Input.styled';
 
 class Input extends PureComponent {
   getEventValue = (type, e) =>

@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should match snapshot 1`] = `
+.c0 {
+  position: relative;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.c1 {
+  display: block;
+  position: relative;
+  padding: 12px;
+  font-size: inherit;
+  font-weight: normal;
+  font-family: inherit;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
+  margin: 0 0 5px 0;
+}
+
+<label
+  className="c0"
+  role="presentation"
+>
+  <input
+    autoComplete={null}
+    autoFocus={null}
+    className="c1"
+    disabled={false}
+    id="name"
+    name="name"
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="Enter Name"
+    required={false}
+    spellCheck={null}
+    type="text"
+    value="test"
+  />
+</label>
+`;

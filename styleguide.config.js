@@ -8,9 +8,9 @@ module.exports = {
     const component = path.basename(componentPath, '.js');
     return `import { ${component} } from '${name}';`;
   },
-  template: path.join(__dirname, 'styleguide-config/template.html'),
   assetsDir: 'assets',
   styleguideDir: 'dist',
+  template: path.join(__dirname, 'styleguide-config/template.html'),
   require: [path.join(__dirname, 'styleguide-config/reset.css')],
   webpackConfig: createConfig([
     babel(),

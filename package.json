@@ -66,6 +66,7 @@
     "babel-eslint": "^8.2.2",
     "babel-jest": "^22.4.1",
     "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-styled-components": "^1.5.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.12",
@@ -88,6 +89,7 @@
     "gzip-size-cli": "^2.1.0",
     "husky": "^0.14.3",
     "jest": "^22.1.4",
+    "jest-styled-components": "^5.0.0",
     "lint-staged": "^6.0.0",
     "microbundle": "^0.4.3",
     "npm-run-all": "^4.1.2",
@@ -104,6 +106,11 @@
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-post-replace": "^1.0.0",
     "standard-version": "^4.3.0",
+    "stylelint": "^9.1.1",
+    "stylelint-config-standard": "^18.1.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.2.2",
+    "styled-components": "^3.1.6",
     "typescript": "^2.7.2",
     "typescript-styled-plugin": "^0.6.0",
     "webpack": "^3.11.0",
@@ -112,12 +119,12 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "downshift": "^1.28.0",
-    "prop-types": "^15.6.0",
-    "styled-components": "^3.1.6"
+    "prop-types": "^15.6.0"
   },
   "peerDependencies": {
     "react": ">= 16.0.0 < 17.0.0-0",
-    "react-dom": ">= 16.0.0 < 17.0.0-0"
+    "react-dom": ">= 16.0.0 < 17.0.0-0",
+    "styled-components": "^3.1.6"
   },
   "bundlesize": [
     {
