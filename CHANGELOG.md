@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.4.1"></a>
+## [2.4.1](https://github.com/stevenfitzpatrick/fitzy/compare/v2.4.0...v2.4.1) (2018-02-26)
+
+
+### Bug Fixes
+
+* **Button:** Add default export for button ([90a77c4](https://github.com/stevenfitzpatrick/fitzy/commit/90a77c4))
+
+
+
 <a name="2.4.0"></a>
 # [2.4.0](https://github.com/stevenfitzpatrick/fitzy/compare/v2.3.0...v2.4.0) (2018-02-26)
 
