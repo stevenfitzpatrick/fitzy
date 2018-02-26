@@ -1,12 +1,14 @@
 import babel from 'rollup-plugin-babel';
 import replace from 'rollup-plugin-post-replace';
-import resolve from 'rollup-plugin-node-resolve';
+// import resolve from 'rollup-plugin-node-resolve';
 
 import pkg from '../package.json';
 
 export default {
   input: 'src/fitzy.js',
-  external: ['react'].concat(Object.keys(pkg.dependencies)),
+  external: ['react', 'styled-components'].concat(
+    Object.keys(pkg.dependencies)
+  ),
   output: {
     globals: {
       react: 'React',
@@ -23,7 +25,6 @@ export default {
     sourcemap: true
   },
   plugins: [
-    resolve(),
     // remove Babel helpers
     replace({
       'throw ': 'return; throw '
@@ -51,5 +52,6 @@ export default {
         ['transform-class-properties', { loose: true }]
       ]
     })
+    // resolve()
   ]
 };
