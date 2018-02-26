@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/stevenfitzpatrick/fitzy/compare/v2.3.0...v2.4.0) (2018-02-26)
+
+
+### Features
+
+* **Button:** Adding a new Button component ([63c6a82](https://github.com/stevenfitzpatrick/fitzy/commit/63c6a82))
+
+
+
 <a name="2.3.0"></a>
 # [2.3.0](https://github.com/stevenfitzpatrick/fitzy/compare/v2.2.1...v2.3.0) (2018-02-25)
 
