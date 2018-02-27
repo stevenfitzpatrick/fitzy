@@ -7,7 +7,7 @@ const FormField = styled.label`
 
   &:focus-within {
     label {
-      top: -24px;
+      top: 0px;
     }
   }
 `;
@@ -20,7 +20,7 @@ const FormError = styled.span`
 const FitzyInput = styled.input`
   display: block;
   position: relative;
-  padding: 12px;
+  padding: 24px 12px 12px;
   font-size: inherit;
   font-weight: normal;
   font-family: inherit;
@@ -33,7 +33,7 @@ const FitzyInput = styled.input`
   margin: 0 0 5px 0;
 
   ~ label {
-    top: ${({ value }) => (value ? '-24px' : '12px')};
+    top: ${({ value }) => (value ? '0' : '18px')};
   }
 `;
 
