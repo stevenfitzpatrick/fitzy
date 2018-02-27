@@ -4,6 +4,12 @@ const FormField = styled.label`
   position: relative;
   display: block;
   margin-bottom: 1.5rem;
+
+  &:focus-within {
+    label {
+      top: -24px;
+    }
+  }
 `;
 
 const FormError = styled.span`
@@ -25,13 +31,19 @@ const FitzyInput = styled.input`
   background-color: #fff;
   transition: border 0.3s ease-in-out;
   margin: 0 0 5px 0;
+
+  ~ label {
+    top: ${({ value }) => (value ? '-24px' : '12px')};
+  }
 `;
 
 const FitzyLabel = styled.label`
   display: inline-block;
-  margin-bottom: 5px;
-  font-weight: bold;
   max-width: 100%;
+  position: absolute;
+  left: 12px;
+  z-index: 1;
+  transition: all 0.3s ease;
 `;
 
 /** @component */

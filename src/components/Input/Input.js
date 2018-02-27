@@ -89,8 +89,8 @@ class Input extends PureComponent {
 
     return (
       <FormField role="presentation" className={className}>
-        {this.renderLabel(inputId)}
         {this.renderInput(inputId)}
+        {this.renderLabel(inputId)}
         {this.renderHint()}
         {this.renderWarning()}
       </FormField>

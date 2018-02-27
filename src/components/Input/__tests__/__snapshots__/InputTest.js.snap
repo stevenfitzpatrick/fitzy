@@ -7,6 +7,10 @@ exports[`Input should match snapshot 1`] = `
   margin-bottom: 1.5rem;
 }
 
+.c0:focus-within label {
+  top: -24px;
+}
+
 .c1 {
   display: block;
   position: relative;
@@ -22,6 +26,10 @@ exports[`Input should match snapshot 1`] = `
   -webkit-transition: border 0.3s ease-in-out;
   transition: border 0.3s ease-in-out;
   margin: 0 0 5px 0;
+}
+
+.c1 ~ label {
+  top: -24px;
 }
 
 <label

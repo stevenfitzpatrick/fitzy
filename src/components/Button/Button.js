@@ -35,7 +35,7 @@ Button.propTypes = {
   /**
    * onClick Handler handling button click
    */
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   /**
    * Value to display in button
    */

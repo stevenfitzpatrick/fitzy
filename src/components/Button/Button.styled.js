@@ -18,7 +18,7 @@ const FitzyButton = styled.button`
   color: white;
   cursor: pointer;
   appearance: none;
-  font-size: 14px;
+  font-size: inherit;
   width: ${({ fullWidth }) => (fullWidth ? '100%' : 'auto')};
 
   &:disabled {
