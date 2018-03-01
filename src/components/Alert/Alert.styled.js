@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Alert from './Alert';
 
 const sizes = {
   Error: 'red',

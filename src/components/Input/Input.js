@@ -78,7 +78,7 @@ class Input extends PureComponent {
         autoFocus={autoFocus}
         spellCheck={spellCheck}
         autoComplete={autoComplete}
-        ref={fieldRef}
+        innerRef={fieldRef}
         onChange={this.handleChange}
         onBlur={this.handleBlur}
       />
