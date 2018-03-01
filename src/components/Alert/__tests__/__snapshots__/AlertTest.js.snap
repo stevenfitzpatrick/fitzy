@@ -2,7 +2,9 @@
 
 exports[`Alert snapshots should match for basic 1`] = `
 .c0 {
+  position: relative;
   color: white;
+  padding: 8px;
   background-color: red;
 }
 
@@ -17,12 +19,10 @@ exports[`Alert snapshots should match for basic 1`] = `
 
 exports[`Alert snapshots should match with button 1`] = `
 .c0 {
+  position: relative;
   color: white;
+  padding: 8px;
   background-color: red;
-}
-
-.c1 {
-  color: white;
 }
 
 <div
@@ -30,12 +30,6 @@ exports[`Alert snapshots should match with button 1`] = `
   role="alert"
   type="Error"
 >
-  <button
-    className="c1"
-    onClick={[Function]}
-  >
-    x
-  </button>
   This is an error
 </div>
 `;
