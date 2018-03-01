@@ -8,13 +8,13 @@ exports[`Input should match snapshot 1`] = `
 }
 
 .c0:focus-within label {
-  top: -24px;
+  top: 0px;
 }
 
 .c1 {
   display: block;
   position: relative;
-  padding: 12px;
+  padding: 24px 12px 12px;
   font-size: inherit;
   font-weight: normal;
   font-family: inherit;
@@ -29,7 +29,7 @@ exports[`Input should match snapshot 1`] = `
 }
 
 .c1 ~ label {
-  top: -24px;
+  top: 0;
 }
 
 <label

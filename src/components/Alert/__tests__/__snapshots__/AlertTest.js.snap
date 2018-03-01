@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert snapshots should match for basic 1`] = `
+.c0 {
+  color: white;
+  background-color: red;
+}
+
+<div
+  className="c0"
+  role="alert"
+  type="Error"
+>
+  This is an error
+</div>
+`;
+
+exports[`Alert snapshots should match with button 1`] = `
+.c0 {
+  color: white;
+  background-color: red;
+}
+
+.c1 {
+  color: white;
+}
+
+<div
+  className="c0"
+  role="alert"
+  type="Error"
+>
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    x
+  </button>
+  This is an error
+</div>
+`;

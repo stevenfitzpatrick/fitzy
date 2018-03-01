@@ -58,7 +58,8 @@ class Input extends PureComponent {
       disabled,
       autoFocus,
       spellCheck,
-      autoComplete
+      autoComplete,
+      ref
     } = this.props;
 
     const classNames = classnames('');
@@ -77,6 +78,7 @@ class Input extends PureComponent {
         autoFocus={autoFocus}
         spellCheck={spellCheck}
         autoComplete={autoComplete}
+        ref={ref}
         onChange={this.handleChange}
         onBlur={this.handleBlur}
       />
