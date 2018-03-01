@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.5.5"></a>
+## [2.5.5](https://github.com/stevenfitzpatrick/fitzy/compare/v2.5.4...v2.5.5) (2018-03-01)
+
+
+### Bug Fixes
+
+* **Input:** Change prop name for passing down ref ([ae97949](https://github.com/stevenfitzpatrick/fitzy/commit/ae97949))
+
+
+
 <a name="2.5.4"></a>
 ## [2.5.4](https://github.com/stevenfitzpatrick/fitzy/compare/v2.5.3...v2.5.4) (2018-03-01)
 
