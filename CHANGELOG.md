@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.7.0"></a>
+# [2.7.0](https://github.com/stevenfitzpatrick/fitzy/compare/v2.6.1...v2.7.0) (2018-03-03)
+
+
+### Bug Fixes
+
+* **Test:** Fix snapshot test for Alert Component ([007c63a](https://github.com/stevenfitzpatrick/fitzy/commit/007c63a))
+
+
+### Features
+
+* **Scoped:** Setting package fitzy to be scoped ([2080ee7](https://github.com/stevenfitzpatrick/fitzy/commit/2080ee7))
+
+
+
 <a name="2.6.1"></a>
 ## [2.6.1](https://github.com/stevenfitzpatrick/fitzy/compare/v2.6.0...v2.6.1) (2018-03-03)
 
