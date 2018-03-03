@@ -1,6 +1,6 @@
 {
   "name": "fitzy",
-  "version": "2.7.2",
+  "version": "2.7.3",
   "source": "src/fitzy.js",
   "description": "React UI Library",
   "main": "lib/fitzy.cjs.js",
@@ -26,7 +26,7 @@
     "size": "node -e \"process.stdout.write('gzip size: ')\" && gzip-size lib/fitzy.cjs.js",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "release": "npm run build && npm run test && standard-version && git push --follow-tags && npm publish --acess public",
+    "release": "npm run build && npm run test && standard-version && git push --follow-tags && npm publish",
     "lint": "eslint src"
   },
   "typings": "./lib/fitzy.d.ts",
