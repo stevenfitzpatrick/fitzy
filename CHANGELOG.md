@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.6.0"></a>
+# [2.6.0](https://github.com/stevenfitzpatrick/fitzy/compare/v2.5.5...v2.6.0) (2018-03-03)
+
+
+### Features
+
+* **Alert:** Adding Alert Component ([b12b195](https://github.com/stevenfitzpatrick/fitzy/commit/b12b195))
+
+
+
 <a name="2.5.5"></a>
 ## [2.5.5](https://github.com/stevenfitzpatrick/fitzy/compare/v2.5.4...v2.5.5) (2018-03-01)
 
