@@ -185,7 +185,7 @@ Input.propTypes = {
   /**
    * Pass down a ref for the Input
    */
-  innerRef: PropTypes.node
+  innerRef: PropTypes.oneOfType([PropTypes.object, PropTypes.func])
 };
 
 Input.defaultProps = {

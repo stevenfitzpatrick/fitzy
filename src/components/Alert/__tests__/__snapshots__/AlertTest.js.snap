@@ -4,8 +4,34 @@ exports[`Alert snapshots should match for basic 1`] = `
 .c0 {
   position: relative;
   color: white;
-  padding: 8px;
+  padding: 1rem;
   background-color: red;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-right: 25px;
+  border: 1px solid #d05353;
+  background-color: #d97575;
+}
+
+.c0 h2 {
+  line-height: normal;
+  font-weight: bold;
+  margin-right: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.c0 div {
+  margin-top: 0.25rem;
 }
 
 <div
@@ -13,7 +39,10 @@ exports[`Alert snapshots should match for basic 1`] = `
   role="alert"
   type="Error"
 >
-  This is an error
+  <h2 />
+  <div>
+    This is an error
+  </div>
 </div>
 `;
 
@@ -21,8 +50,34 @@ exports[`Alert snapshots should match with button 1`] = `
 .c0 {
   position: relative;
   color: white;
-  padding: 8px;
+  padding: 1rem;
   background-color: red;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-right: 25px;
+  border: 1px solid #d05353;
+  background-color: #d97575;
+}
+
+.c0 h2 {
+  line-height: normal;
+  font-weight: bold;
+  margin-right: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.c0 div {
+  margin-top: 0.25rem;
 }
 
 <div
@@ -30,6 +85,9 @@ exports[`Alert snapshots should match with button 1`] = `
   role="alert"
   type="Error"
 >
-  This is an error
+  <h2 />
+  <div>
+    This is an error
+  </div>
 </div>
 `;

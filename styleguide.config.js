@@ -21,7 +21,7 @@ module.exports = {
   styles: {
     StyleGuide: {
       '@global body': {
-        fontFamily: 'Source Sans Pro'
+        fontFamily: ['-apple-system', 'BlinkMacSystemFont']
       }
     }
   },
