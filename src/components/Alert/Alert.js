@@ -3,9 +3,9 @@ import React, { Fragment } from 'react';
 
 import { FitzyAlert, FitzyClose } from './Alert.styled';
 
-function Alert({ onCancel, type, className, children, title }) {
+function Alert({ onCancel, level, className, children, title }) {
   return (
-    <FitzyAlert role="alert" type={type} className={className}>
+    <FitzyAlert role="alert" level={level} className={className}>
       <Fragment>
         <h2>{title}</h2>
         <div>{children}</div>

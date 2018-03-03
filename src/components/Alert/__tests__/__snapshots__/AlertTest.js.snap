@@ -37,9 +37,10 @@ exports[`Alert snapshots should match for basic 1`] = `
 <div
   className="c0"
   role="alert"
-  type="Error"
 >
-  <h2 />
+  <h2>
+    Login Error
+  </h2>
   <div>
     This is an error
   </div>
@@ -47,6 +48,26 @@ exports[`Alert snapshots should match for basic 1`] = `
 `;
 
 exports[`Alert snapshots should match with button 1`] = `
+.c1 {
+  -webkit-appearance: none;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  outline: none;
+  color: inherit;
+  cursor: pointer;
+  line-height: 1;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.c1 > svg {
+  fill: currentColor;
+}
+
 .c0 {
   position: relative;
   color: white;
@@ -83,11 +104,28 @@ exports[`Alert snapshots should match with button 1`] = `
 <div
   className="c0"
   role="alert"
-  type="Error"
 >
-  <h2 />
+  <h2>
+    Login Error
+  </h2>
   <div>
     This is an error
   </div>
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    <svg
+      viewBox="0 0 212.982 212.982"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M131.804 106.491l75.936-75.936c6.99-6.99 6.99-18.323 0-25.312-6.99-6.99-18.322-6.99-25.312 0L106.491 81.18 30.554 5.242c-6.99-6.99-18.322-6.99-25.312 0-6.989 6.99-6.989 18.323 0 25.312l75.937 75.936-75.937 75.937c-6.989 6.99-6.989 18.323 0 25.312 6.99 6.99 18.322 6.99 25.312 0l75.937-75.937 75.937 75.937c6.989 6.99 18.322 6.99 25.312 0 6.99-6.99 6.99-18.322 0-25.312l-75.936-75.936z"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span />
+  </button>
 </div>
 `;
