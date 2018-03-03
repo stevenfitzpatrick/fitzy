@@ -13,7 +13,7 @@ const FitzyAlert = styled.div`
   position: relative;
   color: white;
   padding: 1rem;
-  background-color: ${({ type }) => sizes[type]};
+  background-color: ${({ level }) => sizes[level]};
 
   display: flex;
   align-items: baseline;

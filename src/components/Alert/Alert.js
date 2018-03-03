@@ -38,7 +38,7 @@ Alert.propTypes = {
   /**
    * Type of warning show a different background for each
    */
-  type: PropTypes.oneOf(['Error', 'Warning', 'Success', 'Info']),
+  level: PropTypes.oneOf(['Error', 'Warning', 'Success', 'Info']),
   /**
    * Optional extra user supplied class name
    */
@@ -46,7 +46,7 @@ Alert.propTypes = {
 };
 
 Alert.defaultProps = {
-  type: 'Error',
+  level: 'Error',
   className: ''
 };
 
