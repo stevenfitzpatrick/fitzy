@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
-import { CloseButton } from '../../styles/helpers.styled';
+import CloseButton from '../../styles/CloseButton.styled';
+import ExclamationIcon from '../../styles/icons/ExclamationIcon';
 
 const sizes = {
   Error: 'red',
@@ -12,19 +13,20 @@ const sizes = {
 const FitzyAlert = styled.div`
   position: relative;
   color: white;
-  padding: 1rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  padding: 1rem 2.5rem 1rem 3rem;
   background-color: ${({ level }) => sizes[level]};
 
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
   width: 100%;
-  padding-right: 25px;
-  border: 1px solid #d05353;
+  border-left: 5px solid #d05353;
   background-color: #d97575;
 
+  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+
   h2 {
-    line-height: normal;
     font-weight: bold;
     margin-right: 1.5rem;
     margin-bottom: 0.25rem;
@@ -35,6 +37,12 @@ const FitzyAlert = styled.div`
   }
 `;
 
+const FitzyAlertIcon = styled(ExclamationIcon)`
+  position: absolute;
+  left: calc(1rem);
+  top: 1.125rem;
+`;
+
 const FitzyClose = CloseButton.extend`
   position: absolute;
   right: 1.5rem;
@@ -42,13 +50,23 @@ const FitzyClose = CloseButton.extend`
   height: 0.75rem;
   width: 0.75rem;
 
-  > svg {
-    fill: currentColor;
+  &:hover {
+    &:after {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
   }
 
-  > span {
+  &:after {
+    content: '';
+    position: absolute;
+    transition: background-color 0.25s ease-in;
+    padding: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
   }
 `;
 
 /** @component */
-export { FitzyAlert, FitzyClose };
+export { FitzyAlert, FitzyClose, FitzyAlertIcon };

@@ -1,10 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Alert snapshots should match for basic 1`] = `
+.c2 {
+  display: block;
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+}
+
+.c2:hover {
+  fill: #eee;
+}
+
 .c0 {
   position: relative;
   color: white;
-  padding: 1rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  padding: 1rem 2.5rem 1rem 3rem;
   background-color: red;
   display: -webkit-box;
   display: -webkit-flex;
@@ -18,13 +30,12 @@ exports[`Alert snapshots should match for basic 1`] = `
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
-  padding-right: 25px;
-  border: 1px solid #d05353;
+  border-left: 5px solid #d05353;
   background-color: #d97575;
+  box-shadow: 0 4px 6px hsla(0,0%,0%,0.2);
 }
 
 .c0 h2 {
-  line-height: normal;
   font-weight: bold;
   margin-right: 1.5rem;
   margin-bottom: 0.25rem;
@@ -34,10 +45,27 @@ exports[`Alert snapshots should match for basic 1`] = `
   margin-top: 0.25rem;
 }
 
+.c1 {
+  position: absolute;
+  left: calc(1rem);
+  top: 1.125rem;
+}
+
 <div
   className="c0"
   role="alert"
 >
+  <svg
+    className="c1 c2"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+    />
+    <path
+      d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+    />
+  </svg>
   <h2>
     Login Error
   </h2>
@@ -48,7 +76,29 @@ exports[`Alert snapshots should match for basic 1`] = `
 `;
 
 exports[`Alert snapshots should match with button 1`] = `
-.c1 {
+.c2 {
+  display: block;
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+}
+
+.c2:hover {
+  fill: #eee;
+}
+
+.c4 {
+  display: block;
+  fill: currentColor;
+  height: 12px;
+  width: 12px;
+}
+
+.c4:hover {
+  fill: #eee;
+}
+
+.c3 {
   -webkit-appearance: none;
   background: transparent;
   padding: 0;
@@ -64,14 +114,41 @@ exports[`Alert snapshots should match with button 1`] = `
   width: 0.75rem;
 }
 
-.c1 > svg {
-  fill: currentColor;
+.c3:hover:after {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.c3:after {
+  content: '';
+  position: absolute;
+  -webkit-transition: background-color 0.25s ease-in;
+  transition: background-color 0.25s ease-in;
+  padding: 1rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
+
+.c5 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  -webkit-clip: rect(0,0,0,0);
+  clip: rect(0,0,0,0);
+  border: 0;
 }
 
 .c0 {
   position: relative;
   color: white;
-  padding: 1rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  padding: 1rem 2.5rem 1rem 3rem;
   background-color: red;
   display: -webkit-box;
   display: -webkit-flex;
@@ -85,13 +162,12 @@ exports[`Alert snapshots should match with button 1`] = `
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
-  padding-right: 25px;
-  border: 1px solid #d05353;
+  border-left: 5px solid #d05353;
   background-color: #d97575;
+  box-shadow: 0 4px 6px hsla(0,0%,0%,0.2);
 }
 
 .c0 h2 {
-  line-height: normal;
   font-weight: bold;
   margin-right: 1.5rem;
   margin-bottom: 0.25rem;
@@ -101,10 +177,27 @@ exports[`Alert snapshots should match with button 1`] = `
   margin-top: 0.25rem;
 }
 
+.c1 {
+  position: absolute;
+  left: calc(1rem);
+  top: 1.125rem;
+}
+
 <div
   className="c0"
   role="alert"
 >
+  <svg
+    className="c1 c2"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+    />
+    <path
+      d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+    />
+  </svg>
   <h2>
     Login Error
   </h2>
@@ -112,20 +205,24 @@ exports[`Alert snapshots should match with button 1`] = `
     This is an error
   </div>
   <button
-    className="c1"
+    className="c3"
     onClick={[Function]}
   >
     <svg
+      className="c4"
+      height="12"
       viewBox="0 0 212.982 212.982"
-      xmlns="http://www.w3.org/2000/svg"
+      width="12"
     >
       <path
-        clip-rule="evenodd"
         d="M131.804 106.491l75.936-75.936c6.99-6.99 6.99-18.323 0-25.312-6.99-6.99-18.322-6.99-25.312 0L106.491 81.18 30.554 5.242c-6.99-6.99-18.322-6.99-25.312 0-6.989 6.99-6.989 18.323 0 25.312l75.937 75.936-75.937 75.937c-6.989 6.99-6.989 18.323 0 25.312 6.99 6.99 18.322 6.99 25.312 0l75.937-75.937 75.937 75.937c6.989 6.99 18.322 6.99 25.312 0 6.99-6.99 6.99-18.322 0-25.312l-75.936-75.936z"
-        fill-rule="evenodd"
       />
     </svg>
-    <span />
+    <span
+      className="c5"
+    >
+      Close Alert
+    </span>
   </button>
 </div>
 `;

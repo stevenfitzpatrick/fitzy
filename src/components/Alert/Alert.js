@@ -1,25 +1,22 @@
 import PropTypes from 'prop-types';
 import React, { Fragment } from 'react';
 
-import { FitzyAlert, FitzyClose } from './Alert.styled';
+import CloseIcon from '../../styles/icons/CloseIcon';
+import { SRClose } from '../../styles/CloseButton.styled';
+import { FitzyAlert, FitzyAlertIcon, FitzyClose } from './Alert.styled';
 
 function Alert({ onCancel, level, className, children, title }) {
   return (
     <FitzyAlert role="alert" level={level} className={className}>
+      <FitzyAlertIcon/>
       <Fragment>
         <h2>{title}</h2>
         <div>{children}</div>
       </Fragment>
       {onCancel ? (
         <FitzyClose onClick={onCancel}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.982 212.982">
-            <path
-              d="M131.804 106.491l75.936-75.936c6.99-6.99 6.99-18.323 0-25.312-6.99-6.99-18.322-6.99-25.312 0L106.491 81.18 30.554 5.242c-6.99-6.99-18.322-6.99-25.312 0-6.989 6.99-6.989 18.323 0 25.312l75.937 75.936-75.937 75.937c-6.989 6.99-6.989 18.323 0 25.312 6.99 6.99 18.322 6.99 25.312 0l75.937-75.937 75.937 75.937c6.989 6.99 18.322 6.99 25.312 0 6.99-6.99 6.99-18.322 0-25.312l-75.936-75.936z"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-            />
-          </svg>
-          <span />
+          <CloseIcon height="12" width="12" />
+          <SRClose>Close Alert</SRClose>
         </FitzyClose>
       ) : null}
     </FitzyAlert>
