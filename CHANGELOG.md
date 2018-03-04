@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.7.6"></a>
+## [2.7.6](https://github.com/stevenfitzpatrick/fitzy/compare/v2.7.5...v2.7.6) (2018-03-04)
+
+
+### Bug Fixes
+
+* **Alert:** Add Extra Styling and Icons for Alert component ([887ecb9](https://github.com/stevenfitzpatrick/fitzy/commit/887ecb9))
+
+
+
 <a name="2.7.5"></a>
 ## [2.7.5](https://github.com/stevenfitzpatrick/fitzy/compare/v2.7.4...v2.7.5) (2018-03-03)
 
