@@ -8,7 +8,7 @@ import { FitzyAlert, FitzyAlertIcon, FitzyClose } from './Alert.styled';
 function Alert({ onCancel, level, className, children, title }) {
   return (
     <FitzyAlert role="alert" level={level} className={className}>
-      <FitzyAlertIcon/>
+      <FitzyAlertIcon />
       <Fragment>
         <h2>{title}</h2>
         <div>{children}</div>

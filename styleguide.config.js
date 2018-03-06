@@ -10,6 +10,9 @@ module.exports = {
   },
   assetsDir: 'assets',
   styleguideDir: 'dist',
+  styleguideComponents: {
+    Wrapper: path.join(__dirname, 'styleguide-config/ThemeWrapper.js')
+  },
   template: path.join(__dirname, 'styleguide-config/template.html'),
   require: [path.join(__dirname, 'styleguide-config/reset.css')],
   webpackConfig: createConfig([

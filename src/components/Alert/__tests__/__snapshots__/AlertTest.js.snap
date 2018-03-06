@@ -13,41 +13,40 @@ exports[`Alert snapshots should match for basic 1`] = `
 }
 
 .c0 {
-  position: relative;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  padding: 1rem 2.5rem 1rem 3rem;
-  background-color: red;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
+  border-left: 5px solid #d05353;
+  box-shadow: 0 4px 6px hsla(0,0%,0%,0.2);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #d97575;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  padding: 1rem 2.5rem 1rem 3rem;
+  position: relative;
   width: 100%;
-  border-left: 5px solid #d05353;
-  background-color: #d97575;
-  box-shadow: 0 4px 6px hsla(0,0%,0%,0.2);
 }
 
 .c0 h2 {
   font-weight: bold;
-  margin-right: 1.5rem;
   margin-bottom: 0.25rem;
+  margin-right: 1.5rem;
 }
 
-.c0 div {
+.c0 > div {
   margin-top: 0.25rem;
 }
 
 .c1 {
+  left: 1rem;
   position: absolute;
-  left: calc(1rem);
   top: 1.125rem;
 }
 
@@ -59,9 +58,6 @@ exports[`Alert snapshots should match for basic 1`] = `
     className="c1 c2"
     viewBox="0 0 24 24"
   >
-    <path
-      d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
-    />
     <path
       d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
     />
@@ -100,86 +96,87 @@ exports[`Alert snapshots should match with button 1`] = `
 
 .c3 {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: transparent;
-  padding: 0;
   border: 0;
-  outline: none;
   color: inherit;
   cursor: pointer;
   line-height: 1;
+  outline: none;
+  padding: 0;
+  height: 0.75rem;
   position: absolute;
   right: 1.5rem;
   top: 1.5rem;
-  height: 0.75rem;
   width: 0.75rem;
 }
 
-.c3:hover:after {
-  background-color: rgba(255,255,255,0.1);
-}
-
-.c3:after {
+.c3::after {
+  border-radius: 50%;
   content: '';
-  position: absolute;
-  -webkit-transition: background-color 0.25s ease-in;
-  transition: background-color 0.25s ease-in;
-  padding: 1rem;
-  top: 50%;
   left: 50%;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in;
+  transition: background-color 0.25s ease-in;
+}
+
+.c3:hover::after {
+  background-color: rgba(255,255,255,0.1);
 }
 
 .c5 {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
+  border: 0;
   -webkit-clip: rect(0,0,0,0);
   clip: rect(0,0,0,0);
-  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .c0 {
-  position: relative;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  padding: 1rem 2.5rem 1rem 3rem;
-  background-color: red;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
+  border-left: 5px solid #d05353;
+  box-shadow: 0 4px 6px hsla(0,0%,0%,0.2);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #d97575;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  padding: 1rem 2.5rem 1rem 3rem;
+  position: relative;
   width: 100%;
-  border-left: 5px solid #d05353;
-  background-color: #d97575;
-  box-shadow: 0 4px 6px hsla(0,0%,0%,0.2);
 }
 
 .c0 h2 {
   font-weight: bold;
-  margin-right: 1.5rem;
   margin-bottom: 0.25rem;
+  margin-right: 1.5rem;
 }
 
-.c0 div {
+.c0 > div {
   margin-top: 0.25rem;
 }
 
 .c1 {
+  left: 1rem;
   position: absolute;
-  left: calc(1rem);
   top: 1.125rem;
 }
 
@@ -191,9 +188,6 @@ exports[`Alert snapshots should match with button 1`] = `
     className="c1 c2"
     viewBox="0 0 24 24"
   >
-    <path
-      d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
-    />
     <path
       d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
     />

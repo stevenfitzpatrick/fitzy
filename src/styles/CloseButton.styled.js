@@ -1,25 +1,25 @@
 import styled from 'styled-components';
 
 export const CloseButton = styled.button`
-  -webkit-appearance: none;
+  appearance: none;
   background: transparent;
-  padding: 0;
   border: 0;
-  outline: none;
   color: inherit;
   cursor: pointer;
   line-height: 1;
+  outline: none;
+  padding: 0;
 `;
 
 export const SRClose = styled.span`
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
-  padding: 0;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 `;
 
 export default CloseButton;
