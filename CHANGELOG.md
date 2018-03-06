@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/stevenfitzpatrick/fitzy/compare/v4.0.4...v4.1.0) (2018-03-06)
+
+
+### Features
+
+* **Styled Components:** Include testing setup for styled components ([f218a20](https://github.com/stevenfitzpatrick/fitzy/commit/f218a20))
+
+
+
 <a name="4.0.4"></a>
 ## [4.0.4](https://github.com/stevenfitzpatrick/fitzy/compare/v4.0.4-alpha.0...v4.0.4) (2018-03-05)
 
