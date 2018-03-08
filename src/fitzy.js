@@ -7,3 +7,6 @@ export { default as RadioOption } from './components/RadioGroup/RadioOption';
 
 // Components
 export { default as Alert } from './components/Alert/Alert';
+
+// Export Theme
+export { default as Theme } from './theme/theme';
