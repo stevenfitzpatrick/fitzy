@@ -49,7 +49,8 @@ module.exports = {
           path.resolve(__dirname, 'src/components/Alert', 'Alert.js'),
           path.resolve(__dirname, 'src/components/Tag', 'Tag.js'),
           path.resolve(__dirname, 'src/components/TagInput', 'TagInput.js'),
-          path.resolve(__dirname, 'src/components/Tabs', 'Tabs.js')
+          path.resolve(__dirname, 'src/components/Tabs', 'Tabs.js'),
+          path.resolve(__dirname, 'src/components/Loader', 'Loader.js')
         ];
       }
     },

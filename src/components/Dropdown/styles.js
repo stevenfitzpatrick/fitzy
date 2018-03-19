@@ -17,7 +17,6 @@ const dropdownStyles = css`
   border: 1px solid rgba(34, 36, 38, 0.15);
   border-radius: 0.28571429rem;
   transition: box-shadow 0.1s ease, width 0.1s ease;
-  transition: box-shadow 0.1s ease, width 0.1s ease;
 `;
 
 const menuStyles = css`
@@ -29,7 +28,6 @@ const menuStyles = css`
 
 const buttonStyles = css`
   position: absolute;
-  right: 5px;
   top: 50%;
   right: 16px;
   height: 8px;

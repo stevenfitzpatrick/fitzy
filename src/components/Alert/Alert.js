@@ -5,9 +5,9 @@ import CloseIcon from '../../styles/icons/CloseIcon';
 import { SRClose } from '../../styles/CloseButton.styled';
 import { FitzyAlert, FitzyAlertIcon, FitzyClose } from './Alert.styled';
 
-function Alert({ onCancel, level, className, children, title }) {
+function Alert({ onCancel, use, className, children, title }) {
   return (
-    <FitzyAlert role="alert" level={level} className={className}>
+    <FitzyAlert role="alert" use={use} className={className}>
       <FitzyAlertIcon />
       <Fragment>
         <h2>{title}</h2>
@@ -35,7 +35,7 @@ Alert.propTypes = {
   /**
    * Type of warning show a different background for each
    */
-  level: PropTypes.oneOf(['Error', 'Warning', 'Success', 'Info']),
+  use: PropTypes.oneOf(['Error', 'Warning', 'Success', 'Info']),
   /**
    * Optional extra user supplied class name
    */
@@ -43,7 +43,7 @@ Alert.propTypes = {
 };
 
 Alert.defaultProps = {
-  level: 'Error',
+  use: 'Error',
   className: ''
 };
 

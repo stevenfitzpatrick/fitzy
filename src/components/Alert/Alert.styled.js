@@ -3,17 +3,18 @@ import styled from 'styled-components';
 import CloseButton from '../../styles/CloseButton.styled';
 import ExclamationIcon from '../../styles/icons/ExclamationIcon';
 import { colorMixin } from '../../styles/mixins';
+import { transitionTiming } from '../../styles/animations';
 
 /**
  * Main styles for Alert Component
  */
 const FitzyAlert = styled.div`
   align-items: baseline;
-  border-left: 5px solid ${({ theme, level }) => theme[level].border};
+  border-left: 5px solid ${({ theme, use }) => theme[use].border};
   box-shadow: ${({ theme }) =>
     `${theme.boxShadowSize} ${theme.boxShadowColor}`};
   display: flex;
-  ${props => colorMixin(props)};
+  ${colorMixin};
   flex-wrap: wrap;
   padding: 1rem 2.5rem 1rem 3rem;
   position: relative;
@@ -57,7 +58,7 @@ const FitzyClose = CloseButton.extend`
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: background-color ${({ theme }) => theme.transitionTiming};
+    transition: background-color ${transitionTiming};
   }
 
   &:hover {

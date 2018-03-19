@@ -5,11 +5,11 @@ const FormField = styled.label`
   display: block;
   margin-bottom: 1.5rem;
 
-  &:focus-within {
+  /* &:focus-within {
     label {
-      top: 0px;
+      top: 0;
     }
-  }
+  } */
 `;
 
 const FormError = styled.span`
@@ -26,7 +26,6 @@ const FitzyInput = styled.input`
   font-family: inherit;
   border-radius: 3px;
   border: 1px solid #ccc;
-  font-family: inherit;
   width: 100%;
   background-color: #fff;
   transition: border 0.3s ease-in-out;

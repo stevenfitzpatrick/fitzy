@@ -9,10 +9,7 @@
   ],
   "syntax": "scss",
   "rules": {
-    "order/order": [
-			"custom-properties",
-			"declarations"
-		],
-		"order/properties-alphabetical-order": true
+    "declaration-colon-newline-after": null,
+    "value-list-comma-newline-after": null
   }
 }

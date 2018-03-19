@@ -13,7 +13,7 @@ Warning Alert (without close button):
 ```jsx
 initialState = { value: '' };
 
-<Alert title="Trouble Ahead" level="Warning">
+<Alert title="Trouble Ahead" color="Warning">
   Iceberg dead ahead.
 </Alert>;
 ```
@@ -23,7 +23,7 @@ Success Alert :
 ```jsx
 initialState = { value: '' };
 
-<Alert title="Success !" level="Success" onCancel={() => {}}>
+<Alert title="Success !" color="Success" onCancel={() => {}}>
   This operation has succeeded.
 </Alert>;
 ```

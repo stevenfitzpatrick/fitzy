@@ -14,12 +14,6 @@ const toggleBtn = css`
   transition: all 0.4s ease;
   border: 1px solid #e8eae9;
 
-  &:focus:after,
-  :active::after {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08),
-      inset 0px 0px 0px 1.5px #9c9c9c;
-  }
-
   &::after {
     left: 0;
     position: relative;
@@ -34,7 +28,13 @@ const toggleBtn = css`
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08);
   }
 
-  &:active:after {
+  &:focus::after,
+  :active::after {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08),
+      inset 0 0 0 1.5px #9c9c9c;
+  }
+
+  &:active::after {
     padding-right: 0.8em;
   }
 `;
@@ -45,13 +45,15 @@ const toggleInput = css`
 
 const toggleBtnOn = css`
   background: #86d993;
+
   &::after {
     left: 50%;
   }
-  &::active {
+
+  &:active {
     box-shadow: none;
 
-    &:after {
+    &::after {
       margin-left: -0.8em;
     }
   }

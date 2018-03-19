@@ -1,20 +1,22 @@
-Basic Button :
+Basic :
 
 ```jsx
-initialState = { value: '' };
-
 <Button>Login</Button>;
 ```
 
-Button with full width :
+Full width :
 
 ```jsx
-initialState = { value: '' };
-
 <Button fullWidth>Login</Button>;
 ```
 
-Button disabled :
+Loading :
+
+```jsx
+<Button loading disabled>Loading</Button>;
+```
+
+Disabled :
 
 ```jsx
 initialState = { value: '' };

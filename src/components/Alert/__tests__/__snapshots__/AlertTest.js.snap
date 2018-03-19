@@ -24,7 +24,7 @@ exports[`Alert snapshots should match for basic 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #d97575;
-  color: white;
+  color: #ffffff;
   text-shadow: 0 1px 2px rgba(0,0,0,0.2);
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -154,7 +154,7 @@ exports[`Alert snapshots should match with button 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #d97575;
-  color: white;
+  color: #ffffff;
   text-shadow: 0 1px 2px rgba(0,0,0,0.2);
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
