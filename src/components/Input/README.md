@@ -48,7 +48,7 @@ initialState = {
     required
   />
   <Input
-    label="Name"
+    label="goodbye"
     placeholder="Enter your name"
     name="name"
     value={state.name}

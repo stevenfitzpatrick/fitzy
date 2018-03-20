@@ -76,10 +76,10 @@ const theme = {
     text: colors.light,
     placeholder: colors.placeholder,
     placeholderHover: colors.placeholder,
-    label: colors.primaryHover,
-    labelActive: colors.primaryActive,
-    border: colors.primaryHover,
-    borderActive: colors.primaryActive
+    label: colors.primary,
+    labelActive: colors.primaryHover,
+    border: colors.primary,
+    borderActive: colors.primaryHover
   },
   Disabled: {
     border: colors.primaryDisabled,

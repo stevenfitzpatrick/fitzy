@@ -8,7 +8,8 @@ import { spacing } from '../../styles/spacing';
 const FormField = styled.label`
   position: relative;
   display: block;
-  margin-bottom: ${spacing.xxxxxxl};
+  margin-bottom: ${spacing.xxxxl};
+  padding-top: ${spacing.m};
 
   ${errorMixin};
 `;
@@ -25,6 +26,7 @@ const FitzyLabel = styled.label`
   display: inline-block;
   max-width: 100%;
   font-size: ${font.m};
+  line-height: 1;
   color: ${p => p.theme.Input.label};
   top: 1rem;
   transition: all 0.3s ease;
@@ -52,7 +54,7 @@ const FitzyInput = styled.input`
 
   ~ label {
     transform: ${p =>
-    p.value ? `translateY(-${spacing.xxxxl})` : 'translateY(0)'};
+    p.value ? `translateY(-${spacing.l})` : 'translateY(0)'};
     opacity: ${p => (p.value ? 1 : 0)};
   }
 
@@ -69,7 +71,7 @@ const FitzyInput = styled.input`
     }
 
     ~ label {
-      transform: translateY(-${spacing.xxxxl});
+      transform: translateY(-${spacing.l});
       opacity: 1;
     }
   }
