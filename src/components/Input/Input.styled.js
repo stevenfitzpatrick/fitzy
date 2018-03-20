@@ -16,8 +16,7 @@ const FormField = styled.label`
 const FormError = styled.span`
   display: block;
   color: ${colors.errorActive};
-  padding-left: ${spacing.s};
-  font-size: ${font.s};
+  font-size: ${font.m};
   margin-top: ${spacing.s};
 `;
 
@@ -25,10 +24,9 @@ const FitzyLabel = styled.label`
   position: absolute;
   display: inline-block;
   max-width: 100%;
-  font-size: ${font.s};
+  font-size: ${font.m};
   color: #fff;
   top: 1rem;
-  left: ${spacing.s};
   transition: all 0.3s ease;
   pointer-events: none;
   transform-origin: 0 0;
@@ -37,11 +35,13 @@ const FitzyLabel = styled.label`
 const FitzyInput = styled.input`
   position: relative;
   display: block;
-  padding: ${spacing.m} ${spacing.s};
+  padding: ${spacing.m} 0;
+  width: 100%;
+
   line-height: 1rem;
   font-size: 1rem;
   font-weight: normal;
-  width: 100%;
+  font-family: inherit;
 
   background-color: transparent;
   border: none;
@@ -53,7 +53,7 @@ const FitzyInput = styled.input`
   ~ label {
     color: ${p => p.theme.Input.label};
     transform: ${({ value }) =>
-    value ? `translateY(-${spacing.xxl})` : 'translateY(0)'};
+    value ? `translateY(-${spacing.xxxxl})` : 'translateY(0)'};
     opacity: ${({ value }) => (value ? '1' : '0')};
     pointer-events: none;
   }
