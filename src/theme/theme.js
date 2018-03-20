@@ -1,11 +1,14 @@
 import { setThemeColors } from './utils';
 
-const colors = {
+export const colors = {
   // Shadow Colors
   textShadowDark: '0 1px 2px rgba(0, 0, 0, 0.2)',
   boxShadowDark: 'hsla(0, 0%, 0%, 0.2)',
   // Text Colors
   light: '#ffffff',
+  formWarning: '#f25c54',
+  formWarningActive: '#D05353',
+  placeholder: '#b0c1d4',
   // Primary Theme Colors
   primary: 'hsl(152, 62%, 53%)',
   primaryHover: 'hsl(152, 62%, 63%)',
@@ -66,6 +69,15 @@ const theme = {
   },
   Success: {
     ...setThemeColors(colors, 'success')
+  },
+  Input: {
+    text: colors.light,
+    placeholder: colors.placeholder,
+    placeholderHover: colors.placeholder,
+    label: colors.primaryHover,
+    labelActive: colors.primaryActive,
+    border: colors.primaryHover,
+    borderActive: colors.primaryActive
   },
   Disabled: {
     border: colors.primaryDisabled,

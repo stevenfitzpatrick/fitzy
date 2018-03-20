@@ -64,9 +64,8 @@ class Input extends PureComponent {
 
     const classNames = classnames('');
 
-    const Type = type === 'textarea' ? FitzyInput : FitzyInput;
     return (
-      <Type
+      <FitzyInput
         name={name}
         className={classNames}
         value={value}
@@ -86,11 +85,11 @@ class Input extends PureComponent {
   }
 
   render() {
-    const { id, name, className } = this.props;
+    const { id, name, className, warning } = this.props;
     const inputId = id || name;
 
     return (
-      <FormField role="presentation" className={className}>
+      <FormField role="presentation" className={className} warning={warning}>
         {this.renderInput(inputId)}
         {this.renderLabel(inputId)}
         {this.renderHint()}

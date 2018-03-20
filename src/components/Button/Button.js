@@ -31,7 +31,7 @@ class Button extends Component {
         {...props}
       >
         {children}
-        {loading ? <Loader size={20} /> : null}
+        {loading ? <Loader size={16} /> : null}
       </FitzyButton>
     );
   }
@@ -57,7 +57,15 @@ Button.propTypes = {
   /**
    * Set button theme
    */
-  use: PropTypes.oneOf(['Primary', 'Secondary', 'Success', 'Warning', 'Error', 'Info', 'Light']),
+  use: PropTypes.oneOf([
+    'Primary',
+    'Secondary',
+    'Success',
+    'Warning',
+    'Error',
+    'Info',
+    'Light'
+  ]),
   /**
    * Mark the button as disabled
    */

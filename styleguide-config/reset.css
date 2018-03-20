@@ -57,6 +57,10 @@ ul {
   display: flex;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .spread > * {
   margin-right: 2em;
 }

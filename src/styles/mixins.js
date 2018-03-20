@@ -1,5 +1,7 @@
 import { css } from 'styled-components';
 
+import { colors } from '../theme/theme';
+
 /**
  * Helper for bg color, text and text shadow for primary style
  * @param {object} Styled Component Props
@@ -36,3 +38,20 @@ export const resetInput = css`
   border: none;
   appearance: none;
 `;
+
+export const errorMixin = ({ warning }) => {
+  if (!warning) return;
+
+  return css`
+    &:focus-within {
+      > * {
+        color: ${colors.formWarning} !important;
+        border-bottom-color: ${colors.formWarning} !important;
+      }
+    }
+    > * {
+      color: ${colors.formWarningActive} !important;
+      border-bottom-color: ${colors.formWarningActive} !important;
+    }
+  `;
+};
