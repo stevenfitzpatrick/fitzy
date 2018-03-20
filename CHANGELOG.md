@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.3.1"></a>
+## [4.3.1](https://github.com/stevenfitzpatrick/fitzy/compare/v4.3.0...v4.3.1) (2018-03-20)
+
+
+### Bug Fixes
+
+* **Button:** Add Secondary style for buttons ([b9427f8](https://github.com/stevenfitzpatrick/fitzy/commit/b9427f8))
+
+
+
 <a name="4.3.0"></a>
 # [4.3.0](https://github.com/stevenfitzpatrick/fitzy/compare/v4.2.0...v4.3.0) (2018-03-19)
 
