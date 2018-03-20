@@ -10,6 +10,7 @@
   "syntax": "scss",
   "rules": {
     "declaration-colon-newline-after": null,
-    "value-list-comma-newline-after": null
+    "value-list-comma-newline-after": null,
+    "declaration-empty-line-before": null
   }
 }

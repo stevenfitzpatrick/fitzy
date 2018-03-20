@@ -3,8 +3,8 @@ Loader :
 ```jsx
 <div className="flex spread">
   <Loader />
-  <Loader color="Error" />
-  <Loader color="Warning" />
+  <Loader use="Error" />
+  <Loader use="Warning" />
 </div>
 ```
 

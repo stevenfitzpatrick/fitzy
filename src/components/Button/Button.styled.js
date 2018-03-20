@@ -1,17 +1,20 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-import { colorMixin, resetInput } from '../../styles/mixins';
+import { colorMixin, resetInput, secondaryMixin } from '../../styles/mixins';
 import { FitzyLoader } from '../Loader/Loader.styled';
 import { letterSpacing } from '../../styles/headers';
 import { spacing } from '../../styles/spacing';
 
 const FitzyButton = styled.button`
-  ${resetInput} text-transform: uppercase;
+  ${resetInput};
+  text-transform: uppercase;
   font-weight: bold;
   font-size: inherit;
   letter-spacing: ${letterSpacing};
+  line-height: 1rem;
 
   ${colorMixin};
+  ${secondaryMixin};
 
   border-radius: 4px;
   transition: all 0.25s ease;
@@ -33,14 +36,12 @@ const FitzyButton = styled.button`
   &:focus {
     &:not(:disabled) {
       transform: translateY(-1px);
+      background-color: ${({ theme, use }) => theme[use].hover};
     }
-    border: none;
-    outline: none;
-    opacity: 0.9;
   }
 
-  &:active {
-    opacity: 0.75;
+  &:active:not(:disabled) {
+    background-color: ${({ theme, use }) => theme[use].active};
   }
 
   > ${/*sc-s*/ FitzyLoader} {

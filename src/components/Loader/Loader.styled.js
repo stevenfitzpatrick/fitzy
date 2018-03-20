@@ -17,7 +17,7 @@ const FitzyLoader = styled.div`
   user-select: none;
 
   > ${/*sc-s*/ Circle} {
-    border: ${({ size, theme }) => `calc(${size}px / 10)`} solid transparent;
+    border: ${({ size }) => `calc(${size}px / 10)`} solid transparent;
 
     &:first-of-type {
       border-top-color: ${({ theme, use }) => theme[use].bg};

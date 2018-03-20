@@ -22,6 +22,7 @@ body {
   height: 100%;
   margin: 0;
   width: 100%;
+  line-height: 1.5;
 }
 
 *,
@@ -58,4 +59,10 @@ ul {
 
 .spread > * {
   margin-right: 2em;
+}
+
+.dark {
+  background-color: #172025;
+  padding: 1rem;
+  margin: -1rem;
 }
