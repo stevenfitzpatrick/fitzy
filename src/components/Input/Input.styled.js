@@ -25,20 +25,21 @@ const FitzyLabel = styled.label`
   display: inline-block;
   max-width: 100%;
   font-size: ${font.m};
-  color: #fff;
+  color: ${p => p.theme.Input.label};
   top: 1rem;
   transition: all 0.3s ease;
   pointer-events: none;
-  transform-origin: 0 0;
+  opacity: 0;
+  transform: translateY(0);
 `;
 
 const FitzyInput = styled.input`
   position: relative;
   display: block;
-  padding: ${spacing.m} 0;
+  padding: ${spacing.s} 0;
   width: 100%;
 
-  line-height: 1rem;
+  line-height: ${font.l};
   font-size: 1rem;
   font-weight: normal;
   font-family: inherit;
@@ -50,12 +51,11 @@ const FitzyInput = styled.input`
   color: #fff;
   transition: border 0.3s ease-in-out;
 
-  ~ label {
-    color: ${p => p.theme.Input.label};
-    transform: ${({ value }) =>
-    value ? `translateY(-${spacing.xxxxl})` : 'translateY(0)'};
-    opacity: ${({ value }) => (value ? '1' : '0')};
-    pointer-events: none;
+  &:valid {
+    ~ label {
+      transform: translateY(-${spacing.xxxxl});
+      opacity: 1;
+    }
   }
 
   &::-webkit-input-placeholder {

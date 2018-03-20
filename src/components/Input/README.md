@@ -28,6 +28,7 @@ initialState = {
     name="username"
     value={state.username}
     onChange={(_, v) => setState({ username: v })}
+    required
   />
   <Input
     label="Password"
@@ -35,6 +36,7 @@ initialState = {
     name="password"
     value={state.password}
     onChange={(_, v) => setState({ password: v })}
+    required
   />
   <Input
     label="Name"
@@ -42,6 +44,7 @@ initialState = {
     name="name"
     value={state.name}
     onChange={(_, v) => setState({ name: v })}
+    required
   />
   <Input
     label="Email"
@@ -50,6 +53,7 @@ initialState = {
     value={state.email}
     onChange={(_, v) => setState({ email: v })}
     warning={<span>Invalid Email</span>}
+    required
   />
 </div>;
 ```
