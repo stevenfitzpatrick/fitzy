@@ -39,7 +39,7 @@ const FitzyInput = styled.input`
   padding: ${spacing.s} 0;
   width: 100%;
 
-  line-height: ${font.l};
+  line-height: ${font.xl};
   font-size: 1rem;
   font-weight: normal;
   font-family: inherit;
@@ -51,11 +51,15 @@ const FitzyInput = styled.input`
   color: #fff;
   transition: border 0.3s ease-in-out;
 
-  &:valid {
-    ~ label {
-      transform: translateY(-${spacing.xxxxl});
-      opacity: 1;
-    }
+  ~ label {
+    transform: ${p =>
+    p.value ? `translateY(-${spacing.xxxxl})` : 'translateY(0)'};
+    opacity: ${p => (p.value ? 1 : 0)};
+  }
+
+  &::-webkit-autofill {
+    transform: translateY(-${spacing.xxxxl});
+    opacity: 1;
   }
 
   &::-webkit-input-placeholder {
