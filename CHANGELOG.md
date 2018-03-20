@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.4.1"></a>
+## [4.4.1](https://github.com/stevenfitzpatrick/fitzy/compare/v4.4.0...v4.4.1) (2018-03-20)
+
+
+### Bug Fixes
+
+* **Input:** Fix Typography around Input component ([23ab5d7](https://github.com/stevenfitzpatrick/fitzy/commit/23ab5d7))
+
+
+
 <a name="4.4.0"></a>
 # [4.4.0](https://github.com/stevenfitzpatrick/fitzy/compare/v4.3.1...v4.4.0) (2018-03-20)
 
