@@ -8,7 +8,7 @@ import { spacing } from '../../styles/spacing';
 const FormField = styled.label`
   position: relative;
   display: block;
-  margin-bottom: ${spacing.xxxxxl};
+  margin-bottom: ${spacing.xxxxxxl};
 
   ${errorMixin};
 `;
@@ -63,6 +63,10 @@ const FitzyInput = styled.input`
   &:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px ${colors.bgColor} inset;
     -webkit-text-fill-color: ${colors.light} !important;
+    caret-color: ${p => p.theme.Input.placeholder};
+    &::-webkit-input-placeholder {
+      color: ${p => p.theme.Input.placeholder};
+    }
 
     ~ label {
       transform: translateY(-${spacing.xxxxl});
