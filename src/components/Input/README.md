@@ -39,20 +39,20 @@ initialState = {
     required
   />
   <Input
-    label="Name"
-    placeholder="Enter your name"
-    name="name"
-    value={state.name}
-    onChange={(_, v) => setState({ name: v })}
-    required
-  />
-  <Input
     label="Email"
     placeholder="Enter your email"
     name="email2"
     value={state.email}
     onChange={(_, v) => setState({ email: v })}
     warning={<span>Invalid Email</span>}
+    required
+  />
+  <Input
+    label="Name"
+    placeholder="Enter your name"
+    name="name"
+    value={state.name}
+    onChange={(_, v) => setState({ name: v })}
     required
   />
 </div>;

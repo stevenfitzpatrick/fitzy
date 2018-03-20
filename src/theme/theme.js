@@ -1,6 +1,8 @@
 import { setThemeColors } from './utils';
 
 export const colors = {
+  // Background colors
+  bgColor: '#172025',
   // Shadow Colors
   textShadowDark: '0 1px 2px rgba(0, 0, 0, 0.2)',
   boxShadowDark: 'hsla(0, 0%, 0%, 0.2)',

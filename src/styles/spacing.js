@@ -5,5 +5,6 @@ export const spacing = {
   xl: '1.5rem',
   xxl: '1.75rem',
   xxxl: '2rem',
-  xxxxl: '2.25rem'
+  xxxxl: '2.25rem',
+  xxxxxl: '2.5rem'
 };

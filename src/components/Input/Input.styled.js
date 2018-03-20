@@ -8,16 +8,16 @@ import { spacing } from '../../styles/spacing';
 const FormField = styled.label`
   position: relative;
   display: block;
-  margin-bottom: ${spacing.xl};
+  margin-bottom: ${spacing.xxxxxl};
 
   ${errorMixin};
 `;
 
 const FormError = styled.span`
+  position: absolute;
   display: block;
   color: ${colors.errorActive};
   font-size: ${font.m};
-  margin-top: ${spacing.s};
 `;
 
 const FitzyLabel = styled.label`
@@ -46,7 +46,6 @@ const FitzyInput = styled.input`
 
   background-color: transparent;
   border: none;
-  border: 1px solid transparent;
   border-bottom: 1px solid ${p => p.theme.Input.border};
   color: #fff;
   transition: border 0.3s ease-in-out;
@@ -57,17 +56,18 @@ const FitzyInput = styled.input`
     opacity: ${p => (p.value ? 1 : 0)};
   }
 
+  &::-webkit-input-placeholder {
+    color: ${p => p.theme.Input.placeholder};
+  }
+
   &:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px white inset;
-    -webkit-text-fill-color: yellow !important;
+    -webkit-box-shadow: 0 0 0 30px ${colors.bgColor} inset;
+    -webkit-text-fill-color: ${colors.light} !important;
+
     ~ label {
       transform: translateY(-${spacing.xxxxl});
       opacity: 1;
     }
-  }
-
-  &::-webkit-input-placeholder {
-    color: ${p => p.theme.Input.placeholder};
   }
 
   &:focus {
