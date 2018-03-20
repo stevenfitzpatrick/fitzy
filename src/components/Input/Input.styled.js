@@ -57,7 +57,9 @@ const FitzyInput = styled.input`
     opacity: ${p => (p.value ? 1 : 0)};
   }
 
-  &::-webkit-autofill {
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+    -webkit-text-fill-color: yellow !important;
     ~ label {
       transform: translateY(-${spacing.xxxxl});
       opacity: 1;
