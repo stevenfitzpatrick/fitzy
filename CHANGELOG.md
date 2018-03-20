@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.4.7"></a>
+## [4.4.7](https://github.com/stevenfitzpatrick/fitzy/compare/v4.4.6...v4.4.7) (2018-03-20)
+
+
+### Bug Fixes
+
+* **Input:** Change color of caret when selected with autofill ([96e077e](https://github.com/stevenfitzpatrick/fitzy/commit/96e077e))
+
+
+
 <a name="4.4.6"></a>
 ## [4.4.6](https://github.com/stevenfitzpatrick/fitzy/compare/v4.4.5...v4.4.6) (2018-03-20)
 
