@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.4.3"></a>
+## [4.4.3](https://github.com/stevenfitzpatrick/fitzy/compare/v4.4.2...v4.4.3) (2018-03-20)
+
+
+### Bug Fixes
+
+* **Input:** Chrome Autofill bug ([c9dde58](https://github.com/stevenfitzpatrick/fitzy/commit/c9dde58))
+
+
+
 <a name="4.4.2"></a>
 ## [4.4.2](https://github.com/stevenfitzpatrick/fitzy/compare/v4.4.1...v4.4.2) (2018-03-20)
 
