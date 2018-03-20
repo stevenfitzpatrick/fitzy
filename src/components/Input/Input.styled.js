@@ -58,8 +58,10 @@ const FitzyInput = styled.input`
   }
 
   &::-webkit-autofill {
-    transform: translateY(-${spacing.xxxxl});
-    opacity: 1;
+    ~ label {
+      transform: translateY(-${spacing.xxxxl});
+      opacity: 1;
+    }
   }
 
   &::-webkit-input-placeholder {
