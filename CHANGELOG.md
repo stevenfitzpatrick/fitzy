@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.5.0"></a>
+# [4.5.0](https://github.com/stevenfitzpatrick/fitzy/compare/v4.4.8...v4.5.0) (2018-03-21)
+
+
+### Features
+
+* **Icon:** Adding Icons Component and Tests ([ef0ac92](https://github.com/stevenfitzpatrick/fitzy/commit/ef0ac92))
+
+
+
 <a name="4.4.8"></a>
 ## [4.4.8](https://github.com/stevenfitzpatrick/fitzy/compare/v4.4.7...v4.4.8) (2018-03-20)
 
