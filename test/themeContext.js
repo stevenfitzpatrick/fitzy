@@ -17,14 +17,14 @@ export function renderWithTheme(component) {
 /**
  * Helper to wrap ThemeProvider for shallow / mount for enzyme
  */
-export function _wrapWithTheme(fn, children, options) {
-  const wrapper = fn(
-    <ThemeProvider theme={theme}>{children}</ThemeProvider>,
-    options
-  );
+export function _wrapWithTheme(fn, children) {
+  const context = shallow(<ThemeProvider theme={theme} />)
+    .instance()
+    .getChildContext();
 
-  return wrapper[fn.name]({
-    context: wrapper.instance().getChildContext()
+  return fn(children, {
+    context,
+    childContextTypes: ThemeProvider.childContextTypes
   });
 }
 

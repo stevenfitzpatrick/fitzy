@@ -2,34 +2,31 @@
 
 exports[`Alert snapshots should match for basic 1`] = `
 .c2 {
-  display: block;
+  display: inline-block;
   fill: currentColor;
   height: 24px;
   width: 24px;
-}
-
-.c2:hover {
-  fill: #eee;
+  vertical-align: middle;
 }
 
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 1rem 2.5rem 1rem 3rem;
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
   border-left: 5px solid hsl(0,57%,48%);
   box-shadow: 0 4px 6px hsla(0,0%,0%,0.2);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   background-color: hsl(0,57%,63%);
   color: #ffffff;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 1rem 2.5rem 1rem 3rem;
-  position: relative;
   width: 100%;
 }
 
@@ -46,7 +43,7 @@ exports[`Alert snapshots should match for basic 1`] = `
 .c1 {
   left: 1rem;
   position: absolute;
-  top: 1.125rem;
+  top: 1.25rem;
 }
 
 <div
@@ -55,6 +52,7 @@ exports[`Alert snapshots should match for basic 1`] = `
 >
   <svg
     className="c1 c2"
+    size="24"
     viewBox="0 0 24 24"
   >
     <path
@@ -72,25 +70,11 @@ exports[`Alert snapshots should match for basic 1`] = `
 
 exports[`Alert snapshots should match with button 1`] = `
 .c2 {
-  display: block;
+  display: inline-block;
   fill: currentColor;
   height: 24px;
   width: 24px;
-}
-
-.c2:hover {
-  fill: #eee;
-}
-
-.c4 {
-  display: block;
-  fill: currentColor;
-  height: 12px;
-  width: 12px;
-}
-
-.c4:hover {
-  fill: #eee;
+  vertical-align: middle;
 }
 
 .c3 {
@@ -104,23 +88,23 @@ exports[`Alert snapshots should match with button 1`] = `
   line-height: 1;
   outline: none;
   padding: 0;
-  height: 0.75rem;
   position: absolute;
+  top: 1.25rem;
   right: 1.5rem;
-  top: 1.5rem;
-  width: 0.75rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .c3::after {
   border-radius: 50%;
   content: '';
-  left: 50%;
   padding: 1rem;
   position: absolute;
-  top: 50%;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
   -webkit-transition: background-color 0.25s ease-in;
   transition: background-color 0.25s ease-in;
 }
@@ -129,7 +113,7 @@ exports[`Alert snapshots should match with button 1`] = `
   background-color: rgba(255,255,255,0.1);
 }
 
-.c5 {
+.c4 {
   border: 0;
   -webkit-clip: rect(0,0,0,0);
   clip: rect(0,0,0,0);
@@ -142,23 +126,23 @@ exports[`Alert snapshots should match with button 1`] = `
 }
 
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 1rem 2.5rem 1rem 3rem;
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
   border-left: 5px solid hsl(0,57%,48%);
   box-shadow: 0 4px 6px hsla(0,0%,0%,0.2);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   background-color: hsl(0,57%,63%);
   color: #ffffff;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 1rem 2.5rem 1rem 3rem;
-  position: relative;
   width: 100%;
 }
 
@@ -175,7 +159,7 @@ exports[`Alert snapshots should match with button 1`] = `
 .c1 {
   left: 1rem;
   position: absolute;
-  top: 1.125rem;
+  top: 1.25rem;
 }
 
 <div
@@ -184,6 +168,7 @@ exports[`Alert snapshots should match with button 1`] = `
 >
   <svg
     className="c1 c2"
+    size="24"
     viewBox="0 0 24 24"
   >
     <path
@@ -201,17 +186,16 @@ exports[`Alert snapshots should match with button 1`] = `
     onClick={[Function]}
   >
     <svg
-      className="c4"
-      height="12"
-      viewBox="0 0 212.982 212.982"
-      width="12"
+      className="c2"
+      size="24"
+      viewBox="0 0 24 24"
     >
       <path
-        d="M131.804 106.491l75.936-75.936c6.99-6.99 6.99-18.323 0-25.312-6.99-6.99-18.322-6.99-25.312 0L106.491 81.18 30.554 5.242c-6.99-6.99-18.322-6.99-25.312 0-6.989 6.99-6.989 18.323 0 25.312l75.937 75.936-75.937 75.937c-6.989 6.99-6.989 18.323 0 25.312 6.99 6.99 18.322 6.99 25.312 0l75.937-75.937 75.937 75.937c6.989 6.99 18.322 6.99 25.312 0 6.99-6.99 6.99-18.322 0-25.312l-75.936-75.936z"
+        d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"
       />
     </svg>
     <span
-      className="c5"
+      className="c4"
     >
       Close Alert
     </span>

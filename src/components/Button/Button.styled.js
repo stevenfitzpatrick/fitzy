@@ -5,7 +5,9 @@ import { FitzyLoader } from '../Loader/Loader.styled';
 import { letterSpacing } from '../../styles/headers';
 import { spacing } from '../../styles/spacing';
 
-const FitzyButton = styled.button`
+const FitzyButton = styled.button.attrs({
+  'aria-busy': p => p.loading
+})`
   ${resetInput};
   text-transform: uppercase;
   font-weight: bold;

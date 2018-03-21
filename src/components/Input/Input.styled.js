@@ -14,6 +14,31 @@ const FormField = styled.label`
   ${errorMixin};
 `;
 
+const InputBar = styled.span`
+  position: relative;
+  display: block;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: ${p => p.theme.Input.borderActive};
+    transition: 0.2s ease all;
+  }
+
+  &::before {
+    left: 50%;
+  }
+
+  &::after {
+    right: 50%;
+  }
+`;
+
 const FormError = styled.span`
   position: absolute;
   display: block;
@@ -58,15 +83,16 @@ const FitzyInput = styled.input`
     opacity: ${p => (p.value ? 1 : 0)};
   }
 
-  &::-webkit-input-placeholder {
+  &::placeholder {
     color: ${p => p.theme.Input.placeholder};
   }
 
   &:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px ${colors.bgColor} inset;
-    -webkit-text-fill-color: ${colors.light} !important;
+    box-shadow: 0 0 0 30px ${colors.bgColor} inset;
+    color: ${colors.light} !important;
     caret-color: ${p => p.theme.Input.placeholder};
-    &::-webkit-input-placeholder {
+
+    &::placeholder {
       color: ${p => p.theme.Input.placeholder};
     }
 
@@ -83,8 +109,15 @@ const FitzyInput = styled.input`
     & ~ label {
       color: ${p => p.theme.Input.labelActive};
     }
+
+    & ~ span {
+      &::before,
+      &::after {
+        width: 50%;
+      }
+    }
   }
 `;
 
 /** @component */
-export { FitzyInput, FormField, FitzyLabel, FormError };
+export { FitzyInput, FormField, FitzyLabel, FormError, InputBar };

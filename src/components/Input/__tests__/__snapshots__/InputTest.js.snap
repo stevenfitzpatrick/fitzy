@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should match snapshot 1`] = `
+.c0 {
+  position: relative;
+  display: block;
+  margin-bottom: 2.25rem;
+  padding-top: 0.75rem;
+}
+
+.c2 {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.c2::before,
+.c2::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: hsl(152,62%,63%);
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+.c2::before {
+  left: 50%;
+}
+
+.c2::after {
+  right: 50%;
+}
+
+.c1 {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0;
+  width: 100%;
+  line-height: 1.25rem;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid hsl(152,62%,53%);
+  color: #fff;
+  -webkit-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
+}
+
+.c1 ~ label {
+  -webkit-transform: translateY(-1rem);
+  -ms-transform: translateY(-1rem);
+  transform: translateY(-1rem);
+  opacity: 1;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #b0c1d4;
+}
+
+.c1::-moz-placeholder {
+  color: #b0c1d4;
+}
+
+.c1:-ms-input-placeholder {
+  color: #b0c1d4;
+}
+
+.c1::placeholder {
+  color: #b0c1d4;
+}
+
+.c1:-webkit-autofill {
+  box-shadow: 0 0 0 30px #172025 inset;
+  color: #ffffff !important;
+  caret-color: #b0c1d4;
+}
+
+.c1:-webkit-autofill::-webkit-input-placeholder {
+  color: #b0c1d4;
+}
+
+.c1:-webkit-autofill::-moz-placeholder {
+  color: #b0c1d4;
+}
+
+.c1:-webkit-autofill:-ms-input-placeholder {
+  color: #b0c1d4;
+}
+
+.c1:-webkit-autofill::placeholder {
+  color: #b0c1d4;
+}
+
+.c1:-webkit-autofill ~ label {
+  -webkit-transform: translateY(-1rem);
+  -ms-transform: translateY(-1rem);
+  transform: translateY(-1rem);
+  opacity: 1;
+}
+
+.c1:focus {
+  border-bottom: 1px solid hsl(152,62%,63%);
+  outline: none;
+}
+
+.c1:focus ~ label {
+  color: hsl(152,62%,63%);
+}
+
+.c1:focus ~ span::before,
+.c1:focus ~ span::after {
+  width: 50%;
+}
+
+<label
+  className="c0"
+  role="presentation"
+>
+  <input
+    autoComplete={null}
+    autoFocus={null}
+    className="c1"
+    disabled={false}
+    id="name"
+    name="name"
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="Enter Name"
+    required={false}
+    spellCheck={null}
+    type="text"
+    value="test"
+  />
+  <span
+    className="c2"
+  />
+</label>
+`;

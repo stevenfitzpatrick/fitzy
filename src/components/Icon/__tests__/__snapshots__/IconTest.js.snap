@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icons should match snapshot 1`] = `
+.c0 {
+  display: inline-block;
+  fill: currentColor;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+}
+
+<svg
+  className="c0"
+  size="16"
+  viewBox="0 0 24 24"
+>
+  <path
+    d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"
+  />
+</svg>
+`;

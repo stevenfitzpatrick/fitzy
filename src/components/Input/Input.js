@@ -3,7 +3,13 @@ import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 
 import { isBoolean } from '../../utils/formUtils';
-import { FitzyInput, FitzyLabel, FormError, FormField } from './Input.styled';
+import {
+  FitzyInput,
+  FitzyLabel,
+  FormError,
+  FormField,
+  InputBar
+} from './Input.styled';
 
 class Input extends PureComponent {
   getEventValue = (type, e) =>
@@ -91,6 +97,7 @@ class Input extends PureComponent {
     return (
       <FormField role="presentation" className={className} warning={warning}>
         {this.renderInput(inputId)}
+        <InputBar />
         {this.renderLabel(inputId)}
         {this.renderHint()}
         {this.renderWarning()}
