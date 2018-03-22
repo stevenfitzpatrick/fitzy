@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.5.1"></a>
+## [4.5.1](https://github.com/stevenfitzpatrick/fitzy/compare/v4.5.0...v4.5.1) (2018-03-22)
+
+
+### Bug Fixes
+
+* **Input:** Fix autofill and focus behaviour for label ([183cd20](https://github.com/stevenfitzpatrick/fitzy/commit/183cd20))
+
+
+
 <a name="4.5.0"></a>
 # [4.5.0](https://github.com/stevenfitzpatrick/fitzy/compare/v4.4.8...v4.5.0) (2018-03-21)
 
