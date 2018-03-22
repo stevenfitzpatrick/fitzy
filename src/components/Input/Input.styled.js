@@ -22,7 +22,7 @@ const InputBar = styled.span`
   &::before,
   &::after {
     content: '';
-    height: 2px;
+    height: 3px;
     width: 0;
     bottom: 0;
     position: absolute;
@@ -89,7 +89,7 @@ const FitzyInput = styled.input`
 
   &:-webkit-autofill {
     box-shadow: 0 0 0 30px ${colors.bgColor} inset;
-    color: ${colors.light} !important;
+    text-fill-color: ${colors.light} !important;
     caret-color: ${p => p.theme.Input.placeholder};
 
     &::placeholder {
@@ -108,6 +108,8 @@ const FitzyInput = styled.input`
 
     & ~ label {
       color: ${p => p.theme.Input.labelActive};
+      transform: translateY(-${spacing.l});
+      opacity: 1;
     }
 
     & ~ span {

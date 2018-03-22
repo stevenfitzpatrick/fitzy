@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import FitzyIcon from './Icon.styled';
-import icons from './icons';
+import icons from './icons/index';
 
 function Icon({ icon, use, size, className }) {
   return (
