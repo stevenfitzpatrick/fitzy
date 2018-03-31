@@ -121,7 +121,6 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "downshift": "^1.28.0",
-    "npm": "^5.7.1",
     "prop-types": "^15.6.0"
   },
   "peerDependencies": {

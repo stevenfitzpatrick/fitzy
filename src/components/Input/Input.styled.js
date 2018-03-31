@@ -39,7 +39,13 @@ const InputBar = styled.span`
   }
 `;
 
-const FormError = styled.span`
+/**
+ * Input field alert messages
+ */
+const FormError = styled.span.attrs({
+  role: 'alert',
+  'aria-atomic': 'true'
+})`
   position: absolute;
   display: block;
   color: ${colors.errorActive};
@@ -89,7 +95,7 @@ const FitzyInput = styled.input`
 
   &:-webkit-autofill {
     box-shadow: 0 0 0 30px ${colors.bgColor} inset;
-    text-fill-color: ${colors.light} !important;
+    -webkit-text-fill-color: ${colors.light} !important;
     caret-color: ${p => p.theme.Input.placeholder};
 
     &::placeholder {

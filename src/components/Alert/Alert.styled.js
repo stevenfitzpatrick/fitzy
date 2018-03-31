@@ -9,7 +9,10 @@ import { transitionTiming } from '../../styles/animations';
 /**
  * Main styles for Alert Component
  */
-const FitzyAlert = styled.div`
+const FitzyAlert = styled.div.attrs({
+  role: 'alert',
+  'aria-atomic': 'true'
+})`
   display: flex;
   flex-wrap: wrap;
   position: relative;

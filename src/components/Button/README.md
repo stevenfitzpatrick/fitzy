@@ -14,7 +14,7 @@ Dark Background :
 
 ```jsx
 <div className="flex spread dark">
-  <Button>Login</Button>
+  <Button onClick={e => console.log(e)}>Login</Button>
   <Button use="Warning">Login</Button>
   <Button use="Error">Login</Button>
   <Button use="Info">Login</Button>
