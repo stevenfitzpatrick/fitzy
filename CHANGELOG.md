@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.5.2"></a>
+## [4.5.2](https://github.com/stevenfitzpatrick/fitzy/compare/v4.5.1...v4.5.2) (2018-03-31)
+
+
+### Bug Fixes
+
+* **Input:** Fix issue with `Input` Chrome Autofill ([1331251](https://github.com/stevenfitzpatrick/fitzy/commit/1331251))
+* **Input:** Fix snapshots ([2d09aa4](https://github.com/stevenfitzpatrick/fitzy/commit/2d09aa4))
+
+
+### Reverts
+
+* **Package.json:** Test ([5b0f059](https://github.com/stevenfitzpatrick/fitzy/commit/5b0f059))
+
+
+
 <a name="4.5.1"></a>
 ## [4.5.1](https://github.com/stevenfitzpatrick/fitzy/compare/v4.5.0...v4.5.1) (2018-03-22)
 
