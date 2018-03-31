@@ -47,7 +47,8 @@
     "react",
     "components",
     "react-component",
-    "ui"
+    "ui",
+    "test"
   ],
   "author": "Steven Fitzpatrick <steven.fitzpatrick1985@gmail.com>",
   "homepage": "https://fitzy-ui.com",
