@@ -47,6 +47,7 @@ exports[`Alert snapshots should match for basic 1`] = `
 }
 
 <div
+  aria-atomic="true"
   className="c0"
   role="alert"
 >
@@ -163,6 +164,7 @@ exports[`Alert snapshots should match with button 1`] = `
 }
 
 <div
+  aria-atomic="true"
   className="c0"
   role="alert"
 >

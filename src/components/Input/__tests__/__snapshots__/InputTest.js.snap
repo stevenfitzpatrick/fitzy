@@ -76,7 +76,7 @@ exports[`Input should match snapshot 1`] = `
 
 .c1:-webkit-autofill {
   box-shadow: 0 0 0 30px #172025 inset;
-  text-fill-color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
   caret-color: #b0c1d4;
 }
 
