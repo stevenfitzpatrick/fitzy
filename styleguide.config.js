@@ -13,7 +13,17 @@ module.exports = {
   styleguideComponents: {
     Wrapper: path.join(__dirname, 'styleguide-config/ThemeWrapper.js')
   },
-  template: path.join(__dirname, 'styleguide-config/template.html'),
+  template: {
+    head: {
+      links: [
+        {
+          rel: 'stylesheet',
+          href:
+            'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700'
+        }
+      ]
+    }
+  },
   require: [path.join(__dirname, 'styleguide-config/reset.css')],
   webpackConfig: createConfig([
     babel(),

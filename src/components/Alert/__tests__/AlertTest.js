@@ -1,11 +1,11 @@
 import React from 'react';
-
-import Alert from '../Alert';
 import {
   // mountWithTheme,
   renderWithTheme
   // shallowWithTheme
-} from '../../../../test/themeContext';
+} from '@sfitzpatrick/enzyme-context-helpers';
+
+import Alert from '../Alert';
 
 describe('Alert', () => {
   const defaultProps = {

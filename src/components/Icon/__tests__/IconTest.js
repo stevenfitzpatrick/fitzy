@@ -1,8 +1,11 @@
 import React from 'react';
+import {
+  mountWithTheme,
+  renderWithTheme
+} from '@sfitzpatrick/enzyme-context-helpers';
 
 import Icon from '../Icon';
 import icons from '../../Icon/icons';
-import { mountWithTheme, renderWithTheme } from '../../../../test/themeContext';
 
 describe('Icons', () => {
   let wrapper, component;

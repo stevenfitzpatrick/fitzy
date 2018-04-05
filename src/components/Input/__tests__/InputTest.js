@@ -1,10 +1,11 @@
 import React from 'react';
-import Input from '../Input';
 import {
   mountWithTheme,
   renderWithTheme,
   shallowWithTheme
-} from '../../../../test/themeContext';
+} from '@sfitzpatrick/enzyme-context-helpers';
+
+import Input from '../Input';
 
 describe('Input', () => {
   let wrapper, shallowWrapper;
