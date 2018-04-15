@@ -55,3 +55,27 @@ export const errorMixin = ({ warning }) => {
     }
   `;
 };
+
+export const arrowSideMixin = ({ placement }) => {
+  if (placement === 'top') {
+    return css`
+      top: 100%;
+      left: 50%;
+    `;
+  } else if (placement === 'bottom') {
+    return css`
+      top: 0%;
+      left: 50%;
+    `;
+  } else if (placement === 'right') {
+    return css`
+      top: 50%;
+      left: 0%;
+    `;
+  } else if (placement === 'left') {
+    return css`
+      top: 50%;
+      left: 100%;
+    `;
+  }
+};

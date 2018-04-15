@@ -93,7 +93,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  type: 'submit',
+  type: 'button',
   use: 'Primary',
   disabled: false,
   fullWidth: false,
