@@ -74,6 +74,11 @@ module.exports = {
             __dirname,
             'src/components/EventManager',
             'EventManager.js'
+          ),
+          path.resolve(
+            __dirname,
+            'src/components/CollapseMe',
+            'CollapseMe.js'
           )
         ];
       }
