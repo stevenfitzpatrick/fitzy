@@ -1,20 +1,25 @@
 import Proptypes from 'prop-types';
 import React, { Component } from 'react';
 
+import { FitzyCollapse } from './CollapseMe.styled';
+
 class CollapseMe extends Component {
   childRef = React.createRef();
 
+  scrollHeight = null;
+
   componentDidMount = () => {
     const { open } = this.props;
+    const childRef = this.childRef.current;
+    this.scrollHeight = childRef.scrollHeight;
     if (!open) {
-      this.collapseImmediately(this.childRef.current);
+      this.collapseImmediately(childRef);
     }
   };
 
   componentDidUpdate({ open }) {
     if (open !== this.props.open) {
-      if (this.props.open) this.expand();
-      else this.collapse();
+      this.props.open ? this.expand() : this.collapse();
     }
   }
 
@@ -22,10 +27,13 @@ class CollapseMe extends Component {
     element.style.height = '0px';
   };
 
+  removeHeight = ({ target }) => {
+    target.style.height = null;
+  };
+
   collapse = (element = this.childRef.current) => {
-    const height = element.scrollHeight;
     requestAnimationFrame(() => {
-      element.style.height = height + 'px';
+      element.style.height = `${this.scrollHeight}px`;
       requestAnimationFrame(() => {
         element.style.height = '0px';
       });
@@ -33,34 +41,21 @@ class CollapseMe extends Component {
   };
 
   expand = (element = this.childRef.current) => {
-    const height = element.scrollHeight;
-
-    // have the element transition to the height of its inner content
-    element.style.height = height + 'px';
-
-    // when the next css transition finishes (which should be the one we just triggered)
+    element.style.height = this.scrollHeight + 'px';
     element.addEventListener(
       'transitionend',
-      () => {
-        // remove "height" from the element's inline styles, so it can return to its initial value
-        element.style.height = null;
-      },
+      this.removeHeight,
       { once: true },
       false
     );
   };
 
   render() {
+    const { open } = this.props;
     return (
-      <div
-        style={{
-          overflow: 'hidden',
-          transition: 'height 0.3s ease-out'
-        }}
-        ref={this.childRef}
-      >
-        {this.props.children()}
-      </div>
+      <FitzyCollapse innerRef={this.childRef} open={open}>
+        {this.props.children({ open })}
+      </FitzyCollapse>
     );
   }
 }

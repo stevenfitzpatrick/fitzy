@@ -14,13 +14,7 @@ initialState = { open: false };
     Toggle Content
   </Button>
   <CollapseMe open={state.open}>
-    {() => (
-      <>
-        <p>Some content will go here</p>
-        <p>Some content will go here</p>
-      </>
-    )}
+    {() => <p>Some content will go here</p>}
   </CollapseMe>
-  <Button>Some Other Bottom</Button>
 </>;
 ```

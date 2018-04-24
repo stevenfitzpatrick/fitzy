@@ -45,6 +45,7 @@ module.exports = {
         return [
           path.resolve(__dirname, 'src/components/Input', 'Input.js'),
           path.resolve(__dirname, 'src/components/Button', 'Button.js'),
+          path.resolve(__dirname, 'src/components/CheckBox', 'CheckBox.js'),
           path.resolve(__dirname, 'src/components/RadioGroup', 'RadioGroup.js'),
           path.resolve(__dirname, 'src/components/Toggle', 'Toggle.js'),
           path.resolve(__dirname, 'src/components/Password', 'Password.js'),
@@ -57,6 +58,7 @@ module.exports = {
       components() {
         return [
           path.resolve(__dirname, 'src/components/Alert', 'Alert.js'),
+          path.resolve(__dirname, 'src/components/Modal', 'Modal.js'),
           path.resolve(__dirname, 'src/components/Tag', 'Tag.js'),
           path.resolve(__dirname, 'src/components/TagInput', 'TagInput.js'),
           path.resolve(__dirname, 'src/components/Tabs', 'Tabs.js'),
@@ -75,11 +77,15 @@ module.exports = {
             'src/components/EventManager',
             'EventManager.js'
           ),
-          path.resolve(
-            __dirname,
-            'src/components/CollapseMe',
-            'CollapseMe.js'
-          )
+          path.resolve(__dirname, 'src/components/CollapseMe', 'CollapseMe.js')
+        ];
+      }
+    },
+    {
+      name: 'Layout',
+      components() {
+        return [
+          path.resolve(__dirname, 'src/components/Navigation', 'Navigation.js')
         ];
       }
     }
