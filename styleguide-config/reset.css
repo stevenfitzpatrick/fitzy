@@ -70,3 +70,11 @@ ul {
   padding: 1rem;
   margin: -1rem;
 }
+
+.fixed-frame {
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  height: 100px;
+  padding: 0;
+  height: 300px;
+}

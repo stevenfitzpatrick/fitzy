@@ -8,7 +8,31 @@ export const FitzyHeader = styled.header`
   display: grid;
   grid-template: 'left 👾 right' / auto 1fr auto;
   width: 100%;
-  border: 1px solid;
+  color: #ffffff;
+  background-color: #465362;
+  padding: 0 40px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    > li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 1rem;
+        display: inline-block;
+
+        &:hover {
+          background-color: blue;
+        }
+      }
+    }
+  }
 `;
 
 export const FitzyNavigation = styled.nav``;

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import FitzyIcon from '../Icon/Icon.styled';
 import { colorMixin, resetInput, secondaryMixin } from '../../styles/mixins';
 import { FitzyLoader } from '../Loader/Loader.styled';
 import { letterSpacing } from '../../styles/headers';
@@ -9,7 +10,6 @@ const FitzyButton = styled.button.attrs({
   'aria-busy': p => p.loading
 })`
   ${resetInput};
-  text-transform: uppercase;
   font-weight: bold;
   font-size: inherit;
   letter-spacing: ${letterSpacing};
@@ -17,6 +17,10 @@ const FitzyButton = styled.button.attrs({
 
   ${colorMixin};
   ${secondaryMixin};
+
+  svg {
+    margin-right: 0.5rem;
+  }
 
   border-radius: 4px;
   transition: all 0.25s ease;

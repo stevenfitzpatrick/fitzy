@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
+import Icon from '../Icon/Icon';
 import Loader from '../Loader/Loader';
 import { FitzyButton } from './Button.styled';
 
@@ -16,6 +17,7 @@ class Button extends Component {
       fullWidth,
       className,
       loading,
+      icon,
       ...props
     } = this.props;
 
@@ -30,6 +32,7 @@ class Button extends Component {
         className={className}
         {...props}
       >
+        {icon ? <Icon icon={icon} size="16" /> : null}
         {children}
         {loading ? <Loader size={16} /> : null}
       </FitzyButton>
