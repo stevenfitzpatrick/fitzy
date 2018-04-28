@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.6.0"></a>
+# [4.6.0](https://github.com/stevenfitzpatrick/fitzy/compare/v4.5.2...v4.6.0) (2018-04-28)
+
+
+### Bug Fixes
+
+* **Navigation:** Adding Basic Navigation ([4c4f489](https://github.com/stevenfitzpatrick/fitzy/commit/4c4f489))
+
+
+### Features
+
+* **Collapse:** Adding a new Collapse Component and start of nav component ([e90da75](https://github.com/stevenfitzpatrick/fitzy/commit/e90da75))
+* **CollapseMe:** Collapse Helper Component ([5609d81](https://github.com/stevenfitzpatrick/fitzy/commit/5609d81))
+* **Tooltip:** Adding a new Tooltip component ([d1e760d](https://github.com/stevenfitzpatrick/fitzy/commit/d1e760d))
+
+
+
 <a name="4.5.2"></a>
 ## [4.5.2](https://github.com/stevenfitzpatrick/fitzy/compare/v4.5.1...v4.5.2) (2018-03-31)
 
