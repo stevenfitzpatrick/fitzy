@@ -7,6 +7,7 @@ export { default as RadioOption } from './components/RadioGroup/RadioOption';
 
 // Layout
 export { default as Navigation } from './components/Navigation/Navigation';
+export { default as NavigationLink } from './components/NavLink/NavLink.styled';
 
 // Components
 export { default as Alert } from './components/Alert/Alert';

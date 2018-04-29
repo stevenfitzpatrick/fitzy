@@ -20,17 +20,6 @@ export const FitzyHeader = styled.header`
 
     > li {
       list-style: none;
-
-      a {
-        text-decoration: none;
-        color: #ffffff;
-        padding: 1rem;
-        display: inline-block;
-
-        &:hover {
-          background-color: blue;
-        }
-      }
     }
   }
 `;

@@ -85,6 +85,11 @@ module.exports = {
       name: 'Layout',
       components() {
         return [
+          path.resolve(
+            __dirname,
+            'src/components/NavLink',
+            'NavLink.styled.js'
+          ),
           path.resolve(__dirname, 'src/components/Navigation', 'Navigation.js')
         ];
       }

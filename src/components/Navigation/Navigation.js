@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Layout from './Layout';
-import { FitzyHeader, FitzyNavigation } from './Navigation.styled';
+import { FitzyHeader } from './Navigation.styled';
 
 const Navigation = ({ children, isFixed, className }) => (
   <FitzyHeader className={className} isFixed={isFixed}>

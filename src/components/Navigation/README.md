@@ -8,7 +8,9 @@ Navigation :
         <Layout.Left>
           <ul>
             <li>
-              <a href="">Home</a>
+              <NavigationLink href="/" icon="home">
+                Home
+              </NavigationLink>
             </li>
             <li>
               <Button icon="edit">Add Bet</Button>
@@ -18,7 +20,9 @@ Navigation :
         <Layout.Right>
           <ul>
             <li>
-              <a href="">Logout</a>
+              <NavigationLink href="/" icon="user">
+                Logout
+              </NavigationLink>
             </li>
           </ul>
         </Layout.Right>
