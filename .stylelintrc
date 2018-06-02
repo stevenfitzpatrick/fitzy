@@ -12,6 +12,11 @@
     "declaration-colon-newline-after": null,
     "value-list-comma-newline-after": null,
     "declaration-empty-line-before": null,
-    "property-no-unknown": [true, {"ignoreProperties": ["text-fill-color"], "checkPrefixed": false}]
+    "property-no-unknown": [true, {"ignoreProperties": ["text-fill-color"], "checkPrefixed": false}],
+    "selector-type-no-unknown" : [
+      true,
+      { "ignoreTypes": ["$dummyValue"]}
+    ],
+    "selector-type-case": null
   }
 }

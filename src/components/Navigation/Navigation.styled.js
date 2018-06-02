@@ -7,8 +7,7 @@ export const FitzyHeader = styled.header`
   width: 100%;
   display: grid;
   grid-template: 'left 👾 right' / auto 1fr auto;
-  width: 100%;
-  color: #ffffff;
+  color: #fff;
   background-color: #465362;
   padding: 0 40px;
 
@@ -24,7 +23,9 @@ export const FitzyHeader = styled.header`
   }
 `;
 
-export const FitzyNavigation = styled.nav``;
+export const FitzyNavigation = styled.nav`
+  display: block;
+`;
 
 export const FitzyRight = styled.div`
   grid-area: right;
