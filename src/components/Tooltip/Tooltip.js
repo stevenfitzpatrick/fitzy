@@ -58,6 +58,11 @@ class Tooltip extends React.Component {
 
   componentDidMount() {
     this._calculatePositions();
+    window.addEventListener('resize', this._calculatePositions, false);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this._calculatePositions, false);
   }
 
   toggle = () =>
