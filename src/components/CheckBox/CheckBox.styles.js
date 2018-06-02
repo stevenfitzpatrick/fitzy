@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-import Icon from '../Icon/Icon';
 import { colors } from '../../theme/theme';
 import { hidden } from '../../styles/mixins';
 export const HiddenCheckbox = styled.input`
@@ -18,7 +17,7 @@ export const FitzyCheckBoxText = styled.span`
 
 export const FitzyCheckbox = styled.span`
   flex-shrink: 0;
-  color: ${({ theme, checked }) => theme.Primary.bg};
+  color: ${({ theme }) => theme.Primary.bg};
   border: 2px solid currentColor;
   border-color: currentColor;
   position: relative;

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-import FitzyIcon from '../Icon/Icon.styled';
 import { colorMixin, resetInput, secondaryMixin } from '../../styles/mixins';
 import { FitzyLoader } from '../Loader/Loader.styled';
 import { letterSpacing } from '../../styles/headers';
