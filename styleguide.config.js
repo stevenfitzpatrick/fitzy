@@ -2,6 +2,11 @@ const path = require('path');
 const { version, name } = require('./package.json');
 
 module.exports = {
+  verbose: true,
+  ribbon: {
+    url: 'https://github.com/stevenfitzpatrick/fitzy',
+    text: 'View me on GitHub'
+  },
   title: `Fitzy | ${version}`,
   getComponentPathLine(componentPath) {
     const component = path.basename(componentPath, '.js');
@@ -11,6 +16,11 @@ module.exports = {
   styleguideDir: 'dist',
   styleguideComponents: {
     Wrapper: path.join(__dirname, 'styleguide-config/ThemeWrapper.js')
+  },
+  theme: {
+    color: {
+      ribbonBackground: '#2ab272'
+    }
   },
   template: {
     head: {
