@@ -1,5 +1,4 @@
 const path = require('path');
-const { createConfig, babel, postcss, match, css } = require('webpack-blocks');
 const { version, name } = require('./package.json');
 
 module.exports = {
@@ -25,10 +24,21 @@ module.exports = {
     }
   },
   require: [path.join(__dirname, 'styleguide-config/reset.css')],
-  webpackConfig: createConfig([
-    babel(),
-    match(['*.css', '!*node_modules*'], [css(), postcss()])
-  ]),
+  webpackConfig: {
+    module: {
+      rules: [
+        {
+          test: /\.jsx?$/,
+          exclude: /node_modules/,
+          loader: 'babel-loader'
+        },
+        {
+          test: /\.css$/,
+          loader: 'style-loader!css-loader'
+        }
+      ]
+    }
+  },
   showCode: false,
   showUsage: false,
   styles: {

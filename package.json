@@ -69,6 +69,7 @@
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
     "babel-jest": "^23.0.1",
+    "babel-loader": "^7.1.4",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-styled-components": "^1.5.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -80,6 +81,7 @@
     "copyfiles": "^2.0.0",
     "coveralls": "^3.0.1",
     "cross-env": "^5.1.6",
+    "css-loader": "^0.28.11",
     "cz-conventional-changelog": "^2.1.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -110,6 +112,7 @@
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-post-replace": "^1.0.0",
     "standard-version": "^4.4.0",
+    "style-loader": "^0.21.0",
     "styled-components": "^3.3.0",
     "stylelint": "^9.2.1",
     "stylelint-config-standard": "^18.2.0",
@@ -118,8 +121,7 @@
     "stylelint-processor-styled-components": "^1.3.1",
     "typescript": "^2.9.1",
     "typescript-styled-plugin": "^0.6.3",
-    "webpack": "^3.11.0",
-    "webpack-blocks": "^1.0.0-rc.2"
+    "webpack": "^4.10.2"
   },
   "dependencies": {
     "classnames": "^2.2.5",
