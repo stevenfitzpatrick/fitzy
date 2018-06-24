@@ -78,42 +78,6 @@ exports[`Alert snapshots should match with button 1`] = `
   vertical-align: middle;
 }
 
-.c3 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: transparent;
-  border: 0;
-  color: inherit;
-  cursor: pointer;
-  line-height: 1;
-  outline: none;
-  padding: 0;
-  position: absolute;
-  top: 1.25rem;
-  right: 1.5rem;
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-.c3::after {
-  border-radius: 50%;
-  content: '';
-  padding: 1rem;
-  position: absolute;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  left: 50%;
-  top: 50%;
-  -webkit-transition: background-color 0.25s ease-in;
-  transition: background-color 0.25s ease-in;
-}
-
-.c3:hover::after {
-  background-color: rgba(255,255,255,0.1);
-}
-
 .c4 {
   border: 0;
   -webkit-clip: rect(0,0,0,0);
@@ -161,6 +125,42 @@ exports[`Alert snapshots should match with button 1`] = `
   left: 1rem;
   position: absolute;
   top: 1.25rem;
+}
+
+.c3 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  line-height: 1;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.c3::after {
+  border-radius: 50%;
+  content: '';
+  padding: 1rem;
+  position: absolute;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  -webkit-transition: background-color 0.25s ease-in;
+  transition: background-color 0.25s ease-in;
+}
+
+.c3:hover::after {
+  background-color: rgba(255,255,255,0.1);
 }
 
 <div

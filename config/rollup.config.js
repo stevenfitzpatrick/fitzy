@@ -6,7 +6,7 @@ import pkg from '../package.json';
 
 export default {
   input: 'src/fitzy.js',
-  external: ['react', 'styled-components'].concat(
+  external: ['react', 'react-dom', 'styled-components'].concat(
     Object.keys(pkg.dependencies)
   ),
   output: {

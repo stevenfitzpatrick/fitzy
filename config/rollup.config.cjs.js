@@ -6,7 +6,9 @@ import config from './rollup.config';
 config.output.format = 'cjs';
 config.output.exports = 'named';
 config.output.file = 'lib/fitzy.cjs.js';
-config.external = ['react'].concat(Object.keys(pkg.dependencies));
+config.external = ['react', 'react-dom', 'styled-components'].concat(
+  Object.keys(pkg.dependencies)
+);
 config.plugins = [
   ...config.plugins,
   commonjs({

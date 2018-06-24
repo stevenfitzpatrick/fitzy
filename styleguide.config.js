@@ -2,7 +2,6 @@ const path = require('path');
 const { version, name } = require('./package.json');
 
 module.exports = {
-  verbose: true,
   ribbon: {
     url: 'https://github.com/stevenfitzpatrick/fitzy',
     text: 'View me on GitHub'
@@ -31,6 +30,9 @@ module.exports = {
             'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700'
         }
       ]
+    },
+    body: {
+      raw: '<div id="modalRoot"></div>'
     }
   },
   require: [path.join(__dirname, 'styleguide-config/reset.css')],
