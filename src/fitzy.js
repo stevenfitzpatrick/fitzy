@@ -11,7 +11,7 @@ export { default as NavigationLink } from './components/NavLink/NavLink.styled';
 
 // Components
 export { default as Alert } from './components/Alert/Alert';
-export { default as Modal } from './components/modal/Modal';
+export { default as Modal } from './components/Modal/Modal';
 
 // Export Theme
 export { default as Theme } from './theme/theme';
