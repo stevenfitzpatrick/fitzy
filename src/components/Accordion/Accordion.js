@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 class Accordion extends Component {
   static defaultProps = {
@@ -50,7 +50,7 @@ class Accordion extends Component {
 
   render() {
     const { openIndexes } = this.getState();
-    const { children, ...props } = this.props;
+    const { children } = this.props;
     return children({
       openIndexes,
       handleItemClick: this.handleItemClick
