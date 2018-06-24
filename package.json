@@ -1,6 +1,6 @@
 {
   "name": "@sfitzpatrick/fitzy",
-  "version": "4.6.10",
+  "version": "4.6.11",
   "source": "src/fitzy.js",
   "description": "React UI Library",
   "main": "lib/fitzy.cjs.js",
@@ -23,7 +23,7 @@
     "test:coverage": "npm test -- --coverage",
     "test:ci": "jest --coverage && ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info",
     "test:size": "bundlesize",
-    "size": "node -e \"process.stdout.write('gzip size: ')\" && gzip-size lib/fitzy.cjs.js",
+    "size": "node -e \"process.stdout.write('gzip size: ')\" && gzip-size lib/fitzy.esm.js",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "stylelint": "stylelint src/**/**/*.js",
