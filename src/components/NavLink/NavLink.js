@@ -4,7 +4,7 @@ import React from 'react';
 import Icon from '../Icon/Icon';
 
 const NavLink = ({ to, href, linkType: LinkType, children, icon, ...rest }) => (
-  <React.Fragment>
+  <>
     {href ? (
       <a href={href} {...rest}>
         {icon ? <Icon icon={icon} size="20" /> : null}
@@ -16,7 +16,7 @@ const NavLink = ({ to, href, linkType: LinkType, children, icon, ...rest }) => (
         {children}
       </LinkType>
     )}
-  </React.Fragment>
+  </>
 );
 
 NavLink.propTypes = {
