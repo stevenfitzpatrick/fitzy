@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const dropdownStyles = css`
   position: relative;
@@ -19,6 +19,17 @@ const dropdownStyles = css`
   transition: box-shadow 0.1s ease, width 0.1s ease;
 `;
 
+const DropDownMenu = styled.ul`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+`;
+
+const DropDownContainer = styled.div`
+  position: relative;
+`;
+
 const menuStyles = css`
   position: absolute;
   top: 100%;
@@ -36,4 +47,10 @@ const buttonStyles = css`
   transform: rotate(45deg) translateY(calc(-50% - 4px));
 `;
 
-export { dropdownStyles, menuStyles, buttonStyles };
+export {
+  dropdownStyles,
+  menuStyles,
+  buttonStyles,
+  DropDownMenu,
+  DropDownContainer
+};

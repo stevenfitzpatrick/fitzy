@@ -3,7 +3,7 @@ import Downshift from 'downshift';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { buttonStyles, dropdownStyles, menuStyles } from './styles';
+import { buttonStyles, DropDownMenu } from './Dropdown.styled';
 
 const Dropdown = ({
   items,
@@ -12,37 +12,40 @@ const Dropdown = ({
   defaultInputValue,
   placeholder
 }) => {
-  const classNames = classnames(dropdownStyles);
   return (
     <Downshift
       onChange={onChange}
       defaultInputValue={defaultInputValue}
       itemToString={i => (i ? i.name : '')}
-      render={({
+    >
+      {({
         getItemProps,
-        getButtonProps,
+        getToggleButtonProps,
+        getMenuProps,
         itemToString,
         isOpen,
-        toggleMenu,
         inputValue,
         selectedItem,
         highlightedIndex
       }) => (
-        <div className={classNames}>
+        <div style={{ position: 'relative' }}>
           <button
-            onClick={toggleMenu}
-            {...getButtonProps({ onBlur, className: buttonStyles })}
-          />
-          <span className="text">{inputValue ? inputValue : placeholder}</span>
+            {...getToggleButtonProps({ onBlur, className: buttonStyles })}
+          >
+            <span className="text">
+              {inputValue ? inputValue : placeholder}
+            </span>
+          </button>
+
           {isOpen && (
-            <div className={menuStyles}>
+            <DropDownMenu {...getMenuProps({})}>
               {items.map((item, index) => {
                 const itemClassnames = classnames({
                   selected: selectedItem && selectedItem.id === item.id,
                   active: highlightedIndex === index
                 });
                 return (
-                  <div
+                  <li
                     {...getItemProps({
                       item,
                       key: item.id,
@@ -50,14 +53,14 @@ const Dropdown = ({
                     })}
                   >
                     {itemToString(item)}
-                  </div>
+                  </li>
                 );
               })}
-            </div>
+            </DropDownMenu>
           )}
         </div>
       )}
-    />
+    </Downshift>
   );
 };
 

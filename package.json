@@ -5,7 +5,6 @@
   "description": "React UI Library",
   "main": "lib/fitzy.cjs.js",
   "module": "lib/fitzy.esm.js",
-  "esnext:main": "lib/fitzy.esm.js",
   "dev:main": "lib/fitzy.dev.js",
   "sideEffects": false,
   "scripts": {
@@ -23,7 +22,6 @@
     "test:coverage": "npm test -- --coverage",
     "test:ci": "jest --coverage && ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info",
     "test:size": "bundlesize",
-    "size": "node -e \"process.stdout.write('gzip size: ')\" && gzip-size lib/fitzy.esm.js",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "stylelint": "stylelint src/**/**/*.js",
@@ -124,7 +122,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "downshift": "^1.31.15",
+    "downshift": "^2.0.10",
     "prop-types": "^15.6.2"
   },
   "peerDependencies": {

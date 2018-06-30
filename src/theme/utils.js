@@ -4,6 +4,6 @@ export const setThemeColors = (colors, theme, overrides = {}) => ({
   hover: colors[`${theme}Hover`],
   active: colors[`${theme}Active`],
   text: colors.light,
-  textShadow: colors.textShadowDark.bg,
+  textShadow: colors.textShadowDark,
   ...overrides
 });

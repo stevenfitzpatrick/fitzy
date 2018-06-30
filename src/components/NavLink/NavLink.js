@@ -3,7 +3,7 @@ import React from 'react';
 
 import Icon from '../Icon/Icon';
 
-const NavLink = ({ to, href, LinkType, children, icon, ...rest }) => (
+const NavLink = ({ to, href, linkType: LinkType, children, icon, ...rest }) => (
   <React.Fragment>
     {href ? (
       <a href={href} {...rest}>
