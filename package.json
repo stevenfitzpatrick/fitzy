@@ -22,6 +22,7 @@
     "test:coverage": "npm test -- --coverage",
     "test:ci": "jest --coverage && ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info",
     "test:size": "bundlesize",
+    "start": "npm run styleguide",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "stylelint": "stylelint src/**/**/*.js",
@@ -140,22 +141,6 @@
       "threshold": "4Kb"
     }
   ],
-  "jest": {
-    "collectCoverageFrom": [
-      "src/(components|utils)/**/*.{js}"
-    ],
-    "testMatch": [
-      "<rootDir>/src/**/?(*)(Test).js?(x)"
-    ],
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "json"
-    ],
-    "setupTestFrameworkScriptFile": "<rootDir>/test/setupTests.js"
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

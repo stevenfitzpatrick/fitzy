@@ -3,7 +3,13 @@ import Downshift from 'downshift';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { buttonStyles, DropDownMenu } from './Dropdown.styled';
+import {
+  DropDownButton,
+  DropDownContainer,
+  DropDownIcon,
+  DropDownMenu,
+  DropDownOption
+} from './Dropdown.styled';
 
 const Dropdown = ({
   items,
@@ -22,43 +28,50 @@ const Dropdown = ({
         getItemProps,
         getToggleButtonProps,
         getMenuProps,
+        getRootProps,
         itemToString,
         isOpen,
         inputValue,
         selectedItem,
         highlightedIndex
       }) => (
-        <div style={{ position: 'relative' }}>
-          <button
-            {...getToggleButtonProps({ onBlur, className: buttonStyles })}
+        <DropDownContainer {...getRootProps({ refKey: 'innerRef' })}>
+          <DropDownButton
+            {...getToggleButtonProps({
+              onBlur,
+              isOpen
+            })}
           >
             <span className="text">
               {inputValue ? inputValue : placeholder}
             </span>
-          </button>
+            <DropDownIcon icon="arrow" size="24" />
+          </DropDownButton>
 
           {isOpen && (
-            <DropDownMenu {...getMenuProps({})}>
-              {items.map((item, index) => {
-                const itemClassnames = classnames({
-                  selected: selectedItem && selectedItem.id === item.id,
-                  active: highlightedIndex === index
-                });
-                return (
-                  <li
-                    {...getItemProps({
-                      item,
-                      key: item.id,
-                      className: itemClassnames
-                    })}
-                  >
-                    {itemToString(item)}
-                  </li>
-                );
-              })}
-            </DropDownMenu>
+            <React.Fragment>
+              <DropDownMenu {...getMenuProps({ refKey: 'innerRef' })}>
+                {items.map((item, index) => {
+                  const itemClassnames = classnames({
+                    selected: selectedItem && selectedItem.id === item.id,
+                    active: highlightedIndex === index
+                  });
+                  return (
+                    <DropDownOption
+                      {...getItemProps({
+                        item,
+                        key: item.id,
+                        className: itemClassnames
+                      })}
+                    >
+                      {itemToString(item)}
+                    </DropDownOption>
+                  );
+                })}
+              </DropDownMenu>
+            </React.Fragment>
           )}
-        </div>
+        </DropDownContainer>
       )}
     </Downshift>
   );
