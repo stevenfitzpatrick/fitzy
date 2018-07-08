@@ -3,6 +3,9 @@ import React, { Component, createRef } from 'react';
 import ReactDOM from 'react-dom';
 
 import Icon from '../Icon/Icon';
+import Body from './Body';
+import Footer from './Footer';
+import Header from './Header';
 import { CloseButton, ModalContent, ModalDialog } from './Modal.styled';
 
 export class Modal extends Component {
@@ -31,13 +34,15 @@ export class Modal extends Component {
   openDialog = () => this.ref.current.showModal();
 
   handleClose = e => {
+    //console.log('inside handleClose');
     e.stopPropagation();
     this.closeDialog();
     this.props.onClose();
   };
 
   handleOutsideClick = e => {
-    if (!this.refContent.current.contains(e.target)) {
+    const { tagName } = e.target;
+    if (tagName === 'DIALOG') {
       this.handleClose(e);
     }
   };
@@ -74,7 +79,7 @@ export class Modal extends Component {
       <ModalDialog innerRef={this.ref}>
         <ModalContent innerRef={this.refContent} className="modal-content">
           <CloseButton type="button" onClick={this.handleClose}>
-            <Icon icon="close" size="48" use="Primary" />
+            <Icon icon="close" size="48" use="Light" />
           </CloseButton>
           {children}
         </ModalContent>
@@ -89,5 +94,8 @@ Modal.propTypes = {
 };
 
 Modal.defaultProps = {};
+Modal.Body = Body;
+Modal.Footer = Footer;
+Modal.Header = Header;
 
 export default Modal;

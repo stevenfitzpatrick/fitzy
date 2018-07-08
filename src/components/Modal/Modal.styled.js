@@ -8,10 +8,12 @@ const ModalWrapper = styled.div`
 const appear = keyframes`
   from {
     opacity: 0;
+    transform: scale(0.75);
   }
 
   to {
     opacity: 1;
+    transform: none;
   }
 `;
 
@@ -20,6 +22,9 @@ const ModalDialog = styled.dialog`
   padding: 0;
   border-radius: 6px;
   background-color: violetred;
+  will-change: transform;
+  width: 40rem;
+  max-width: 90%;
 
   &::backdrop {
     background-color: rgba(0, 0, 0, 0.5);
@@ -29,14 +34,12 @@ const ModalDialog = styled.dialog`
   animation: ${appear} 0.25s ease-in forwards;
 `;
 
-const ModalContent = styled.div`
-  padding: 2rem;
-`;
+const ModalContent = styled.div``;
 
 const CloseButton = styled.button`
   position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 0.5rem;
+  right: 0rem;
   ${resetInput};
   cursor: pointer;
 `;

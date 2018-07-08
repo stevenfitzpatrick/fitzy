@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import Downshift from 'downshift';
-import PropTypes from 'prop-types';
 import React from 'react';
+import { array, func, object, oneOfType, string } from 'prop-types';
 
 import {
   DropDownButton,
@@ -13,19 +13,22 @@ import {
 
 const Dropdown = ({
   items,
-  onChange,
-  onBlur,
+  itemToString,
   defaultInputValue,
-  placeholder
+  defaultSelectedItem,
+  onChange,
+  onBlur
 }) => {
   return (
     <Downshift
       onChange={onChange}
       defaultInputValue={defaultInputValue}
-      itemToString={i => (i ? i.name : '')}
+      defaultSelectedItem={defaultSelectedItem}
+      itemToString={itemToString}
     >
       {({
         getItemProps,
+        getLabelProps,
         getToggleButtonProps,
         getMenuProps,
         getRootProps,
@@ -36,15 +39,14 @@ const Dropdown = ({
         highlightedIndex
       }) => (
         <DropDownContainer {...getRootProps({ refKey: 'innerRef' })}>
+          <label {...getLabelProps()}>Select an Item:</label>
           <DropDownButton
             {...getToggleButtonProps({
               onBlur,
               isOpen
             })}
           >
-            <span className="text">
-              {inputValue ? inputValue : placeholder}
-            </span>
+            <span className="text">{inputValue}</span>
             <DropDownIcon icon="arrow" size="24" />
           </DropDownButton>
 
@@ -53,14 +55,14 @@ const Dropdown = ({
               <DropDownMenu {...getMenuProps({ refKey: 'innerRef' })}>
                 {items.map((item, index) => {
                   const itemClassnames = classnames({
-                    selected: selectedItem && selectedItem.id === item.id,
+                    selected: selectedItem === item,
                     active: highlightedIndex === index
                   });
                   return (
                     <DropDownOption
                       {...getItemProps({
                         item,
-                        key: item.id,
+                        key: index,
                         className: itemClassnames
                       })}
                     >
@@ -81,32 +83,35 @@ Dropdown.propTypes = {
   /**
    * onChange Handler sending updated value
    */
-  onChange: PropTypes.func.isRequired,
+  onChange: func.isRequired,
   /**
    * onBlur Handler for informing Formik of touched value
    */
-  onBlur: PropTypes.func,
+  onBlur: func,
   /**
    * List of items to display in the dropdown
    */
-  items: PropTypes.arrayOf(
-    PropTypes.shape({ id: PropTypes.string, name: PropTypes.string })
-  ),
+  items: array,
   /**
-   * Options preselected item in dropdown
+   * When using object, function map selected value from object
    */
-  defaultInputValue: PropTypes.string,
+  itemToString: func,
   /**
    * Intitial placeholder for the dropdown
    */
-  placeholder: PropTypes.string
+  defaultInputValue: string,
+  /**
+   * Object Options preselected item in dropdown
+   */
+  defaultSelectedItem: oneOfType([string, object])
 };
 
 Dropdown.defaultProps = {
+  defaultInputValue: 'Select an item',
+  defaultSelectedItem: null,
   items: [],
-  onBlur: () => {},
-  defaultInputValue: '',
-  placeholder: 'Select an item'
+  itemToString: i => (i == null ? '' : String(i)),
+  onBlur: () => {}
 };
 
 export default Dropdown;

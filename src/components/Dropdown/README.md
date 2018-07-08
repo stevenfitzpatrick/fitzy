@@ -1,26 +1,3 @@
-```jsx
-initialState = { value: '' };
-
-const items = [
-  {
-    id: 'Cars',
-    name: 'my cars'
-  },
-  {
-    id: 'Planes',
-    name: 'F-16'
-  }
-];
-
-<Dropdown
-  items={items}
-  onChange={e => {
-    setState({ value: e });
-  }}
-  onBlur={e => console.log('hi')}
-/>;
-```
-
 Dropdown with default selected item :
 
 ```jsx
@@ -28,21 +5,47 @@ initialState = { value: '' };
 
 const items = [
   {
-    id: 'Cars',
-    name: 'my cars'
+    value: '1',
+    label: 'Cards'
   },
   {
-    id: 'Planes',
-    name: 'F-16'
+    value: '2',
+    label: 'Planes'
   }
 ];
 
 <Dropdown
   items={items}
-  defaultInputValue="Planes"
-  onChange={e => {
-    setState({ value: e });
-  }}
-  onBlur={e => console.log('hi')}
+  onChange={selection => alert(`You selected ${selection.value}`)}
+  defaultSelectedItem={items[1]}
+  itemToString={item => (item ? item.label : '')}
+/>;
+```
+
+Dropdown can also handle primitives :
+
+```jsx
+initialState = { value: '' };
+
+const primitives = ['Cards', 'Planes'];
+
+<Dropdown
+  items={primitives}
+  onChange={selection => alert(`You selected ${selection}`)}
+  defaultSelectedItem={primitives[1]}
+/>;
+```
+
+Dropdown can also handle be supplied placeholder :
+
+```jsx
+initialState = { value: '' };
+
+const primitives = ['Cards', 'Planes'];
+
+<Dropdown
+  items={primitives}
+  onChange={selection => alert(`You selected ${selection}`)}
+  defaultInputValue="Please pick an item"
 />;
 ```
