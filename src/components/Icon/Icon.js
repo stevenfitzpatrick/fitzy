@@ -4,13 +4,14 @@ import React from 'react';
 import FitzyIcon from './Icon.styled';
 import icons from './icons/index';
 
-function Icon({ icon, use, size, className }) {
+function Icon({ icon, use, size, className, ...props }) {
   return (
     <FitzyIcon
       use={use}
       size={size}
       viewBox={icons[icon].viewBox}
       className={className}
+      {...props}
     >
       <path d={icons[icon].path} />
     </FitzyIcon>

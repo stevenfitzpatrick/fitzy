@@ -29,6 +29,7 @@ const Dropdown = ({
       {({
         getItemProps,
         getLabelProps,
+        getInputProps,
         getToggleButtonProps,
         getMenuProps,
         getRootProps,
@@ -41,13 +42,14 @@ const Dropdown = ({
         <DropDownContainer {...getRootProps({ refKey: 'innerRef' })}>
           <label {...getLabelProps()}>Select an Item:</label>
           <DropDownButton
+            {...getInputProps()}
             {...getToggleButtonProps({
               onBlur,
               isOpen
             })}
           >
             <span className="text">{inputValue}</span>
-            <DropDownIcon icon="arrow" size="24" />
+            <DropDownIcon icon="arrow" size="22" />
           </DropDownButton>
 
           {isOpen && (

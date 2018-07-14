@@ -9,7 +9,7 @@ const ModalHeader = styled.div`
   display: flex;
   align-items: center;
   background-color: ${colors.primary};
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
   font-size: 1.25rem;
   padding: 1rem;

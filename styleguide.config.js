@@ -71,7 +71,12 @@ module.exports = {
           path.resolve(__dirname, 'src/components/RadioGroup', 'RadioGroup.js'),
           path.resolve(__dirname, 'src/components/Toggle', 'Toggle.js'),
           path.resolve(__dirname, 'src/components/Password', 'Password.js'),
-          path.resolve(__dirname, 'src/components/Dropdown', 'Dropdown.js')
+          path.resolve(__dirname, 'src/components/Dropdown', 'Dropdown.js'),
+          path.resolve(
+            __dirname,
+            'src/components/AutoComplete',
+            'AutoComplete.js'
+          )
         ];
       }
     },

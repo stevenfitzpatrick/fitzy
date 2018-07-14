@@ -34,12 +34,14 @@ const ModalDialog = styled.dialog`
   animation: ${appear} 0.25s ease-in forwards;
 `;
 
-const ModalContent = styled.div``;
+const ModalContent = styled.div`
+  position: relative;
+`;
 
 const CloseButton = styled.button`
   position: fixed;
   top: 0.5rem;
-  right: 0rem;
+  right: 0;
   ${resetInput};
   cursor: pointer;
 `;

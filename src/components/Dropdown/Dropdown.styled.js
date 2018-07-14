@@ -6,12 +6,15 @@ import { colors } from '../../theme/theme';
 const DropDownContainer = styled.div`
   position: relative;
   display: inline-flex;
+  flex-direction: column;
   min-width: 14rem;
   z-index: 0;
 `;
 
 const DropDownIcon = styled(Icon)`
   fill: ${colors.primary};
+  cursor: pointer;
+  transition: all 0.25s;
 `;
 
 const DropDownButton = styled.button`
@@ -33,7 +36,6 @@ const DropDownButton = styled.button`
   }
 
   > ${/*sc-s*/ DropDownIcon} {
-    transition: all 0.25s;
     transform: rotate(${({ isOpen }) => (isOpen ? '180deg' : '0deg')});
   }
 `;
@@ -50,6 +52,14 @@ const DropDownMenu = styled.ul`
   padding: 0.5rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
   margin-top: 1rem;
+
+  &:empty {
+    ::after {
+      content: 'No options available.';
+    }
+    padding: 0.75rem;
+    font-size: 14px;
+  }
 `;
 
 const DropDownOption = styled.li`
@@ -57,6 +67,7 @@ const DropDownOption = styled.li`
   padding: 0.5rem;
   line-height: 1.5rem;
   border-radius: 4px;
+  font-size: 14px;
   transition: background-color 0.15s;
 
   &:not(:last-child) {

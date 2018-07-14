@@ -11,6 +11,7 @@
     "clean": "rimraf lib/",
     "build": "npm-run-all clean transpile copy-typescript-definition test:size",
     "build:microbundle": "microbundle",
+    "cli": "node ./cli/index.js",
     "copy-typescript-definition": "copyfiles -f ./src/fitzy.d.ts ./lib",
     "commit": "git add . && git cz && git push",
     "transpile:main": "rollup -c config/rollup.config.js",
@@ -84,6 +85,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^5.0.1",
+    "eslint-import-resolver-jest": "^2.1.1",
     "eslint-plugin-codebox": "^2.0.2",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jest": "^21.17.0",
@@ -119,11 +121,13 @@
     "stylelint-processor-styled-components": "^1.3.1",
     "typescript": "^2.9.2",
     "typescript-styled-plugin": "^0.7.0",
-    "webpack": "^4.14.0"
+    "webpack": "^4.14.0",
+    "yargs": "^12.0.0"
   },
   "dependencies": {
     "classnames": "^2.2.6",
     "downshift": "^2.0.10",
+    "match-sorter": "^2.2.3",
     "prop-types": "^15.6.2"
   },
   "peerDependencies": {

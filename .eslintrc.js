@@ -52,5 +52,12 @@ module.exports = {
         ignoreCase: true
       }
     ]
+  },
+  settings: {
+    'import/resolver': {
+      jest: {
+        jestConfigFile: './jest.config.js'
+      }
+    }
   }
 };
