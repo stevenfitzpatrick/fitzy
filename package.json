@@ -127,6 +127,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "downshift": "^2.0.19",
+    "invariant": "^2.2.4",
     "match-sorter": "^2.2.3",
     "prop-types": "^15.6.2"
   },
