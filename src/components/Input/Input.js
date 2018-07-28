@@ -44,17 +44,21 @@ class Input extends PureComponent {
     return <FormError>{warning}</FormError>;
   }
 
-  renderLabel(inputId) {
+  renderLabel(inputId, labelId) {
     const { label } = this.props;
 
     if (!label) {
       return null;
     }
 
-    return <FitzyLabel htmlFor={inputId}>{label}</FitzyLabel>;
+    return (
+      <FitzyLabel id={labelId} htmlFor={inputId}>
+        {label}
+      </FitzyLabel>
+    );
   }
 
-  renderInput(inputId) {
+  renderInput(inputId, labelId) {
     const {
       type,
       name,
@@ -78,6 +82,7 @@ class Input extends PureComponent {
         placeholder={placeholder}
         type={type}
         id={inputId}
+        aria-labelledby={labelId}
         required={required}
         disabled={disabled}
         autoFocus={autoFocus}
@@ -93,12 +98,13 @@ class Input extends PureComponent {
   render() {
     const { id, name, className, warning } = this.props;
     const inputId = id || name;
+    const labelId = `label-${inputId}`;
 
     return (
       <FormField role="presentation" className={className} warning={warning}>
-        {this.renderInput(inputId)}
+        {this.renderInput(inputId, labelId)}
         <InputBar />
-        {this.renderLabel(inputId)}
+        {this.renderLabel(inputId, labelId)}
         {this.renderHint()}
         {this.renderWarning()}
       </FormField>
