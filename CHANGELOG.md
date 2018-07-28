@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.6.18"></a>
+## [4.6.18](https://github.com/stevenfitzpatrick/fitzy/compare/v4.6.17...v4.6.18) (2018-07-28)
+
+
+
 <a name="4.6.17"></a>
 ## [4.6.17](https://github.com/stevenfitzpatrick/fitzy/compare/v4.6.16...v4.6.17) (2018-07-14)
 

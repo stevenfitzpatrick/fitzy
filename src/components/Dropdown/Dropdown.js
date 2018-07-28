@@ -105,7 +105,8 @@ Dropdown.propTypes = {
   /**
    * Object Options preselected item in dropdown
    */
-  defaultSelectedItem: oneOfType([string, object])
+  defaultSelectedItem: oneOfType([string, object]),
+  label: string
 };
 
 Dropdown.defaultProps = {
@@ -113,6 +114,7 @@ Dropdown.defaultProps = {
   defaultSelectedItem: null,
   items: [],
   itemToString: i => (i == null ? '' : String(i)),
+  label: 'Select an item',
   onBlur: () => {}
 };
 

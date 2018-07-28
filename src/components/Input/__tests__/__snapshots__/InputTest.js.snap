@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input should match snapshot 1`] = `
+exports[`Input should match snapshot with label 1`] = `
 .c0 {
   position: relative;
   display: block;
@@ -32,6 +32,23 @@ exports[`Input should match snapshot 1`] = `
 
 .c2::after {
   right: 50%;
+}
+
+.c3 {
+  position: absolute;
+  display: inline-block;
+  max-width: 100%;
+  font-size: 0.875rem;
+  line-height: 1;
+  color: hsl(152,62%,53%);
+  top: 1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
 }
 
 .c1 {
@@ -126,6 +143,7 @@ exports[`Input should match snapshot 1`] = `
   role="presentation"
 >
   <input
+    aria-labelledby="label-name"
     autoComplete={null}
     autoFocus={null}
     className="c1"
@@ -143,5 +161,12 @@ exports[`Input should match snapshot 1`] = `
   <span
     className="c2"
   />
+  <label
+    className="c3"
+    htmlFor="name"
+    id="label-name"
+  >
+    My Name
+  </label>
 </label>
 `;

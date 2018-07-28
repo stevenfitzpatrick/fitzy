@@ -40,9 +40,9 @@ describe('Input', () => {
     onChangeSpy.mockReset();
   });
 
-  test('should match snapshot', () => {
+  test('should match snapshot with label', () => {
     const tree = renderWithTheme(
-      <Input type="text" {...defaultProps} />
+      <Input type="text" {...defaultProps} label="My Name" />
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });
