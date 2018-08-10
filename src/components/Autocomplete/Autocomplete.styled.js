@@ -1,7 +1,6 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import CloseButton from '../../styles/CloseButton.styled';
-import Icon from '../Icon/Icon';
 import { colors } from '../../theme/theme';
 import { DropDownIcon } from '../Dropdown/Dropdown.styled';
 

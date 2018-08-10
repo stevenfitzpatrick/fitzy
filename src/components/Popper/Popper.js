@@ -1,7 +1,6 @@
-import classnames from 'classnames';
 import Downshift from 'downshift';
-import React, { Fragment, PureComponent } from 'react';
-import { array, func, object, oneOfType, string } from 'prop-types';
+import React, { PureComponent } from 'react';
+import { func } from 'prop-types';
 
 class Popper extends PureComponent {
   state = {};

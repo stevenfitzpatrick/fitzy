@@ -24,6 +24,7 @@ module.exports = {
     'prefer-arrow-callback': 2,
     'react/jsx-uses-vars': 1,
     'react/jsx-uses-react': 1,
+    'jsx-a11y/label-has-associated-control': 0,
     'jsx-a11y/no-autofocus': [
       2,
       {
