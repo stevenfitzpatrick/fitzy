@@ -53,27 +53,25 @@ const Dropdown = ({
           </DropDownButton>
 
           {isOpen && (
-            <React.Fragment>
-              <DropDownMenu {...getMenuProps({ refKey: 'innerRef' })}>
-                {items.map((item, index) => {
-                  const itemClassnames = classnames({
-                    selected: selectedItem === item,
-                    active: highlightedIndex === index
-                  });
-                  return (
-                    <DropDownOption
-                      {...getItemProps({
-                        item,
-                        key: index,
-                        className: itemClassnames
-                      })}
-                    >
-                      {itemToString(item)}
-                    </DropDownOption>
-                  );
-                })}
-              </DropDownMenu>
-            </React.Fragment>
+            <DropDownMenu {...getMenuProps({ refKey: 'innerRef' })}>
+              {items.map((item, index) => {
+                const itemClassnames = classnames({
+                  selected: selectedItem === item,
+                  active: highlightedIndex === index
+                });
+                return (
+                  <DropDownOption
+                    {...getItemProps({
+                      item,
+                      key: index,
+                      className: itemClassnames
+                    })}
+                  >
+                    {itemToString(item)}
+                  </DropDownOption>
+                );
+              })}
+            </DropDownMenu>
           )}
         </DropDownContainer>
       )}
