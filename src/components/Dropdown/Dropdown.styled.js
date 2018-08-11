@@ -45,6 +45,7 @@ const DropDownMenu = styled.ul`
   top: 100%;
   left: 0;
   width: 100%;
+  min-width: 14rem;
   background-color: white;
   border-radius: 4px;
   border: 1px solid #eee;
@@ -87,13 +88,6 @@ const DropDownOption = styled.li`
   }
 `;
 
-const menuStyles = css`
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-`;
-
 export const DropDownArrow = styled.div`
   position: absolute;
   background-color: inherit;
@@ -107,7 +101,6 @@ export {
   DropDownOption,
   DropDownIcon,
   DropDownButton,
-  menuStyles,
   DropDownMenu,
   DropDownContainer
 };

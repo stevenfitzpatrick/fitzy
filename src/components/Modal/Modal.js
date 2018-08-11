@@ -3,9 +3,7 @@ import React, { Component, createRef } from 'react';
 import ReactDOM from 'react-dom';
 
 import Icon from '../Icon/Icon';
-import Body from './Body';
-import Footer from './Footer';
-import Header from './Header';
+import { Body, Footer, Header } from './components';
 import { CloseButton, ModalContent, ModalDialog } from './Modal.styled';
 
 export class Modal extends Component {
@@ -29,12 +27,16 @@ export class Modal extends Component {
     window.removeEventListener('keydown', this.handleKeyUp, false);
   }
 
-  closeDialog = () => this.ref.current.close();
+  closeDialog = () => {
+    if (typeof this.ref.current.close === 'function') this.ref.current.close();
+  };
 
-  openDialog = () => this.ref.current.showModal();
+  openDialog = () => {
+    if (typeof this.ref.current.showModal === 'function')
+      this.ref.current.showModal();
+  };
 
   handleClose = e => {
-    //console.log('inside handleClose');
     e.stopPropagation();
     this.closeDialog();
     this.props.onClose();
@@ -78,7 +80,11 @@ export class Modal extends Component {
     return ReactDOM.createPortal(
       <ModalDialog innerRef={this.ref}>
         <ModalContent innerRef={this.refContent} className="modal-content">
-          <CloseButton type="button" onClick={this.handleClose}>
+          <CloseButton
+            type="button"
+            onClick={this.handleClose}
+            data-testid="modal-close"
+          >
             <Icon icon="close" size="48" use="Light" />
           </CloseButton>
           {children}

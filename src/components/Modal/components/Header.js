@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { string } from 'prop-types';
 
-import Icon from '../Icon/Icon';
-import { colors } from '../../theme/theme';
+import Icon from '../../Icon/Icon';
+import { colors } from '../../../theme/theme';
 
 const ModalHeader = styled.div`
   display: flex;

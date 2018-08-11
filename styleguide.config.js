@@ -51,8 +51,8 @@ module.exports = {
       ]
     }
   },
-  showCode: false,
-  showUsage: false,
+  exampleMode: 'collapse',
+  usageMode: 'collapse',
   styles: {
     StyleGuide: {
       '@global body': {
@@ -67,6 +67,7 @@ module.exports = {
         return [
           path.resolve(__dirname, 'src/components/Input', 'Input.js'),
           path.resolve(__dirname, 'src/components/Button', 'Button.js'),
+          path.resolve(__dirname, 'src/components/IconButton', 'IconButton.js'),
           path.resolve(__dirname, 'src/components/CheckBox', 'CheckBox.js'),
           path.resolve(__dirname, 'src/components/RadioGroup', 'RadioGroup.js'),
           path.resolve(__dirname, 'src/components/Toggle', 'Toggle.js'),

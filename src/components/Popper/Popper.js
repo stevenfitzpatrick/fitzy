@@ -2,6 +2,9 @@ import Downshift from 'downshift';
 import React, { PureComponent } from 'react';
 import { func } from 'prop-types';
 
+import { DropDownMenu, DropDownOption } from '../Dropdown/Dropdown.styled';
+import { PopperContainer } from './Popper.styled';
+
 class Popper extends PureComponent {
   state = {};
 
@@ -9,11 +12,24 @@ class Popper extends PureComponent {
     const { children, itemToString, onChange, renderMenu } = this.props;
     return (
       <Downshift itemToString={itemToString} onChange={onChange}>
-        {({ getItemProps, getToggleButtonProps, getMenuProps, isOpen }) => (
-          <div>
+        {({
+          getItemProps,
+          getToggleButtonProps,
+          getRootProps,
+          getMenuProps,
+          isOpen
+        }) => (
+          <PopperContainer {...getRootProps({ refKey: 'innerRef' })}>
             {children({ getToggleButtonProps })}
-            {isOpen && renderMenu({ getItemProps, getMenuProps, itemToString })}
-          </div>
+            {isOpen &&
+              renderMenu({
+                getItemProps,
+                getMenuProps,
+                itemToString,
+                Menu: DropDownMenu,
+                MenuItem: DropDownOption
+              })}
+          </PopperContainer>
         )}
       </Downshift>
     );

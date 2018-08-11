@@ -18,26 +18,34 @@ const items = [
   }
 ];
 
-function dropDownMenu({ getItemProps, getMenuProps, itemToString }) {
+function dropDownMenu({
+  getItemProps,
+  getMenuProps,
+  itemToString,
+  Menu,
+  MenuItem
+}) {
   return (
-    <ul {...getMenuProps()}>
+    <Menu {...getMenuProps()}>
       {items.map((item, index) => {
         return (
-          <li
+          <MenuItem
             {...getItemProps({
               item,
               key: index
             })}
           >
             {itemToString(item)}
-          </li>
+          </MenuItem>
         );
       })}
-    </ul>
+    </Menu>
   );
 }
 
-<Popper renderMenu={dropDownMenu}>
-  {({ getToggleButtonProps }) => <div {...getToggleButtonProps()}>lol</div>}
+<Popper renderMenu={dropDownMenu} onChange={item => console.log(item)}>
+  {({ getToggleButtonProps }) => (
+    <IconButton icon="more" {...getToggleButtonProps()} />
+  )}
 </Popper>;
 ```
