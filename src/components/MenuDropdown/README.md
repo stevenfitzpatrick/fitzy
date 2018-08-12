@@ -1,4 +1,4 @@
-Popper Dropdown :
+MenuDropdown Dropdown :
 
 ```jsx
 initialState = { value: '' };
@@ -18,15 +18,25 @@ const items = [
   }
 ];
 
-function dropDownMenu({
-  getItemProps,
-  getMenuProps,
-  itemToString,
-  Menu,
-  MenuItem
-}) {
-  return (
-    <Menu {...getMenuProps()}>
+function iconButton({ getToggleButtonProps, ref }) {
+  return <IconButton icon="more" innerRef={ref} {...getToggleButtonProps()} />;
+}
+
+<MenuDropdown
+  renderButton={iconButton}
+  onChange={item => console.log(item)}
+  width={12}
+>
+  {({
+    getItemProps,
+    getMenuProps,
+    itemToString,
+    Menu,
+    MenuItem,
+    selectedItem,
+    highlightedIndex
+  }) => (
+    <Menu {...getMenuProps({ refKey: 'innerRef' })}>
       {items.map((item, index) => {
         return (
           <MenuItem
@@ -40,12 +50,6 @@ function dropDownMenu({
         );
       })}
     </Menu>
-  );
-}
-
-<Popper renderMenu={dropDownMenu} onChange={item => console.log(item)}>
-  {({ getToggleButtonProps }) => (
-    <IconButton icon="more" {...getToggleButtonProps()} />
   )}
-</Popper>;
+</MenuDropdown>;
 ```

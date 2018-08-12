@@ -46,6 +46,7 @@ const DropDownMenu = styled.ul`
   left: 0;
   width: 100%;
   min-width: 14rem;
+
   background-color: white;
   border-radius: 4px;
   border: 1px solid #eee;
@@ -71,6 +72,7 @@ const DropDownOption = styled.li`
   border-radius: 4px;
   font-size: 14px;
   transition: background-color 0.15s;
+  color: ${colors.bgColor};
 
   &:not(:last-child) {
     margin-bottom: 0.25rem;

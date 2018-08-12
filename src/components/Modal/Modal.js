@@ -3,7 +3,7 @@ import React, { Component, createRef } from 'react';
 import ReactDOM from 'react-dom';
 
 import Icon from '../Icon/Icon';
-import { Body, Footer, Header } from './components';
+import { Body, Footer, Header } from './components/index';
 import { CloseButton, ModalContent, ModalDialog } from './Modal.styled';
 
 export class Modal extends Component {
