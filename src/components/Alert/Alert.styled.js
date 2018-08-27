@@ -47,7 +47,7 @@ const FitzyAlertIcon = styled(Icon)`
 /**
  * Extra Styles for Alert Close Button
  */
-const FitzyClose = CloseButton.extend`
+const FitzyClose = styled(CloseButton)`
   position: absolute;
   top: ${spacing.lg};
   right: ${spacing.xl};

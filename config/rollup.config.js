@@ -6,14 +6,19 @@ import pkg from '../package.json';
 
 export default {
   input: 'src/fitzy.js',
-  external: ['react', 'react-dom', 'styled-components'].concat(
-    Object.keys(pkg.dependencies)
-  ),
+  external: [
+    'classnames',
+    'prop-types',
+    'react',
+    'react-dom',
+    'styled-components'
+  ].concat(Object.keys(pkg.dependencies)),
   output: {
     globals: {
       react: 'React',
       'prop-types': 'PropTypes',
       downshift: 'Downshift',
+      'react-popper': 'react-popper',
       classnames: 'classnames',
       'styled-components': 'styled-components'
     },

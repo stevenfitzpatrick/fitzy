@@ -12,7 +12,7 @@ const Container = styled.div`
   z-index: 0;
 `;
 
-const InputClose = CloseButton.extend`
+const InputClose = styled(CloseButton)`
   &:focus {
     > ${/*sc-s*/ DropDownIcon} {
       transform: rotate(180deg);
