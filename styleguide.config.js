@@ -74,8 +74,8 @@ module.exports = {
           path.resolve(__dirname, 'src/components/Password', 'Password.js'),
           path.resolve(
             __dirname,
-            'src/components/AutoComplete',
-            'AutoComplete.js'
+            'src/components/Autocomplete',
+            'Autocomplete.js'
           )
         ];
       }
