@@ -1,7 +1,7 @@
 Basic :
 
 ```jsx
-<Tooltip content="I am at the top Yo" id="topTooltip">
+<Tooltip content="I am at the top Yo" id="topTooltip" use="Light">
   <Button>Top</Button>
 </Tooltip>
 ```
@@ -23,7 +23,7 @@ Basic :
   placement="right"
   content="I'm right Yo"
   id="rightTooltip"
-  use="Info"
+  use="Texas"
 >
   <Button>Right</Button>
 </Tooltip>

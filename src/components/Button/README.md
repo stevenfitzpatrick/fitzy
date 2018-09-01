@@ -7,6 +7,7 @@ Basic :
   <Button use="Error">Login</Button>
   <Button use="Info">Login</Button>
   <Button use="Success">Login</Button>
+  <Button use="Texas">Login</Button>
 </div>
 ```
 
@@ -26,6 +27,14 @@ Secondary:
 
 ```jsx
 <Button use="Secondary">Save</Button>
+```
+
+With Icon:
+
+```jsx
+<Button use="Texas" icon="notification">
+  Notification
+</Button>
 ```
 
 Full width :

@@ -29,7 +29,7 @@ export const colors = {
   warningBorder: 'hsl(36, 100%, 38%)',
   // Error Theme Colors
   error: 'hsl(0, 57%, 63%)',
-  errorHover: 'hsl(0, 57%, 73%)',
+  errorHover: 'hsl(0, 57%, 59%)',
   errorActive: 'hsl(0, 57%, 53%)',
   errorBorder: 'hsl(0, 57%, 48%)',
   // Info Theme Colors
@@ -42,6 +42,11 @@ export const colors = {
   successHover: 'hsl(123, 38%, 63%)',
   successActive: 'hsl(123, 38%, 43%)',
   successBorder: 'hsl(123, 38%, 38%)',
+  // Texas Theme Colors
+  texas: 'hsl(27, 60%, 50%)',
+  texasHover: 'hsl(27, 69%, 50%)',
+  texasActive: 'hsl(27, 100%, 37%)',
+  texasBorder: 'hsl(27, 60%, 50%)',
   // Disabled Colors
   primaryDisabled: '#eaf0f6',
   primaryDisabledColor: '#b0c1d4'
@@ -71,6 +76,9 @@ const theme = {
   },
   Success: {
     ...setThemeColors(colors, 'success')
+  },
+  Texas: {
+    ...setThemeColors(colors, 'texas')
   },
   Input: {
     text: colors.light,

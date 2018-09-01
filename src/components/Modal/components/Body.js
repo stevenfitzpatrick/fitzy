@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ModalHeader = styled.div`
+export const ModalBody = styled.div`
   padding: 1rem;
 `;
 
-const Header = ({ children }) => {
-  return <ModalHeader>{children}</ModalHeader>;
+const Body = ({ children }) => {
+  return <ModalBody>{children}</ModalBody>;
 };
 
-export default Header;
+export default Body;

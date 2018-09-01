@@ -65,10 +65,17 @@ class Tooltip extends React.Component {
     window.removeEventListener('resize', this._calculatePositions, false);
   }
 
-  toggle = () =>
+  toggleOn = () =>
     requestAnimationFrame(() =>
-      this.setState(({ isHovered }) => ({
-        isHovered: !isHovered
+      this.setState(() => ({
+        isHovered: true
+      }))
+    );
+
+  toggleOff = () =>
+    requestAnimationFrame(() =>
+      this.setState(() => ({
+        isHovered: false
       }))
     );
 
@@ -93,8 +100,8 @@ class Tooltip extends React.Component {
         </TooltipWrapper>
         {React.cloneElement(children, {
           innerRef: this.childRef,
-          onMouseEnter: this.toggle,
-          onMouseLeave: this.toggle,
+          onMouseEnter: this.toggleOn,
+          onMouseLeave: this.toggleOff,
           'aria-describedby': id
         })}
       </React.Fragment>
@@ -121,7 +128,8 @@ Tooltip.propTypes = {
     'Warning',
     'Error',
     'Info',
-    'Light'
+    'Light',
+    'Texas'
   ]),
   /**
    * Element to toggle tooltip

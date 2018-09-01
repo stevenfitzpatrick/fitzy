@@ -33,8 +33,9 @@ export const TooltipInner = styled.div`
   padding: ${spacing.s} ${spacing.m};
 
   ${colorMixin};
+  margin: 0;
 
-  font-size: ${font.m};
+  font-size: 14px;
   text-align: center;
   border-radius: 4px;
 `;

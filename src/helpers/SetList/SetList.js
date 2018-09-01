@@ -32,7 +32,7 @@ class SetList extends Component {
       remove: this.remove
     };
 
-    return this.props.children(helpers);
+    return children(helpers);
   }
 }
 

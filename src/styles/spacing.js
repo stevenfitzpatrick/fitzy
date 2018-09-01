@@ -1,8 +1,8 @@
 export const spacing = {
-  xs: '0.25rem',
-  s: '0.5rem',
-  m: '0.75rem',
-  l: '1rem',
+  xs: '4px',
+  s: '8px',
+  m: '12px',
+  l: '16px',
   lg: '1.25rem',
   xl: '1.5rem',
   xxl: '1.75rem',

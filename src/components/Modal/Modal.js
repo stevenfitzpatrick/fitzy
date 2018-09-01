@@ -1,8 +1,9 @@
-import PropTypes from 'prop-types';
 import React, { Component, createRef } from 'react';
 import ReactDOM from 'react-dom';
+import { func, oneOf } from 'prop-types';
 
 import Icon from '../Icon/Icon';
+import { THEME, THEMES } from '../../shared/propTypes';
 import { Body, Footer, Header } from './components/index';
 import { CloseButton, ModalContent, ModalDialog } from './Modal.styled';
 
@@ -64,22 +65,16 @@ export class Modal extends Component {
     }
   };
 
-  // componentDidUpdate({ show }) {
-  //   if (show !== this.props.show) {
-  //     if (this.props.show) {
-  //       this.openDialog();
-  //     } else {
-  //       this.closeDialog();
-  //     }
-  //   }
-  // }
-
   render() {
-    const { children } = this.props;
+    const { children, use } = this.props;
 
     return ReactDOM.createPortal(
       <ModalDialog innerRef={this.ref}>
-        <ModalContent innerRef={this.refContent} className="modal-content">
+        <ModalContent
+          innerRef={this.refContent}
+          className="modal-content"
+          use={use}
+        >
           <CloseButton
             type="button"
             onClick={this.handleClose}
@@ -96,10 +91,15 @@ export class Modal extends Component {
 }
 
 Modal.propTypes = {
-  onClose: PropTypes.func
+  onClose: func,
+  use: oneOf(THEMES)
 };
 
-Modal.defaultProps = {};
+Modal.defaultProps = {
+  onClose: () => {},
+  use: THEME.light
+};
+
 Modal.Body = Body;
 Modal.Footer = Footer;
 Modal.Header = Header;

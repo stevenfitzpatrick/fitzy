@@ -113,7 +113,8 @@ Dropdown.defaultProps = {
   items: [],
   itemToString: i => (i == null ? '' : String(i)),
   label: 'Select an item',
-  onBlur: () => {}
+  onBlur: () => {},
+  onChange: () => {}
 };
 
 export default Dropdown;

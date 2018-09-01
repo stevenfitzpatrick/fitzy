@@ -1,5 +1,9 @@
 import styled, { keyframes } from 'styled-components';
+
+import { colors } from '../../theme/theme';
 import { resetInput } from '../../styles/mixins';
+import { THEME } from '../../shared/propTypes';
+import { ModalBody } from './components/Body';
 
 const ModalWrapper = styled.div`
   display: block;
@@ -36,6 +40,13 @@ const ModalDialog = styled.dialog`
 
 const ModalContent = styled.div`
   position: relative;
+
+  > ${/*sc-s*/ ModalBody} {
+    background-color: ${({ theme, use }) =>
+    use === THEME.light ? colors.light : colors.bgColor};
+    color: ${({ theme, use }) =>
+    use === THEME.light ? colors.primary : colors.primary};
+  }
 `;
 
 const CloseButton = styled.button`

@@ -10,21 +10,24 @@ const FitzyButton = styled.button.attrs({
 })`
   ${resetInput};
   font-weight: bold;
-  font-size: inherit;
+  font-size: 14px;
   letter-spacing: ${letterSpacing};
-  line-height: 1rem;
+  line-height: 1.575;
+
+  box-shadow: ${({ theme }) =>
+    `${theme.boxShadowSize} ${theme.boxShadowColor}`};
 
   ${colorMixin};
   ${secondaryMixin};
 
   svg {
-    margin-right: 0.5rem;
+    margin: 0 8px 0 0;
   }
 
   border-radius: 4px;
   transition: all 0.25s ease;
   width: ${({ fullWidth }) => (fullWidth ? '100%' : 'auto')};
-  padding: ${spacing.m} ${spacing.xl};
+  padding: ${spacing.s} ${spacing.xl};
   user-select: none;
   cursor: pointer;
 

@@ -45,3 +45,11 @@ Dark
   <Icon icon="edit" size="32" use="Primary" />
 </div>
 ```
+
+Big12 Icon
+
+```jsx
+<div className="spread dark">
+  <BigTwelve />
+</div>
+```

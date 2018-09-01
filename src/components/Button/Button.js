@@ -67,7 +67,8 @@ Button.propTypes = {
     'Warning',
     'Error',
     'Info',
-    'Light'
+    'Light',
+    'Texas'
   ]),
   /**
    * Mark the button as disabled

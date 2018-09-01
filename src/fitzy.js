@@ -13,9 +13,16 @@ export { default as RadioOption } from './components/RadioGroup/RadioOption';
 export { default as Navigation } from './components/Navigation/Navigation';
 export { default as NavigationLink } from './components/NavLink/NavLink.styled';
 
+// Icons
+export { default as BigTwelve } from './components/Icon/BigTwelve';
+
 // Components
 export { default as Alert } from './components/Alert/Alert';
 export { default as Modal } from './components/Modal/Modal';
+export { default as Tooltip } from './components/Tooltip/Tooltip';
+
+// Helper Render Prop Component
+export { default as Toggle } from './helpers/Toggle/Toggle';
 
 // Export Theme
 export { default as Theme } from './theme/theme';
