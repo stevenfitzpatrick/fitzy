@@ -14,7 +14,7 @@ Warning Alert (without close button):
 initialState = { value: '' };
 
 <Alert title="Trouble Ahead" use="Warning">
-  Iceberg dead ahead.
+  Iceberg dead ahead
 </Alert>;
 ```
 
