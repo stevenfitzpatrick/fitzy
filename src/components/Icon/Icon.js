@@ -5,15 +5,19 @@ import FitzyIcon from './Icon.styled';
 import icons from './icons/index';
 
 function Icon({ icon, use, size, className, ...props }) {
+  // Check if icon exists
+  const selectedIcon = icons[icon];
+  if (!selectedIcon) return null;
+
   return (
     <FitzyIcon
       use={use}
       size={size}
-      viewBox={icons[icon].viewBox}
+      viewBox={selectedIcon.viewBox}
       className={className}
       {...props}
     >
-      <path d={icons[icon].path} />
+      {selectedIcon.child ? selectedIcon.child : <path d={selectedIcon.path} />}
     </FitzyIcon>
   );
 }

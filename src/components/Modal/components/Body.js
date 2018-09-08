@@ -6,7 +6,7 @@ export const ModalBody = styled.div`
 `;
 
 const Body = ({ children }) => {
-  return <ModalBody>{children}</ModalBody>;
+  return <ModalBody className="model-body">{children}</ModalBody>;
 };
 
 export default Body;

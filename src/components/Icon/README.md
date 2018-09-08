@@ -11,6 +11,8 @@ Default
   <Icon icon="tag" />
   <Icon icon="trash" />
   <Icon icon="edit" />
+  <Icon icon="soccer" />
+  <Icon icon="football" />
 </div>
 ```
 
@@ -27,6 +29,8 @@ Larger
   <Icon icon="tag" size="32" />
   <Icon icon="trash" size="32" />
   <Icon icon="edit" size="32" />
+  <Icon icon="soccer" size="32" />
+  <Icon icon="football" size="32" />
 </div>
 ```
 

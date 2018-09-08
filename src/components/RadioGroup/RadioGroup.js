@@ -1,17 +1,20 @@
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 
+import { RadioContainer } from './RadioGroup.styled';
+
 class RadioGroup extends PureComponent {
   onChange = e => this.props.onChange && this.props.onChange(e.target.value);
 
   render() {
-    return React.Children.map(this.props.children, child => {
-      return React.cloneElement(child, {
-        isChecked: this.props.value === child.props.value,
-        name: this.props.name,
-        onChange: this.onChange
-      });
-    });
+    return <RadioContainer>{React.Children.map(this.props.children, child => {
+       return React.cloneElement(child, {
+         isChecked: this.props.value === child.props.value,
+         name: this.props.name,
+         onChange: this.onChange
+       });
+     })}</RadioContainer>;
+
   }
 }
 

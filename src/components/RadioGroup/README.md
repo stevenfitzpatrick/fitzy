@@ -2,13 +2,15 @@
 const RadioOption = require('./RadioOption').default;
 
 initialState = { value: 'xl' };
-
-<RadioGroup
-  name="tshirt_sixes"
-  value={state.value}
-  onChange={v => setState({ value: v })}
->
-  <RadioOption value="xl">XL</RadioOption>
-  <RadioOption value="xs">XS</RadioOption>
-</RadioGroup>;
+<>
+  <div>Selected Value: {state.value}</div>
+  <RadioGroup
+    name="tshirt_sixes"
+    value={state.value}
+    onChange={v => setState({ value: v })}
+  >
+    <RadioOption value="xl" icon="football">Football</RadioOption>
+    <RadioOption value="xs" icon="soccer">Soccer</RadioOption>
+  </RadioGroup>
+</>
 ```

@@ -41,7 +41,7 @@ const ModalDialog = styled.dialog`
 const ModalContent = styled.div`
   position: relative;
 
-  > ${/*sc-s*/ ModalBody} {
+  .model-body {
     background-color: ${({ theme, use }) =>
     use === THEME.light ? colors.light : colors.bgColor};
     color: ${({ theme, use }) =>

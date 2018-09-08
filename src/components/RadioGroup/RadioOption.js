@@ -1,9 +1,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const RadioOption = ({ isChecked, value, onChange, name, children }) => (
+import Icon from '../Icon/Icon';
+import { HiddenRadio, FancyRadio } from './RadioGroup.styled'
+
+const RadioOption = ({ icon, isChecked, value, onChange, name, children }) => (
   <label htmlFor={value}>
-    <input
+    <HiddenRadio
       type="radio"
       checked={isChecked}
       value={value}
@@ -11,11 +14,18 @@ const RadioOption = ({ isChecked, value, onChange, name, children }) => (
       name={name}
       id={value}
     />
-    {children}
+    <FancyRadio>
+      <Icon icon={icon} size="24" />
+      <span>{children}</span>
+    </FancyRadio>
   </label>
 );
 
 RadioOption.propTypes = {
+   /**
+   * Icon Name
+   */
+  icon: PropTypes.string.isRequired,
   /**
    * onChange Handler sending updated value
    */
