@@ -1,6 +1,6 @@
 {
   "name": "@sfitzpatrick/fitzy",
-  "version": "4.6.38",
+  "version": "4.6.39",
   "source": "src/fitzy.js",
   "description": "React UI Library",
   "main": "lib/fitzy.cjs.js",
