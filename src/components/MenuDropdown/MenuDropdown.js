@@ -14,10 +14,11 @@ const MenuDropdown = ({
   renderButton,
   referenceProps,
   popperProps,
-  width
+  width,
+  ...props
 }) => (
   <Manager>
-    <Downshift itemToString={itemToString} onChange={onChange}>
+    <Downshift itemToString={itemToString} onChange={onChange} {...props}>
       {({
         getItemProps,
         getToggleButtonProps,

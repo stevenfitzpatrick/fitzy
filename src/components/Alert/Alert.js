@@ -6,9 +6,11 @@ import { SRClose } from '../../styles/CloseButton.styled';
 import { FitzyAlert, FitzyAlertIcon, FitzyClose } from './Alert.styled';
 
 function Alert({ onCancel, use, className, children, title }) {
+  const iconName = use === 'Success' ? 'check' : 'exlamation';
+
   return (
     <FitzyAlert use={use} className={className}>
-      <FitzyAlertIcon icon="exlamation" />
+      <FitzyAlertIcon icon={iconName} />
       <Fragment>
         <h2>{title}</h2>
         <div>{children}</div>
