@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.7.2"></a>
+## [4.7.2](https://github.com/stevenfitzpatrick/fitzy/compare/v4.7.1...v4.7.2) (2018-09-09)
+
+
+### Bug Fixes
+
+* **Add Success Icon for Alert:** Alert Changes ([f60cc19](https://github.com/stevenfitzpatrick/fitzy/commit/f60cc19))
+
+
+
 <a name="4.7.1"></a>
 ## [4.7.1](https://github.com/stevenfitzpatrick/fitzy/compare/v4.7.0...v4.7.1) (2018-09-08)
 
